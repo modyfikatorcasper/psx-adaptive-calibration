@@ -43,7 +43,7 @@ const uint16_t *tud_descriptor_string_cb(uint8_t index,uint16_t langid) {
  (void)langid;static uint16_t result[64];static char serial[2*PICO_UNIQUE_BOARD_ID_SIZE_BYTES+1];
  if(index==0){result[0]=0x0304;result[1]=0x0409;return result;}
  pico_get_unique_board_id_string(serial,sizeof serial);
- const char *strings[]={"","Modibox","Modi PSX Adapter",serial,"Modi HID Gamepad","Modi Raw Diagnostic HID"};
+ const char *strings[]={"","Modyfikator","Modi PSX Adapter",serial,"Modi HID Gamepad","Modi Raw Diagnostic HID"};
  if(index>=sizeof strings/sizeof strings[0])return NULL;
  size_t n=strlen(strings[index]);if(n>63)n=63;
  result[0]=(uint16_t)(0x0300|((n+1)*2));

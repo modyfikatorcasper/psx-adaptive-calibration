@@ -14,7 +14,7 @@ Tor badawczy wyglądał następująco:
 
 **pad PS1 lub PS2 → Modi PSX Adapter na RP2040-Zero → USB → Modi PSX Lab na PC.**
 
-Adapter odczytuje protokół kontrolera. Aplikacja pokazuje cztery oryginalne bajty osi w zakresie 0–255. W badaniu nie dodawaliśmy deadzone, wygładzania, przesuwania środka ani rozciągania zakresu. Parser kopiuje osie z odpowiedzi kontrolera; wartości w raportach USB porównywaliśmy z zachowaną ramką PSX. Kod tego toru jest w [psx_parser.c](../firmware/src/psx_parser.c), a format danych w [format raportu RAW](../DRIFTGUARD_PROTOCOL.md).
+Adapter odczytuje protokół kontrolera. Aplikacja pokazuje cztery oryginalne bajty osi w zakresie 0–255. W badaniu nie dodawaliśmy deadzone, wygładzania, przesuwania środka ani rozciągania zakresu. Parser kopiuje osie z odpowiedzi kontrolera; wartości w raportach USB porównywaliśmy z zachowaną ramką PSX. Kod tego toru jest w [psx_parser.c](../firmware/src/psx_parser.c).
 
 **RAW oznacza tutaj wartości wysłane przez pad, już po ewentualnym przetwarzaniu wewnątrz jego elektroniki.** To nie jest bezpośredni pomiar napięcia potencjometru ani surowych próbek przetwornika ADC. Wynik pozwala więc badać zachowanie kontrolera widziane przez komputer.
 

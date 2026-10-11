@@ -13,7 +13,7 @@ i kontrolerów nie wgrano ani nie testowano w tej sesji.
 - Zweryfikowano sumę CRC boot2, stos SRAM oraz wektor startowy Thumb w flash.
 - Odczytano deskryptory z faktycznie połączonego ELF: 2 HID, standard gamepad
   7 bajtów, vendor FF00:0001 64 bajty, endpoints 81/82 IN, interval 1 ms.
-  USB product/manufacturer w źródle: Modi PSX Adapter / Modibox.
+  USB product/manufacturer w źródle: Modi PSX Adapter / Modyfikator.
 - Uruchomiono rzeczywisty parser C na Windows (host GCC z w64devkit 2.10.0),
   z `-Wall -Wextra -Werror`: 41, 53, 73, 79, F3, center 128 i nierówny center,
   wszystkie 256 wartości każdej osi, pressure, surowe bity przycisków, diagonalny

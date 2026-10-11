@@ -1,5 +1,5 @@
 Modi PSX Adapter development firmware
-Copyright 2026 Modibox project contributors
+Copyright 2026 Modyfikator project contributors
 Licensed under Apache License, Version 2.0.
 
 This product includes code derived from Joypad OS (joypad-ai/joypad-os),
@@ -16,7 +16,7 @@ file-specific licenses). Credits to Raspberry Pi and Ha Thach / TinyUSB
 contributors. License files and source headers retained in vendor/pico-sdk.
 No source from Loc15/PicoGamepadConverter has been copied.
 
-Modibox/Modi are user-requested product strings, not an assertion of trademark
+Modyfikator/Modi are user-requested product strings, not an assertion of trademark
 ownership by this generated package. Joypad/Sony/Waveshare marks belong to
 their respective owners. No Sony USB identifiers or branded USB emulation.
 
