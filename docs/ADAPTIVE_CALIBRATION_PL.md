@@ -26,7 +26,7 @@ W tych doświadczeniach nie programowaliśmy wewnętrznej kalibracji Sony ani ni
 
 ## Źródło Sony — DualShock do PS1, 1998
 
-Sony Computer Entertainment, *Technical Requirements Checklist for PlayStation Software*, wersja 1.3, czerwiec 1998, §11.10.1, strona 14 (19. strona PDF). [Źródło](https://psx.arthus.net/sdk/Psy-Q/DOCS/TECHNOTE/mtrc13.pdf#page=19).
+Sony Computer Entertainment, *Technical Requirements Checklist for PlayStation Software*, wersja 1.3, czerwiec 1998, §11.10.1, strona 14 (19. strona PDF). Źródło.
 
 > built-in auto-calibration function for center position calibration and maximum travel value detection
 
@@ -152,7 +152,7 @@ Różnice po mikroruchach są zgodne z niedoskonałą powtarzalnością powrotu 
 
 Autokalibracja oznacza kalibrację wykonywaną automatycznie; nazwa nie ogranicza jej do chwili startu. Adaptacyjna opisuje jej dostosowanie do obserwowanego sygnału. W naszym opisie używamy obu pojęć zgodnie z tym znaczeniem.
 
-Sony w *Technical Requirements Checklist* 1.3, §11.10.1, opisuje wbudowaną kalibrację środka i wykrywanie maksymalnego wychylenia DualShocka. Dokument mówi również o wykorzystaniu wartości pobranej przy podłączeniu kontrolera. To dokument dotyczący DS1; nie jest opisem dokładnej implementacji każdej wersji DS2. [Źródło Sony, strona dokumentu 14](https://psx.arthus.net/sdk/Psy-Q/DOCS/TECHNOTE/mtrc13.pdf#page=19).
+Sony w *Technical Requirements Checklist* 1.3, §11.10.1, opisuje wbudowaną kalibrację środka i wykrywanie maksymalnego wychylenia DualShocka. Dokument mówi również o wykorzystaniu wartości pobranej przy podłączeniu kontrolera. To dokument dotyczący DS1; nie jest opisem dokładnej implementacji każdej wersji DS2. Źródło Sony, strona dokumentu 14.
 
 Nasze próby także nie pozwalają uznać, że start niczego nie zmienia. W PS1 po uruchomieniu z gałką wychyloną i późniejszym puszczeniu LX wynosił 64; po kolejnym uruchomieniu z gałką puszczoną wynosił 128. Osobna próba przy ciągłym zasilaniu wykazała jednak podobną dużą zmianę po samym ruchu, więc tych obserwacji nie wolno przypisać wyłącznie startowi.
 
