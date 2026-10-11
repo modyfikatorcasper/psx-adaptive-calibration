@@ -1,6 +1,6 @@
 # Jak działa adaptacyjna kalibracja w badanych padach PS1 i PS2
 
-Kacper Lewandowski, znany też jako modyfikator Modi / modyfikator 89 · Modi PSX Lab · badania zamknięte 11 października 2026 r.
+Kacper Lewandowski, znany jako modyfikatorCasper / modi / modyfikator89 · Modi PSX Lab · badania zamknięte 11 października 2026 r.
 
 **W badanych kontrolerach odczyt środka zależał od wcześniejszych wychyleń. Po przejściu pełnego zakresu kolejne powroty stawały się znacznie bardziej zgodne.** Okrąg pozwalał przejść przez krańce obu osi przed serią kierunkową. Przy samych kierunkach duże przesunięcia występowały jeszcze w pierwszej serii, a następna dawała już skupione wyniki.
 
@@ -234,3 +234,15 @@ Krótki tekst przeznaczony do publikacji znajduje się w [ADAPTIVE_CALIBRATION_P
 
 W naszych próbach zmodyfikowany pad PS1 dawał mniej powtarzalne środki niż PS2 po wymianie analogów. Przykładowo LY w wybranych powrotach PS1 przyjmowała 130–137, podczas gdy końcowa seria kierunkowa lewej gałki PS2 po obrocie utrzymywała LY 125 i LX 126–127. To porównanie tych egzemplarzy i prób, nie wszystkich padów PS1 i PS2; PS1 był niezłożony, a warunki oraz historie ruchów różniły się.
 
+
+## Co wykazaliśmy — końcowy wynik badań
+
+**Samo uruchomienie badanego pada nie gwarantowało ustalonego, powtarzalnego środka. Dopiero przejście zakresów — pełnym obrotem lub ruchami w czterech kierunkach — prowadziło w naszych próbach do stabilizacji kolejnych powrotów. Wykazaliśmy więc zależność raportowanego środka od historii wychyleń, zgodną z adaptacyjną kalibracją, a nie tylko zaobserwowaliśmy obecność funkcji nazwanej „autokalibracją”.**
+
+**Różnica była mierzalna: w końcowym porównaniu prawej gałki PS2 po wymianie analogów rozrzut powrotów zmalał z 27/27 do 2/0 jednostek RAW. Lewa gałka po obrocie wracała do LX 126–127 i LY 125. Mały rozrzut oznacza powtarzalność; nie należy go mylić z odległością od nominalnego 128/128.**
+
+**Pokazaliśmy również praktyczny wpływ wymiany analogów na tej samej płycie kontrolera. Wynik zależy od zamontowanego modułu, jego dopasowania i powrotu mechanicznego. Wewnętrzna korekcja nie gwarantuje idealnego centrum dla każdego analoga.**
+
+Tym badaniem wyjaśniamy konkretną niejasność istotną dla napraw i diagnostyki: określenie „autokalibracja” nie uprawnia do założenia, że po samym włączeniu pad ma już końcowe, idealne centrum. Udostępnione sekwencje ruchów, logi RAW i tester pozwalają tę różnicę samodzielnie sprawdzić. Nie jest to dowód, że przy starcie nie zachodzą żadne czynności kalibracyjne, ani pomiar zachowania na konsoli — zarejestrowane badanie wykonano z adapterem przy PC.
+
+**Badania i pomiary: Kacper Lewandowski — modyfikatorCasper / modi / modyfikator89.**
