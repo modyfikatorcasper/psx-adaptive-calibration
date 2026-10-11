@@ -34,6 +34,7 @@
 </header>
 <main>
   <div class="heading"><div><div class="eyebrow">PS1 + PS2 / ODCZYT RAW</div><h1>Zobacz, co raportuje pad.</h1><p>Diagnostyka oryginalnych wartości RAW przez Modi PSX Adapter.</p></div><div class="mode-tag" id="sourceTag">BRAK ŹRÓDŁA</div></div>
+  <section class="panel" aria-label="Cel adaptera" style="margin-bottom:18px"><div class="eyebrow">DIAGNOSTYKA BEZ DODATKOWYCH KOREKCJI</div><h2>Po co powstał Modi PSX?</h2><p class="hint" style="margin-top:10px">Modi PSX powstał do diagnostyki: jego celem jest pokazanie na komputerze wartości, które kontroler wysyła konsoli w danym trybie odczytu. Adapter nie dodaje martwych stref, wygładzania, skalowania zakresu ani korekcji środka.</p><p class="hint" style="margin-top:8px">RAW oznacza bajty raportowane przez pad po jego wewnętrznym przetwarzaniu, w tym ewentualnej adaptacyjnej kalibracji. Pomiar środka w testerze zapisuje tylko punkt odniesienia — nie zmienia danych ani kalibracji kontrolera.</p></section>
   <section class="connection" aria-label="Połączenie">
     <div class="connection-copy"><span id="statusDot" class="status-dot"></span><div><strong id="statusTitle">Gotowy do testu</strong><p id="status" role="status">Podłącz adapter i wybierz go przyciskiem „Połącz adapter”.</p></div></div>
     <div class="actions"><button class="primary" id="connect">Połącz adapter <span aria-hidden="true">↗</span></button><button id="disconnect" disabled>Rozłącz</button></div>
@@ -65,6 +66,11 @@
 // UI translations only. Hardware data and exported reports remain unchanged.
 const PSXLanguage = (() => {
   const english = {
+  "Cel adaptera": "Adapter purpose",
+  "DIAGNOSTYKA BEZ DODATKOWYCH KOREKCJI": "DIAGNOSTICS WITHOUT ADDED CORRECTIONS",
+  "Po co powstał Modi PSX?": "Why did we build Modi PSX?",
+  "Modi PSX powstał do diagnostyki: jego celem jest pokazanie na komputerze wartości, które kontroler wysyła konsoli w danym trybie odczytu. Adapter nie dodaje martwych stref, wygładzania, skalowania zakresu ani korekcji środka.": "Modi PSX was built for diagnostics: its goal is to show on a computer the values a controller sends to the console in the selected reading mode. The adapter adds no dead zones, smoothing, range scaling or center correction.",
+  "RAW oznacza bajty raportowane przez pad po jego wewnętrznym przetwarzaniu, w tym ewentualnej adaptacyjnej kalibracji. Pomiar środka w testerze zapisuje tylko punkt odniesienia — nie zmienia danych ani kalibracji kontrolera.": "RAW means bytes reported by the controller after its internal processing, including any adaptive calibration. Measuring the center in the tester only saves a reference point — it does not change the data or the controller’s calibration.",
   "Modi PSX RAW Tester — początek": "Modi PSX RAW Tester — home",
   "Odczyt RAW kontrolerów PS1 i PS2 przez Modi PSX Adapter.": "Read PS1 and PS2 controller RAW data through Modi PSX Adapter.",
   "Odczyty pozostają w przeglądarce": "Readings stay in your browser",
