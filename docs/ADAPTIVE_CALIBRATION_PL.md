@@ -8,6 +8,12 @@ Takie zachowanie mocno wspiera model **adaptacyjnej kalibracji zależnej od pozn
 
 Osiągany środek pozostaje zależny od zamontowanych analogów. Po wymianie modułów w badanym PS2 wybrane wyniki po przejściu zakresu były bliższe środkowi nominalnemu. Jednocześnie ani wymiana, ani kolejne obroty nie gwarantowały identycznego 128/128 po każdym puszczeniu.
 
+## Wniosek końcowy: adaptacyjne centrowanie w praktyce
+
+W badanych egzemplarzach rozpoznaliśmy powtarzalną zasadę działania: po uruchomieniu wartości środka mogły być różne, a pełny obrót gałki lub przejście czterech kierunków prowadziły do stabilizacji kolejnych powrotów. Opisujemy ten efekt jako adaptacyjną kalibrację zależną od historii wychyleń i poznanego zakresu. Sam start nie wystarczał do uzyskania końcowego, powtarzalnego środka; korekta ujawniała się podczas ruchów.
+
+W praktyce oznacza to, że po przejściu zakresu pad wracał do bardziej powtarzalnego punktu, w granicach możliwości zamontowanego modułu analogowego. „Wycentrowanie” nie oznacza tutaj gwarancji 128/128. Wymiana analogów wpływała na osiągane wyniki. Tym samym wyjaśniliśmy obserwowane zachowanie badanych padów i sposób jego odtworzenia; nie utożsamiamy tego z odczytaniem dokładnego algorytmu Sony ani dowodem całkowitej niezależności kalibracji od czynności wykonywanych przy starcie.
+
 ## Cel badania: zrozumieć, jak działa kalibracja
 
 Głównym celem badań było doświadczalne zrozumienie, jak działa kalibracja w badanych kontrolerach PS1 i PS2: kiedy zmieniają się raportowane wartości środka, jakie znaczenie mają wcześniejsze ruchy i osiągnięte zakresy oraz jak na wynik wpływa wymiana modułów analogowych. Motywacją były niejasności w społeczności dotyczące pojęcia „autokalibracja”. Według prowadzącego dostępne mu opisy Sony nie wyjaśniały wystarczająco mechanizmu, aby przewidzieć obserwowane zachowanie padów; dlatego postanowił zbadać je bezpośrednio na sprzęcie i udostępnić pomiary oraz sposób ich odtworzenia.
