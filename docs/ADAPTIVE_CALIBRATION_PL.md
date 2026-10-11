@@ -24,15 +24,11 @@ Drugim celem było sprawdzenie, czy na wynik można wpłynąć sprzętowo, wymie
 
 W tych doświadczeniach nie programowaliśmy wewnętrznej kalibracji Sony ani nie stosowaliśmy korekcji wartości RAW po stronie adaptera. Nie wykazaliśmy tym samym, że każda ingerencja programowa jest niemożliwa; wykazaliśmy wpływ historii ruchów i wymiany sprzętu na raportowane wartości.
 
-## Źródło Sony: deklarowana autokalibracja
+## Źródło Sony
 
-Sony Computer Entertainment, *Technical Requirements Checklist for PlayStation Software*, wersja 1.3, czerwiec 1998, §11.10.1, strona 14 (19. strona PDF). [Kopia dokumentu w zewnętrznym archiwum](https://psx.arthus.net/sdk/Psy-Q/DOCS/TECHNOTE/mtrc13.pdf#page=19).
+Sony Computer Entertainment, *Technical Requirements Checklist for PlayStation Software*, wersja 1.3, czerwiec 1998, §11.10.1, strona 14 (19. strona PDF). [Źródło](https://psx.arthus.net/sdk/Psy-Q/DOCS/TECHNOTE/mtrc13.pdf#page=19).
 
-Krótki fragment: “built-in auto-calibration function for center position calibration and maximum travel value detection”.
-
-Dokument przypisuje kontrolerowi DualShock wbudowaną kalibrację środka i wykrywanie krańców. W tym samym punkcie wiąże kalibrację środka z wartością uzyskaną przy podłączeniu kontrolera oraz pozostawia aplikacji ustawienie obszaru neutralnego. Nie przedstawia dokładnego algorytmu ani przebiegu późniejszych zmian po kolejnych wychyleniach. Dlatego nie przywołujemy go jako dowodu, że start nie ma żadnego znaczenia. Nasze pomiary opisują, co działo się po podłączeniu i podczas ruchów w badanych egzemplarzach; samo podłączenie nie gwarantowało końcowego, powtarzalnego środka.
-
-Jest to historyczny dokument Sony dotyczący DualShocka PS1. Nie stanowi automatycznie specyfikacji wszystkich rewizji PS2. Kopia jest dostępna publicznie w zewnętrznym archiwum, ale dokument zawiera oznaczenie poufności; dostępność kopii nie oznacza oficjalnego udostępnienia przez Sony. W repo zamieszczamy odsyłacz, krótki cytat i omówienie, bez kopii całego PDF.
+> built-in auto-calibration function for center position calibration and maximum travel value detection
 
 ## Co zbudowaliśmy i co mierzyliśmy
 
