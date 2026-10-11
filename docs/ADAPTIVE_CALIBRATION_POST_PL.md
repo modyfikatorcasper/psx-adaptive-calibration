@@ -14,7 +14,7 @@ Wymiana analogów w tym samym PS2 poprawiła wybrane pomiary po przejściu zakre
 
 Mechanizm nie usuwa wszystkich różnic wynikających z powrotu analogów. Po mikroruchach widzieliśmy różne wartości w kolejnych przerwach. Po ostatnim puszczeniu odczyty przez **28,3 sekundy** pozostawały nieruchome — w tym oknie nie było dalszego dociągania do 128/128. Sam zapis nie rozdziela wpływu mechaniki i wewnętrznej korekcji.
 
-Autokalibracja i adaptacja nie wykluczają się. Sony już w dokumentacji DualShocka opisywało kalibrację środka przy podłączeniu oraz wykrywanie maksymalnego wychylenia. Nasze pomiary pokazują praktycznie, dlaczego sam start nie gwarantuje idealnego centrum i dlaczego historia ruchu ma znaczenie. [Dokumentacja Sony, §11.10.1](https://psx.arthus.net/sdk/Psy-Q/DOCS/TECHNOTE/mtrc13.pdf#page=19).
+Autokalibracja i adaptacja nie wykluczają się. Sony już w dokumentacji DualShocka opisywało kalibrację środka przy podłączeniu oraz wykrywanie maksymalnego wychylenia. Nasze pomiary pokazują praktycznie, dlaczego sam start nie gwarantuje idealnego centrum i dlaczego historia ruchu ma znaczenie. Dokumentacja Sony, §11.10.1.
 
 Dla napraw oznacza to, że **dobór analogu ma znaczenie**: jego mechaniczny powrót, charakterystyka ścieżki i zgodność z elektroniką kontrolera wpływają na wynik. Sama rezystancja w kΩ lub oznaczenie kąta nie opisują całego modułu. Raport nadal ma 256 wartości, a 10 jednostek RAW to 3,92% pełnej rozpiętości 0–255.
 
