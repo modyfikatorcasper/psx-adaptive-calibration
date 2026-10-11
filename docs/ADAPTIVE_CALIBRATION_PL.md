@@ -8,6 +8,14 @@ Takie zachowanie mocno wspiera model **adaptacyjnej kalibracji zależnej od pozn
 
 Osiągany środek pozostaje zależny od zamontowanych analogów. Po wymianie modułów w badanym PS2 wybrane wyniki po przejściu zakresu były bliższe środkowi nominalnemu. Jednocześnie ani wymiana, ani kolejne obroty nie gwarantowały identycznego 128/128 po każdym puszczeniu.
 
+## Cel badania: co naprawdę oznacza „autokalibracja przy uruchomieniu”
+
+Badanie miało zweryfikować spotykane w internecie twierdzenie, że samo uruchomienie pada automatycznie ustawia prawidłowy, idealny środek analogów. W naszych próbach samo podłączenie nie gwarantowało takiego wyniku. Pierwsze wychylenia zmieniały wartości powrotu, a po przejściu zakresów — obrotem lub ruchami kierunkowymi — kolejne powroty stawały się bardziej powtarzalne. To właśnie ten obserwowalny wzorzec opisujemy jako zachowanie zgodne z adaptacyjną kalibracją. Słowo „automatyczna” samo w sobie nie oznacza „wykonywana wyłącznie przy starcie”; pomiary nie wykluczają wszystkich czynności inicjalizacyjnych kontrolera.
+
+Drugim celem było sprawdzenie, czy na wynik można wpłynąć sprzętowo, wymieniając moduły analogowe. Porównanie badanego PS2 przed i po wymianie pokazało zmianę zachowania środka. Dobór modułu jest więc praktycznym sposobem wpływania na wynik. Powtarzalność mechanicznego powrotu oraz zgodność charakterystyki elektrycznej modułu są istotnymi kryteriami doboru. Rezystancję, przebieg ścieżki i zależność sygnału od kąta należy przy tym odróżnić od osobno zmierzonych przyczyn: w tym badaniu nie izolowaliśmy wpływu każdego z tych parametrów i nie obiecujemy idealnego środka dla dowolnego zamiennika.
+
+W tych doświadczeniach nie programowaliśmy wewnętrznej kalibracji Sony ani nie stosowaliśmy korekcji wartości RAW po stronie adaptera. Nie wykazaliśmy tym samym, że każda ingerencja programowa jest niemożliwa; wykazaliśmy wpływ historii ruchów i wymiany sprzętu na raportowane wartości.
+
 ## Co zbudowaliśmy i co mierzyliśmy
 
 Tor badawczy wyglądał następująco:
