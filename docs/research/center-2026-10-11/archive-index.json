@@ -1,0 +1,1029 @@
+{
+  "schema": "modi-center-local-archive-index-v1",
+  "closedDate": "2026-10-11",
+  "meaning": "Inventory of retained local evidence, not a claim of public upload",
+  "fileCount": 255,
+  "totalBytes": 459453930,
+  "files": [
+    {
+      "path": "lab/qa/center-mechanism-2026-10-10/adaptive-calibration-working-models.json",
+      "bytes": 2512
+    },
+    {
+      "path": "lab/qa/center-mechanism-2026-10-10/automatic-center-ready.png",
+      "bytes": 131803
+    },
+    {
+      "path": "lab/qa/center-mechanism-2026-10-10/automatic-ui-qa.json",
+      "bytes": 628
+    },
+    {
+      "path": "lab/qa/center-mechanism-2026-10-10/protocol.json",
+      "bytes": 5276
+    },
+    {
+      "path": "lab/qa/center-mechanism-2026-10-10/startup-and-motion-inference-comparison.json",
+      "bytes": 5789
+    },
+    {
+      "path": "lab/qa/center-mechanism-2026-10-10/W01-after-down-dom.json",
+      "bytes": 1255
+    },
+    {
+      "path": "lab/qa/center-mechanism-2026-10-10/W01-after-left-dom.json",
+      "bytes": 1469
+    },
+    {
+      "path": "lab/qa/center-mechanism-2026-10-10/W01-after-right-dom.json",
+      "bytes": 1043
+    },
+    {
+      "path": "lab/qa/center-mechanism-2026-10-10/W01-after-right-down-dom.json",
+      "bytes": 2076
+    },
+    {
+      "path": "lab/qa/center-mechanism-2026-10-10/W01-after-right-left-dom.json",
+      "bytes": 2276
+    },
+    {
+      "path": "lab/qa/center-mechanism-2026-10-10/W01-after-right-right-dom.json",
+      "bytes": 1875
+    },
+    {
+      "path": "lab/qa/center-mechanism-2026-10-10/W01-after-right-up-dom.json",
+      "bytes": 1519
+    },
+    {
+      "path": "lab/qa/center-mechanism-2026-10-10/W01-automatic-left-native-check.json",
+      "bytes": 1663
+    },
+    {
+      "path": "lab/qa/center-mechanism-2026-10-10/W01-automatic-left-verified.json",
+      "bytes": 4394
+    },
+    {
+      "path": "lab/qa/center-mechanism-2026-10-10/W01-automatic-right-verified.json",
+      "bytes": 5187
+    },
+    {
+      "path": "lab/qa/center-mechanism-2026-10-10/W01-first-movement.png",
+      "bytes": 148209
+    },
+    {
+      "path": "lab/qa/center-mechanism-2026-10-10/W01-full-right-repeat-conditions.json",
+      "bytes": 1832
+    },
+    {
+      "path": "lab/qa/center-mechanism-2026-10-10/W01-full-right-repeat-early-windows.json",
+      "bytes": 3544
+    },
+    {
+      "path": "lab/qa/center-mechanism-2026-10-10/W01-full-right-repeat-LX64.png",
+      "bytes": 59181
+    },
+    {
+      "path": "lab/qa/center-mechanism-2026-10-10/W01-full-right-repeat-poll-status.json",
+      "bytes": 289
+    },
+    {
+      "path": "lab/qa/center-mechanism-2026-10-10/W01-full-right-repeat-pre-reset-hold.json",
+      "bytes": 660
+    },
+    {
+      "path": "lab/qa/center-mechanism-2026-10-10/W01-full-right-repeat-rest.json",
+      "bytes": 1208
+    },
+    {
+      "path": "lab/qa/center-mechanism-2026-10-10/W01-full-right-repeat-UI.json",
+      "bytes": 282
+    },
+    {
+      "path": "lab/qa/center-mechanism-2026-10-10/W01-full-startup-neutral-comparison.json",
+      "bytes": 1470
+    },
+    {
+      "path": "lab/qa/center-mechanism-2026-10-10/W01-initial-control-dom.json",
+      "bytes": 1065
+    },
+    {
+      "path": "lab/qa/center-mechanism-2026-10-10/W01-left-result-right-prepared.png",
+      "bytes": 169466
+    },
+    {
+      "path": "lab/qa/center-mechanism-2026-10-10/W01-left-up-full-armed.png",
+      "bytes": 76786
+    },
+    {
+      "path": "lab/qa/center-mechanism-2026-10-10/W01-manual-trial-ui-before-close.txt",
+      "bytes": 9603
+    },
+    {
+      "path": "lab/qa/center-mechanism-2026-10-10/W01-marker.json",
+      "bytes": 75
+    },
+    {
+      "path": "lab/qa/center-mechanism-2026-10-10/W01-native-rest-windows-02.json",
+      "bytes": 2216
+    },
+    {
+      "path": "lab/qa/center-mechanism-2026-10-10/W01-native-rest-windows.json",
+      "bytes": 6264
+    },
+    {
+      "path": "lab/qa/center-mechanism-2026-10-10/W01-neutral-after-full-right-conditions.json",
+      "bytes": 1326
+    },
+    {
+      "path": "lab/qa/center-mechanism-2026-10-10/W01-neutral-after-full-right-LX128.png",
+      "bytes": 59305
+    },
+    {
+      "path": "lab/qa/center-mechanism-2026-10-10/W01-neutral-after-full-right-native-snapshot.json",
+      "bytes": 1490
+    },
+    {
+      "path": "lab/qa/center-mechanism-2026-10-10/W01-neutral-after-full-right-poll-status.json",
+      "bytes": 289
+    },
+    {
+      "path": "lab/qa/center-mechanism-2026-10-10/W01-neutral-after-full-right-rest.json",
+      "bytes": 1217
+    },
+    {
+      "path": "lab/qa/center-mechanism-2026-10-10/W01-neutral-after-full-right-UI.json",
+      "bytes": 271
+    },
+    {
+      "path": "lab/qa/center-mechanism-2026-10-10/W01-pilot-archive-dom.json",
+      "bytes": 2686
+    },
+    {
+      "path": "lab/qa/center-mechanism-2026-10-10/W01-pilot-manifest.json",
+      "bytes": 4616
+    },
+    {
+      "path": "lab/qa/center-mechanism-2026-10-10/W01-post-reenumeration-rest.png",
+      "bytes": 74797
+    },
+    {
+      "path": "lab/qa/center-mechanism-2026-10-10/W01-powered-full-left-after-both-conditions.json",
+      "bytes": 672
+    },
+    {
+      "path": "lab/qa/center-mechanism-2026-10-10/W01-powered-full-left-after-both-motion.json",
+      "bytes": 1795
+    },
+    {
+      "path": "lab/qa/center-mechanism-2026-10-10/W01-powered-full-left-followup-conditions.json",
+      "bytes": 1057
+    },
+    {
+      "path": "lab/qa/center-mechanism-2026-10-10/W01-powered-full-left-followup-motion.json",
+      "bytes": 972
+    },
+    {
+      "path": "lab/qa/center-mechanism-2026-10-10/W01-powered-full-left-followup-rest.json",
+      "bytes": 3268
+    },
+    {
+      "path": "lab/qa/center-mechanism-2026-10-10/W01-powered-full-left-followup-UI.json",
+      "bytes": 255
+    },
+    {
+      "path": "lab/qa/center-mechanism-2026-10-10/W01-powered-full-right-after-both-conditions.json",
+      "bytes": 692
+    },
+    {
+      "path": "lab/qa/center-mechanism-2026-10-10/W01-powered-full-right-after-both-motion.json",
+      "bytes": 2547
+    },
+    {
+      "path": "lab/qa/center-mechanism-2026-10-10/W01-powered-full-right-after-both-rest.json",
+      "bytes": 1053
+    },
+    {
+      "path": "lab/qa/center-mechanism-2026-10-10/W01-powered-full-right-control-conditions.json",
+      "bytes": 623
+    },
+    {
+      "path": "lab/qa/center-mechanism-2026-10-10/W01-powered-full-right-control-release-check01.json",
+      "bytes": 938
+    },
+    {
+      "path": "lab/qa/center-mechanism-2026-10-10/W01-powered-full-right-long-hold-rest.json",
+      "bytes": 2242
+    },
+    {
+      "path": "lab/qa/center-mechanism-2026-10-10/W01-powered-full-right-long-hold.json",
+      "bytes": 1425
+    },
+    {
+      "path": "lab/qa/center-mechanism-2026-10-10/W01-powered-range-history-comparison.json",
+      "bytes": 2636
+    },
+    {
+      "path": "lab/qa/center-mechanism-2026-10-10/W01-powered-three-circles-CCW-conditions.json",
+      "bytes": 727
+    },
+    {
+      "path": "lab/qa/center-mechanism-2026-10-10/W01-powered-three-circles-CCW-motion.json",
+      "bytes": 2248
+    },
+    {
+      "path": "lab/qa/center-mechanism-2026-10-10/W01-powered-three-circles-CW-conditions.json",
+      "bytes": 738
+    },
+    {
+      "path": "lab/qa/center-mechanism-2026-10-10/W01-powered-three-circles-CW-motion.json",
+      "bytes": 2243
+    },
+    {
+      "path": "lab/qa/center-mechanism-2026-10-10/W01-right-down-armed.png",
+      "bytes": 76520
+    },
+    {
+      "path": "lab/qa/center-mechanism-2026-10-10/W01-right-left-armed.png",
+      "bytes": 76459
+    },
+    {
+      "path": "lab/qa/center-mechanism-2026-10-10/W01-right-native-rest.json",
+      "bytes": 1067
+    },
+    {
+      "path": "lab/qa/center-mechanism-2026-10-10/W01-right-right-armed.png",
+      "bytes": 76752
+    },
+    {
+      "path": "lab/qa/center-mechanism-2026-10-10/W01-right-up-repeat-2-dom.json",
+      "bytes": 1673
+    },
+    {
+      "path": "lab/qa/center-mechanism-2026-10-10/W01-right-up-repeat.png",
+      "bytes": 74448
+    },
+    {
+      "path": "lab/qa/center-mechanism-2026-10-10/W01-small-motions-pilot.json",
+      "bytes": 2670
+    },
+    {
+      "path": "lab/qa/center-mechanism-2026-10-10/W01-startup-autoreconnect-01.jsonl",
+      "bytes": 5248202
+    },
+    {
+      "path": "lab/qa/center-mechanism-2026-10-10/W01-startup-autoreconnect-01.summary.json",
+      "bytes": 352
+    },
+    {
+      "path": "lab/qa/center-mechanism-2026-10-10/W01-startup-autoreconnect-02.jsonl",
+      "bytes": 586950
+    },
+    {
+      "path": "lab/qa/center-mechanism-2026-10-10/W01-startup-autoreconnect-02.summary.json",
+      "bytes": 350
+    },
+    {
+      "path": "lab/qa/center-mechanism-2026-10-10/W01-startup-autoreconnect-03.jsonl",
+      "bytes": 8216578
+    },
+    {
+      "path": "lab/qa/center-mechanism-2026-10-10/W01-startup-autoreconnect-03.summary.json",
+      "bytes": 353
+    },
+    {
+      "path": "lab/qa/center-mechanism-2026-10-10/W01-startup-autoreconnect-04.jsonl",
+      "bytes": 17612494
+    },
+    {
+      "path": "lab/qa/center-mechanism-2026-10-10/W01-startup-autoreconnect-04.summary.json",
+      "bytes": 355
+    },
+    {
+      "path": "lab/qa/center-mechanism-2026-10-10/W01-startup-autoreconnect-05.jsonl",
+      "bytes": 8190969
+    },
+    {
+      "path": "lab/qa/center-mechanism-2026-10-10/W01-startup-autoreconnect-05.summary.json",
+      "bytes": 353
+    },
+    {
+      "path": "lab/qa/center-mechanism-2026-10-10/W01-startup-autoreconnect-06.jsonl",
+      "bytes": 66225173
+    },
+    {
+      "path": "lab/qa/center-mechanism-2026-10-10/W01-startup-autoreconnect-06.summary.json",
+      "bytes": 282
+    },
+    {
+      "path": "lab/qa/center-mechanism-2026-10-10/W01-startup-autoreconnect-manifest.json",
+      "bytes": 4074
+    },
+    {
+      "path": "lab/qa/center-mechanism-2026-10-10/W01-startup-conditions.json",
+      "bytes": 1051
+    },
+    {
+      "path": "lab/qa/center-mechanism-2026-10-10/W01-startup-L-conditions.json",
+      "bytes": 1101
+    },
+    {
+      "path": "lab/qa/center-mechanism-2026-10-10/W01-startup-L-poll-status.json",
+      "bytes": 292
+    },
+    {
+      "path": "lab/qa/center-mechanism-2026-10-10/W01-startup-L-rest.json",
+      "bytes": 1209
+    },
+    {
+      "path": "lab/qa/center-mechanism-2026-10-10/W01-startup-L-result-N3-ready.png",
+      "bytes": 221022
+    },
+    {
+      "path": "lab/qa/center-mechanism-2026-10-10/W01-startup-L-UI.json",
+      "bytes": 1196
+    },
+    {
+      "path": "lab/qa/center-mechanism-2026-10-10/W01-startup-marker.json",
+      "bytes": 67
+    },
+    {
+      "path": "lab/qa/center-mechanism-2026-10-10/W01-startup-N2-conditions.json",
+      "bytes": 930
+    },
+    {
+      "path": "lab/qa/center-mechanism-2026-10-10/W01-startup-N2-poll-status.json",
+      "bytes": 296
+    },
+    {
+      "path": "lab/qa/center-mechanism-2026-10-10/W01-startup-N2-rest.json",
+      "bytes": 1204
+    },
+    {
+      "path": "lab/qa/center-mechanism-2026-10-10/W01-startup-N2-result-L-ready.png",
+      "bytes": 215932
+    },
+    {
+      "path": "lab/qa/center-mechanism-2026-10-10/W01-startup-N2-UI.json",
+      "bytes": 842
+    },
+    {
+      "path": "lab/qa/center-mechanism-2026-10-10/W01-startup-N3-conditions.json",
+      "bytes": 980
+    },
+    {
+      "path": "lab/qa/center-mechanism-2026-10-10/W01-startup-N3-poll-status.json",
+      "bytes": 284
+    },
+    {
+      "path": "lab/qa/center-mechanism-2026-10-10/W01-startup-N3-rest.json",
+      "bytes": 1204
+    },
+    {
+      "path": "lab/qa/center-mechanism-2026-10-10/W01-startup-N3-UI.json",
+      "bytes": 1180
+    },
+    {
+      "path": "lab/qa/center-mechanism-2026-10-10/W01-startup-neutral-armed.png",
+      "bytes": 75784
+    },
+    {
+      "path": "lab/qa/center-mechanism-2026-10-10/W01-startup-neutral-UI-recheck.json",
+      "bytes": 572
+    },
+    {
+      "path": "lab/qa/center-mechanism-2026-10-10/W01-startup-P-attempt2-conditions.json",
+      "bytes": 1181
+    },
+    {
+      "path": "lab/qa/center-mechanism-2026-10-10/W01-startup-P-attempt2-poll-status.json",
+      "bytes": 346
+    },
+    {
+      "path": "lab/qa/center-mechanism-2026-10-10/W01-startup-P-attempt2-rest.json",
+      "bytes": 1219
+    },
+    {
+      "path": "lab/qa/center-mechanism-2026-10-10/W01-startup-P-attempt2-UI.json",
+      "bytes": 834
+    },
+    {
+      "path": "lab/qa/center-mechanism-2026-10-10/W01-startup-P-reset-unverified.json",
+      "bytes": 834
+    },
+    {
+      "path": "lab/qa/center-mechanism-2026-10-10/W01-startup-P-result-N2-ready.png",
+      "bytes": 210543
+    },
+    {
+      "path": "lab/qa/center-mechanism-2026-10-10/W01-startup-P-unverified-rest.json",
+      "bytes": 3267
+    },
+    {
+      "path": "lab/qa/center-mechanism-2026-10-10/W01-startup-post-USB-rest.json",
+      "bytes": 1234
+    },
+    {
+      "path": "lab/qa/center-mechanism-2026-10-10/W01-startup-rep2-N1-conditions.json",
+      "bytes": 1023
+    },
+    {
+      "path": "lab/qa/center-mechanism-2026-10-10/W01-startup-rep2-N1-poll-status.json",
+      "bytes": 303
+    },
+    {
+      "path": "lab/qa/center-mechanism-2026-10-10/W01-startup-rep2-N1-rest.json",
+      "bytes": 1205
+    },
+    {
+      "path": "lab/qa/center-mechanism-2026-10-10/W01-startup-rep2-N1-result-P-ready.png",
+      "bytes": 234424
+    },
+    {
+      "path": "lab/qa/center-mechanism-2026-10-10/W01-startup-rep2-N1-UI.json",
+      "bytes": 1370
+    },
+    {
+      "path": "lab/qa/center-mechanism-2026-10-10/W01-startup-rep2-P-clarification.png",
+      "bytes": 237352
+    },
+    {
+      "path": "lab/qa/center-mechanism-2026-10-10/W01-startup-rep2-P-conditions-pending.json",
+      "bytes": 940
+    },
+    {
+      "path": "lab/qa/center-mechanism-2026-10-10/W01-startup-rep2-P-early-windows.json",
+      "bytes": 8787
+    },
+    {
+      "path": "lab/qa/center-mechanism-2026-10-10/W01-startup-rep2-P-pending-rest.json",
+      "bytes": 1210
+    },
+    {
+      "path": "lab/qa/center-mechanism-2026-10-10/W01-startup-rep2-P-repeat-conditions.json",
+      "bytes": 768
+    },
+    {
+      "path": "lab/qa/center-mechanism-2026-10-10/W01-startup-rep2-P-repeat-position-check01.json",
+      "bytes": 666
+    },
+    {
+      "path": "lab/qa/center-mechanism-2026-10-10/W01-startup-rep2-P-repeat-positioning.png",
+      "bytes": 59332
+    },
+    {
+      "path": "lab/qa/center-mechanism-2026-10-10/W01-startup-repetition1-result-rep2-ready.png",
+      "bytes": 227866
+    },
+    {
+      "path": "lab/qa/center-mechanism-2026-10-10/W01-startup-repetition1-summary.json",
+      "bytes": 1584
+    },
+    {
+      "path": "lab/qa/center-mechanism-2026-10-10/W01-startup-stream-01.jsonl",
+      "bytes": 2127955
+    },
+    {
+      "path": "lab/qa/center-mechanism-2026-10-10/W01-startup-stream-01.summary.json",
+      "bytes": 351
+    },
+    {
+      "path": "lab/qa/center-mechanism-2026-10-10/W01-startup-stream-02.jsonl",
+      "bytes": 28637853
+    },
+    {
+      "path": "lab/qa/center-mechanism-2026-10-10/W01-startup-stream-02.summary.json",
+      "bytes": 354
+    },
+    {
+      "path": "lab/qa/center-mechanism-2026-10-10/W01-startup-stream-03.jsonl",
+      "bytes": 4699508
+    },
+    {
+      "path": "lab/qa/center-mechanism-2026-10-10/W01-startup-stream-03.summary.json",
+      "bytes": 352
+    },
+    {
+      "path": "lab/qa/center-mechanism-2026-10-10/W01-startup-stream-04.jsonl",
+      "bytes": 4793106
+    },
+    {
+      "path": "lab/qa/center-mechanism-2026-10-10/W01-startup-stream-04.summary.json",
+      "bytes": 352
+    },
+    {
+      "path": "lab/qa/center-mechanism-2026-10-10/W01-startup-stream-05.jsonl",
+      "bytes": 25342946
+    },
+    {
+      "path": "lab/qa/center-mechanism-2026-10-10/W01-startup-stream-05.summary.json",
+      "bytes": 352
+    },
+    {
+      "path": "lab/qa/center-mechanism-2026-10-10/W01-startup-stream-06.jsonl",
+      "bytes": 11336783
+    },
+    {
+      "path": "lab/qa/center-mechanism-2026-10-10/W01-startup-stream-06.summary.json",
+      "bytes": 353
+    },
+    {
+      "path": "lab/qa/center-mechanism-2026-10-10/W01-startup-stream-07.jsonl",
+      "bytes": 10655290
+    },
+    {
+      "path": "lab/qa/center-mechanism-2026-10-10/W01-startup-stream-07.summary.json",
+      "bytes": 353
+    },
+    {
+      "path": "lab/qa/center-mechanism-2026-10-10/W01-startup-USB-interruption.json",
+      "bytes": 552
+    },
+    {
+      "path": "lab/qa/center-mechanism-2026-10-10/W01-startup-USB-right-armed.png",
+      "bytes": 206283
+    },
+    {
+      "path": "lab/qa/center-mechanism-2026-10-10/W01-stream-01.jsonl",
+      "bytes": 43920502
+    },
+    {
+      "path": "lab/qa/center-mechanism-2026-10-10/W01-stream-01.summary.json",
+      "bytes": 280
+    },
+    {
+      "path": "lab/qa/center-mechanism-2026-10-10/W01-stream-02.jsonl",
+      "bytes": 20234543
+    },
+    {
+      "path": "lab/qa/center-mechanism-2026-10-10/W01-stream-02.summary.json",
+      "bytes": 278
+    },
+    {
+      "path": "lab/qa/center-mechanism-2026-10-10/W02-PS2-autoreconnect-01.jsonl",
+      "bytes": 2022315
+    },
+    {
+      "path": "lab/qa/center-mechanism-2026-10-10/W02-PS2-autoreconnect-01.summary.json",
+      "bytes": 351
+    },
+    {
+      "path": "lab/qa/center-mechanism-2026-10-10/W02-PS2-autoreconnect-02.jsonl",
+      "bytes": 111118129
+    },
+    {
+      "path": "lab/qa/center-mechanism-2026-10-10/W02-PS2-autoreconnect-02.summary.json",
+      "bytes": 281
+    },
+    {
+      "path": "lab/qa/center-mechanism-2026-10-10/W02-PS2-autoreconnect-manifest.json",
+      "bytes": 1518
+    },
+    {
+      "path": "lab/qa/center-mechanism-2026-10-10/W02-PS2-before-after-new-modules-comparison.json",
+      "bytes": 3861
+    },
+    {
+      "path": "lab/qa/center-mechanism-2026-10-10/W02-PS2-circle-vs-directions-counterbalanced-comparison.json",
+      "bytes": 2096
+    },
+    {
+      "path": "lab/qa/center-mechanism-2026-10-10/W02-PS2-circles-automatic-conditions.json",
+      "bytes": 1109
+    },
+    {
+      "path": "lab/qa/center-mechanism-2026-10-10/W02-PS2-circles-automatic-ready.png",
+      "bytes": 71722
+    },
+    {
+      "path": "lab/qa/center-mechanism-2026-10-10/W02-PS2-circles-automatic-verified.json",
+      "bytes": 2468
+    },
+    {
+      "path": "lab/qa/center-mechanism-2026-10-10/W02-PS2-conditions.json",
+      "bytes": 715
+    },
+    {
+      "path": "lab/qa/center-mechanism-2026-10-10/W02-PS2-continuation-01.jsonl",
+      "bytes": 8723332
+    },
+    {
+      "path": "lab/qa/center-mechanism-2026-10-10/W02-PS2-continuation-01.summary.json",
+      "bytes": 353
+    },
+    {
+      "path": "lab/qa/center-mechanism-2026-10-10/W02-PS2-continuation-02.jsonl",
+      "bytes": 23219815
+    },
+    {
+      "path": "lab/qa/center-mechanism-2026-10-10/W02-PS2-continuation-02.summary.json",
+      "bytes": 279
+    },
+    {
+      "path": "lab/qa/center-mechanism-2026-10-10/W02-PS2-continuation-manifest.json",
+      "bytes": 1516
+    },
+    {
+      "path": "lab/qa/center-mechanism-2026-10-10/W02-PS2-final-circles-01.jsonl",
+      "bytes": 4336003
+    },
+    {
+      "path": "lab/qa/center-mechanism-2026-10-10/W02-PS2-final-circles-01.summary.json",
+      "bytes": 278
+    },
+    {
+      "path": "lab/qa/center-mechanism-2026-10-10/W02-PS2-final-circles-manifest.json",
+      "bytes": 885
+    },
+    {
+      "path": "lab/qa/center-mechanism-2026-10-10/W02-PS2-left-done-right-ready.png",
+      "bytes": 72645
+    },
+    {
+      "path": "lab/qa/center-mechanism-2026-10-10/W02-PS2-manual-circle-vs-directions-20261011T002927Z-01.jsonl",
+      "bytes": 4323061
+    },
+    {
+      "path": "lab/qa/center-mechanism-2026-10-10/W02-PS2-manual-circle-vs-directions-20261011T002927Z-01.summary.json",
+      "bytes": 278
+    },
+    {
+      "path": "lab/qa/center-mechanism-2026-10-10/W02-PS2-manual-circle-vs-directions-20261011T002927Z-analysis.json",
+      "bytes": 5983
+    },
+    {
+      "path": "lab/qa/center-mechanism-2026-10-10/W02-PS2-manual-circle-vs-directions-20261011T002927Z-conditions.json",
+      "bytes": 604
+    },
+    {
+      "path": "lab/qa/center-mechanism-2026-10-10/W02-PS2-manual-circle-vs-directions-20261011T002927Z-manifest.json",
+      "bytes": 922
+    },
+    {
+      "path": "lab/qa/center-mechanism-2026-10-10/W02-PS2-manual-circle-vs-directions-20261011T002927Z-marker.json",
+      "bytes": 100
+    },
+    {
+      "path": "lab/qa/center-mechanism-2026-10-10/W02-PS2-manual-circle-vs-directions-reversed-20261011T003309Z-01.jsonl",
+      "bytes": 4553564
+    },
+    {
+      "path": "lab/qa/center-mechanism-2026-10-10/W02-PS2-manual-circle-vs-directions-reversed-20261011T003309Z-01.summary.json",
+      "bytes": 278
+    },
+    {
+      "path": "lab/qa/center-mechanism-2026-10-10/W02-PS2-manual-circle-vs-directions-reversed-20261011T003309Z-analysis.json",
+      "bytes": 4772
+    },
+    {
+      "path": "lab/qa/center-mechanism-2026-10-10/W02-PS2-manual-circle-vs-directions-reversed-20261011T003309Z-conditions.json",
+      "bytes": 782
+    },
+    {
+      "path": "lab/qa/center-mechanism-2026-10-10/W02-PS2-manual-circle-vs-directions-reversed-20261011T003309Z-manifest.json",
+      "bytes": 931
+    },
+    {
+      "path": "lab/qa/center-mechanism-2026-10-10/W02-PS2-manual-circle-vs-directions-reversed-20261011T003309Z-marker.json",
+      "bytes": 109
+    },
+    {
+      "path": "lab/qa/center-mechanism-2026-10-10/W02-PS2-manual-per-return-left-circle-20261011T003858Z-01.jsonl",
+      "bytes": 7281449
+    },
+    {
+      "path": "lab/qa/center-mechanism-2026-10-10/W02-PS2-manual-per-return-left-circle-20261011T003858Z-01.summary.json",
+      "bytes": 279
+    },
+    {
+      "path": "lab/qa/center-mechanism-2026-10-10/W02-PS2-manual-per-return-left-circle-20261011T003858Z-analysis.json",
+      "bytes": 12966
+    },
+    {
+      "path": "lab/qa/center-mechanism-2026-10-10/W02-PS2-manual-per-return-left-circle-20261011T003858Z-conditions.json",
+      "bytes": 820
+    },
+    {
+      "path": "lab/qa/center-mechanism-2026-10-10/W02-PS2-manual-per-return-left-circle-20261011T003858Z-manifest.json",
+      "bytes": 925
+    },
+    {
+      "path": "lab/qa/center-mechanism-2026-10-10/W02-PS2-manual-per-return-left-circle-20261011T003858Z-marker.json",
+      "bytes": 102
+    },
+    {
+      "path": "lab/qa/center-mechanism-2026-10-10/W02-PS2-marker.json",
+      "bytes": 89
+    },
+    {
+      "path": "lab/qa/center-mechanism-2026-10-10/W02-PS2-micro-movement-20261011T004432Z-01.jsonl",
+      "bytes": 3792449
+    },
+    {
+      "path": "lab/qa/center-mechanism-2026-10-10/W02-PS2-micro-movement-20261011T004432Z-01.summary.json",
+      "bytes": 278
+    },
+    {
+      "path": "lab/qa/center-mechanism-2026-10-10/W02-PS2-micro-movement-20261011T004432Z-analysis.json",
+      "bytes": 6377
+    },
+    {
+      "path": "lab/qa/center-mechanism-2026-10-10/W02-PS2-micro-movement-20261011T004432Z-conditions.json",
+      "bytes": 616
+    },
+    {
+      "path": "lab/qa/center-mechanism-2026-10-10/W02-PS2-micro-movement-20261011T004432Z-manifest.json",
+      "bytes": 909
+    },
+    {
+      "path": "lab/qa/center-mechanism-2026-10-10/W02-PS2-micro-movement-20261011T004432Z-marker.json",
+      "bytes": 87
+    },
+    {
+      "path": "lab/qa/center-mechanism-2026-10-10/W02-PS2-native-continuation-conditions.json",
+      "bytes": 495
+    },
+    {
+      "path": "lab/qa/center-mechanism-2026-10-10/W02-PS2-neutral-baseline.json",
+      "bytes": 1500
+    },
+    {
+      "path": "lab/qa/center-mechanism-2026-10-10/W02-PS2-neutral-baseline.png",
+      "bytes": 59460
+    },
+    {
+      "path": "lab/qa/center-mechanism-2026-10-10/W02-PS2-new-modules-20261011-01.jsonl",
+      "bytes": 12375066
+    },
+    {
+      "path": "lab/qa/center-mechanism-2026-10-10/W02-PS2-new-modules-20261011-01.summary.json",
+      "bytes": 279
+    },
+    {
+      "path": "lab/qa/center-mechanism-2026-10-10/W02-PS2-new-modules-20261011-manifest.json",
+      "bytes": 899
+    },
+    {
+      "path": "lab/qa/center-mechanism-2026-10-10/W02-PS2-new-modules-circles-log-review.json",
+      "bytes": 6117
+    },
+    {
+      "path": "lab/qa/center-mechanism-2026-10-10/W02-PS2-new-modules-conditions.json",
+      "bytes": 1315
+    },
+    {
+      "path": "lab/qa/center-mechanism-2026-10-10/W02-PS2-new-modules-first-vs-repeat-comparison.json",
+      "bytes": 5351
+    },
+    {
+      "path": "lab/qa/center-mechanism-2026-10-10/W02-PS2-new-modules-left-result.png",
+      "bytes": 71992
+    },
+    {
+      "path": "lab/qa/center-mechanism-2026-10-10/W02-PS2-new-modules-left-verified.json",
+      "bytes": 9695
+    },
+    {
+      "path": "lab/qa/center-mechanism-2026-10-10/W02-PS2-new-modules-marker.json",
+      "bytes": 87
+    },
+    {
+      "path": "lab/qa/center-mechanism-2026-10-10/W02-PS2-new-modules-repeat2-01.jsonl",
+      "bytes": 15624245
+    },
+    {
+      "path": "lab/qa/center-mechanism-2026-10-10/W02-PS2-new-modules-repeat2-01.summary.json",
+      "bytes": 279
+    },
+    {
+      "path": "lab/qa/center-mechanism-2026-10-10/W02-PS2-new-modules-repeat2-conditions.json",
+      "bytes": 1166
+    },
+    {
+      "path": "lab/qa/center-mechanism-2026-10-10/W02-PS2-new-modules-repeat2-left-result.png",
+      "bytes": 71946
+    },
+    {
+      "path": "lab/qa/center-mechanism-2026-10-10/W02-PS2-new-modules-repeat2-left-verified.json",
+      "bytes": 9658
+    },
+    {
+      "path": "lab/qa/center-mechanism-2026-10-10/W02-PS2-new-modules-repeat2-manifest.json",
+      "bytes": 898
+    },
+    {
+      "path": "lab/qa/center-mechanism-2026-10-10/W02-PS2-new-modules-repeat2-marker.json",
+      "bytes": 81
+    },
+    {
+      "path": "lab/qa/center-mechanism-2026-10-10/W02-PS2-new-modules-repeat2-right-result.png",
+      "bytes": 71802
+    },
+    {
+      "path": "lab/qa/center-mechanism-2026-10-10/W02-PS2-new-modules-repeat2-right-verified.json",
+      "bytes": 9686
+    },
+    {
+      "path": "lab/qa/center-mechanism-2026-10-10/W02-PS2-new-modules-right-result.png",
+      "bytes": 71810
+    },
+    {
+      "path": "lab/qa/center-mechanism-2026-10-10/W02-PS2-new-modules-right-verified.json",
+      "bytes": 9662
+    },
+    {
+      "path": "lab/qa/center-mechanism-2026-10-10/W02-PS2-post-motion-neutral-USB-control-conditions.json",
+      "bytes": 732
+    },
+    {
+      "path": "lab/qa/center-mechanism-2026-10-10/W02-PS2-post-motion-neutral-USB-control-result.json",
+      "bytes": 2177
+    },
+    {
+      "path": "lab/qa/center-mechanism-2026-10-10/W02-PS2-post-reset-both-attempt1-quality.json",
+      "bytes": 8514
+    },
+    {
+      "path": "lab/qa/center-mechanism-2026-10-10/W02-PS2-post-reset-both-attempt1-result.png",
+      "bytes": 72110
+    },
+    {
+      "path": "lab/qa/center-mechanism-2026-10-10/W02-PS2-post-reset-both-automatic-conditions.json",
+      "bytes": 974
+    },
+    {
+      "path": "lab/qa/center-mechanism-2026-10-10/W02-PS2-post-reset-both-ready.png",
+      "bytes": 71959
+    },
+    {
+      "path": "lab/qa/center-mechanism-2026-10-10/W02-PS2-post-reset-left-circles-attempt1-quality.json",
+      "bytes": 3041
+    },
+    {
+      "path": "lab/qa/center-mechanism-2026-10-10/W02-PS2-post-reset-left-circles-attempt2-quality.json",
+      "bytes": 3809
+    },
+    {
+      "path": "lab/qa/center-mechanism-2026-10-10/W02-PS2-post-reset-left-circles-attempt2-result.png",
+      "bytes": 70406
+    },
+    {
+      "path": "lab/qa/center-mechanism-2026-10-10/W02-PS2-post-reset-left-circles-attempt3-conditions.json",
+      "bytes": 615
+    },
+    {
+      "path": "lab/qa/center-mechanism-2026-10-10/W02-PS2-post-reset-left-circles-attempt3-result.png",
+      "bytes": 73609
+    },
+    {
+      "path": "lab/qa/center-mechanism-2026-10-10/W02-PS2-post-reset-left-circles-attempt3-verified.json",
+      "bytes": 4721
+    },
+    {
+      "path": "lab/qa/center-mechanism-2026-10-10/W02-PS2-post-reset-left-circles-conditions.json",
+      "bytes": 465
+    },
+    {
+      "path": "lab/qa/center-mechanism-2026-10-10/W02-PS2-post-reset-left-circles-ready.png",
+      "bytes": 71500
+    },
+    {
+      "path": "lab/qa/center-mechanism-2026-10-10/W02-PS2-post-reset-left-circles-result.png",
+      "bytes": 71632
+    },
+    {
+      "path": "lab/qa/center-mechanism-2026-10-10/W02-PS2-powered-first-left-conditions.json",
+      "bytes": 688
+    },
+    {
+      "path": "lab/qa/center-mechanism-2026-10-10/W02-PS2-powered-first-left-motion.json",
+      "bytes": 2124
+    },
+    {
+      "path": "lab/qa/center-mechanism-2026-10-10/W02-PS2-powered-first-right-conditions.json",
+      "bytes": 700
+    },
+    {
+      "path": "lab/qa/center-mechanism-2026-10-10/W02-PS2-powered-first-right-motion.json",
+      "bytes": 1963
+    },
+    {
+      "path": "lab/qa/center-mechanism-2026-10-10/W02-PS2-powered-range-history-comparison.json",
+      "bytes": 2256
+    },
+    {
+      "path": "lab/qa/center-mechanism-2026-10-10/W02-PS2-powered-repeat-left-conditions.json",
+      "bytes": 666
+    },
+    {
+      "path": "lab/qa/center-mechanism-2026-10-10/W02-PS2-powered-repeat-left-motion.json",
+      "bytes": 2016
+    },
+    {
+      "path": "lab/qa/center-mechanism-2026-10-10/W02-PS2-powered-repeat-right-conditions.json",
+      "bytes": 668
+    },
+    {
+      "path": "lab/qa/center-mechanism-2026-10-10/W02-PS2-powered-repeat-right-motion.json",
+      "bytes": 2033
+    },
+    {
+      "path": "lab/qa/center-mechanism-2026-10-10/W02-PS2-right-automatic-attempt1-quality.json",
+      "bytes": 677
+    },
+    {
+      "path": "lab/qa/center-mechanism-2026-10-10/W02-PS2-right-automatic-attempt2-quality.json",
+      "bytes": 3396
+    },
+    {
+      "path": "lab/qa/center-mechanism-2026-10-10/W02-PS2-right-automatic-conditions.json",
+      "bytes": 1049
+    },
+    {
+      "path": "lab/qa/center-mechanism-2026-10-10/W02-PS2-right-circles-attempt1-stopped.png",
+      "bytes": 72040
+    },
+    {
+      "path": "lab/qa/center-mechanism-2026-10-10/W02-PS2-right-circles-attempt2-result.png",
+      "bytes": 73782
+    },
+    {
+      "path": "lab/qa/center-mechanism-2026-10-10/W02-PS2-right-circles-automatic-attempt1-quality.json",
+      "bytes": 2385
+    },
+    {
+      "path": "lab/qa/center-mechanism-2026-10-10/W02-PS2-right-circles-automatic-attempt2-verified.json",
+      "bytes": 4631
+    },
+    {
+      "path": "lab/qa/center-mechanism-2026-10-10/W02-PS2-right-circles-automatic-conditions.json",
+      "bytes": 876
+    },
+    {
+      "path": "lab/qa/center-mechanism-2026-10-10/W02-PS2-right-circles-ready.png",
+      "bytes": 72175
+    },
+    {
+      "path": "lab/qa/center-mechanism-2026-10-10/W02-PS2-right-down-held-confirmed.json",
+      "bytes": 531
+    },
+    {
+      "path": "lab/qa/center-mechanism-2026-10-10/W02-PS2-right-down-release-check01.json",
+      "bytes": 695
+    },
+    {
+      "path": "lab/qa/center-mechanism-2026-10-10/W02-PS2-right-powered-down-conditions.json",
+      "bytes": 1398
+    },
+    {
+      "path": "lab/qa/center-mechanism-2026-10-10/W02-PS2-right-powered-down-motion.json",
+      "bytes": 3168
+    },
+    {
+      "path": "lab/qa/center-mechanism-2026-10-10/W02-PS2-right-powered-history-comparison.json",
+      "bytes": 1936
+    },
+    {
+      "path": "lab/qa/center-mechanism-2026-10-10/W02-PS2-right-powered-left-conditions.json",
+      "bytes": 645
+    },
+    {
+      "path": "lab/qa/center-mechanism-2026-10-10/W02-PS2-right-powered-left-motion.json",
+      "bytes": 1818
+    },
+    {
+      "path": "lab/qa/center-mechanism-2026-10-10/W02-PS2-right-powered-repeat-up-conditions.json",
+      "bytes": 857
+    },
+    {
+      "path": "lab/qa/center-mechanism-2026-10-10/W02-PS2-right-powered-repeat-up-motion.json",
+      "bytes": 1904
+    },
+    {
+      "path": "lab/qa/center-mechanism-2026-10-10/W02-PS2-right-powered-right-conditions.json",
+      "bytes": 676
+    },
+    {
+      "path": "lab/qa/center-mechanism-2026-10-10/W02-PS2-right-powered-right-motion.json",
+      "bytes": 1843
+    },
+    {
+      "path": "lab/qa/center-mechanism-2026-10-10/W02-PS2-right-response-check-conditions.json",
+      "bytes": 778
+    },
+    {
+      "path": "lab/qa/center-mechanism-2026-10-10/W02-PS2-right-response-check-held.json",
+      "bytes": 1033
+    },
+    {
+      "path": "lab/qa/center-mechanism-2026-10-10/W02-PS2-right-response-check-ready.png",
+      "bytes": 59479
+    },
+    {
+      "path": "lab/qa/center-mechanism-2026-10-10/W02-PS2-right-response-check-rest.json",
+      "bytes": 2012
+    },
+    {
+      "path": "lab/qa/center-mechanism-2026-10-10/W02-PS2-session-checkpoint.json",
+      "bytes": 3981
+    }
+  ]
+}

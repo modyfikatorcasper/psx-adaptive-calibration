@@ -1,0 +1,29 @@
+Modi PSX Adapter development firmware
+Copyright 2026 Modibox project contributors
+Licensed under Apache License, Version 2.0.
+
+This product includes code derived from Joypad OS (joypad-ai/joypad-os),
+commit bf507bf87aee18e24ea82f84647cd592a7a2ddaf, Apache-2.0.
+Original PSX sources and license retained in vendor/joypad-os.
+Credits: Joypad OS contributors / Joypad Inc. (no affiliation implied).
+Modified files: src/psx.pio and src/psx_transport.c.
+Changes: passive DAT input, fixed Zero pinout, stripped routing/feedback,
+cooperative bounded configuration, DMA timeout, separate parser/RAW/composite HID.
+
+Includes Raspberry Pi Pico SDK 2.2.0 (BSD-3-Clause and file-specific licenses),
+and TinyUSB commit 86ad6e56c1700e85f1c5678607a762cfe3aa2f47 (MIT and
+file-specific licenses). Credits to Raspberry Pi and Ha Thach / TinyUSB
+contributors. License files and source headers retained in vendor/pico-sdk.
+No source from Loc15/PicoGamepadConverter has been copied.
+
+Modibox/Modi are user-requested product strings, not an assertion of trademark
+ownership by this generated package. Joypad/Sony/Waveshare marks belong to
+their respective owners. No Sony USB identifiers or branded USB emulation.
+
+Development VID/PID 1209:0001 is pid.codes private in-house test only;
+not unique, not allowed for distributed, sold or manufactured devices.
+
+Modi Lab2 additions: serialized transaction queue, RX trace, Output/Feature protocol,
+contiguous generic axes and D-pad buttons, command catalog and guided center trials.
+Research references PS2SDK, ShendoXT, horizonends and BlueRetro; their implementation
+code was not copied into the application/firmware. Apache-2.0 applies to Modi code.

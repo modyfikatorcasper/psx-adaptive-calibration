@@ -1,0 +1,46 @@
+[
+  {
+    "repo": "ps2dev/ps2sdk",
+    "branch": "master",
+    "commit": "2c670453980fcc3fe46ead6399b730b12c8556eb",
+    "license": {
+      "key": "other",
+      "name": "Other",
+      "spdx_id": "NOASSERTION",
+      "url": null,
+      "node_id": "MDc6TGljZW5zZTA="
+    },
+    "archive_sha256": "292049acf45f3725db571d71cd90141cdb39c4a87324de04114c92ed49bfaf43",
+    "path": "C:\\Users\\User\\Documents\\Codex\\2026-10-06\\files-pasted-by-the-user-tak\\work\\research\\ps2dev--ps2sdk"
+  },
+  {
+    "repo": "horizonends/controllertester",
+    "branch": "main",
+    "commit": "8a440dac3ff9442c3839558786c18df48a7807a7",
+    "license": null,
+    "archive_sha256": "68cd9397a785ae21e499726da835d4d919720e2cbece778a0c1c3d42bf1e8d25",
+    "path": "C:\\Users\\User\\Documents\\Codex\\2026-10-06\\files-pasted-by-the-user-tak\\work\\research\\horizonends--controllertester"
+  },
+  {
+    "repo": "ShendoXT/padtest",
+    "branch": "master",
+    "commit": "2747c29fac27f1b2c2d7d358e8fa7977b39eadd1",
+    "license": null,
+    "archive_sha256": "7a86063036589cf527296325658589e6598bbc04505187ed7be950aec582321a",
+    "path": "C:\\Users\\User\\Documents\\Codex\\2026-10-06\\files-pasted-by-the-user-tak\\work\\research\\ShendoXT--padtest"
+  },
+  {
+    "repo": "darthcloud/BlueRetro",
+    "branch": "master",
+    "commit": "e1a9831a875f5313a923160a1379a7ebbfaa2b11",
+    "license": {
+      "key": "apache-2.0",
+      "name": "Apache License 2.0",
+      "spdx_id": "Apache-2.0",
+      "url": "https://api.github.com/licenses/apache-2.0",
+      "node_id": "MDc6TGljZW5zZTI="
+    },
+    "archive_sha256": "93e4775c510b3ee79f5ae22c172240858ef38fac28163a309c1aa31163936697",
+    "path": "C:\\Users\\User\\Documents\\Codex\\2026-10-06\\files-pasted-by-the-user-tak\\work\\research\\darthcloud--BlueRetro"
+  }
+]

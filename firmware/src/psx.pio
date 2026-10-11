@@ -1,0 +1,33 @@
+; SPDX-License-Identifier: Apache-2.0
+; Modified for Modi: passive external 4.7k pull-up; DAT is always INPUT.
+; Derived from Joypad OS bf507bf87aee18e24ea82f84647cd592a7a2ddaf.
+.program psx
+.side_set 2
+
+.wrap_target
+    set y, 3         side 0b11 [7]      ; 4 command bytes (0x01,0x42,smallMotor,largeMotor); idle CLK=1 ATT=1
+    pull             side 0b11 [7]      ; wait for CPU trigger word (idle high)
+    nop              side 0b01 [7]      ; ATT low -> select (CLK stays high)
+
+cmd_byte:
+    set x, 7         side 0b01 [7]      ; 8 bits per byte (CLK high)
+cmd_bit:
+    out pins, 1      side 0b01          ; drive CMD bit (LSB first), CLK high
+    nop              side 0b00          ; CLK falling, DAT stays input
+    nop              side 0b00          ; passive pull-up rise time
+    set pindirs, 0   side 0b00 [2]      ; DAT -> input (release) + settle
+    in pins, 1       side 0b00          ; sample DAT (CLK still low)
+    jmp x-- cmd_bit  side 0b01          ; CLK=1 (rising edge)
+    jmp y-- cmd_byte side 0b01
+    set y, 16        side 0b01          ; 17 more data bytes (4 cmd + 17 = 21 = PSX_HW_BYTES)
+
+data_byte:
+    set x, 7         side 0b01 [7]
+data_bit:
+    nop              side 0b00          ; CLK falling, DAT stays input
+    nop              side 0b00          ; passive pull-up rise time
+    set pindirs, 0   side 0b00 [2]      ; DAT -> input (release) + settle
+    in pins, 1       side 0b00          ; sample DAT
+    jmp x-- data_bit side 0b01          ; CLK=1 (rising edge)
+    jmp y-- data_byte side 0b01
+.wrap

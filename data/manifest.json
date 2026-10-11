@@ -1,0 +1,1220 @@
+[
+  {
+    "file": "raw-01.zip",
+    "bytes": 2642653,
+    "sha256": "270f794c683bd64274b360e4db9fb562e5f3186b09c006ac6419569ded576c4a",
+    "files": [
+      {
+        "path": "lab/qa/center-mechanism-2026-10-10/adaptive-calibration-working-models.json",
+        "sha256": "a92f50d8337f1ead174c5dc498b5bc594e3f2dd90a82861979d592b16036cd58"
+      },
+      {
+        "path": "lab/qa/center-mechanism-2026-10-10/automatic-center-ready.png",
+        "sha256": "d01919c4db1c3cc6525678822ab67fc866e390e9670b4090b617b296ff83e648"
+      },
+      {
+        "path": "lab/qa/center-mechanism-2026-10-10/automatic-ui-qa.json",
+        "sha256": "83d73279759796998ac7dda6c49a9b4ddb0477a902ec29bd85a6ada69aff4a22"
+      },
+      {
+        "path": "lab/qa/center-mechanism-2026-10-10/protocol.json",
+        "sha256": "1c229003afc6517019ecd1dfb6c0d4be6fbf201da86b0503c564e6aed0c4a2ec"
+      },
+      {
+        "path": "lab/qa/center-mechanism-2026-10-10/startup-and-motion-inference-comparison.json",
+        "sha256": "01a95693c5c68a2dc308301217403a7604bcb017392368336d375722b0e6799a"
+      },
+      {
+        "path": "lab/qa/center-mechanism-2026-10-10/W01-after-down-dom.json",
+        "sha256": "8096bd355b0585fdf802896fcd6f055495371acae1346828b2b35d798061536e"
+      },
+      {
+        "path": "lab/qa/center-mechanism-2026-10-10/W01-after-left-dom.json",
+        "sha256": "2ce4b051cae1a226dce6af5ef4421520987da0b74b4c5d29559598f6b4e90850"
+      },
+      {
+        "path": "lab/qa/center-mechanism-2026-10-10/W01-after-right-dom.json",
+        "sha256": "bcb15cca56d55de0f3b00ebf0a347d752a541faa10bf1e6b2003e79db48fc4a1"
+      },
+      {
+        "path": "lab/qa/center-mechanism-2026-10-10/W01-after-right-down-dom.json",
+        "sha256": "74debf36195ccfde53034e6db7b354a079ad7240a3c1baef273f1379985bb4a1"
+      },
+      {
+        "path": "lab/qa/center-mechanism-2026-10-10/W01-after-right-left-dom.json",
+        "sha256": "f8c816dd13ad55fbf2ff562626e791ede6e56e12129b7c8e5599635eef920db5"
+      },
+      {
+        "path": "lab/qa/center-mechanism-2026-10-10/W01-after-right-right-dom.json",
+        "sha256": "d732bd6dc2c11ea69a026dc4d2e8011cde2f4f569f5994e8bb2da41721796868"
+      },
+      {
+        "path": "lab/qa/center-mechanism-2026-10-10/W01-after-right-up-dom.json",
+        "sha256": "54bf2c8a0500819ced32b5f57d77c7e9941c037a96bcc6b9304daa96ee8f6de2"
+      },
+      {
+        "path": "lab/qa/center-mechanism-2026-10-10/W01-automatic-left-native-check.json",
+        "sha256": "8d051cf48c4777f148c353ff57f91e2e958735d974aff30535652d377604a8b3"
+      },
+      {
+        "path": "lab/qa/center-mechanism-2026-10-10/W01-automatic-left-verified.json",
+        "sha256": "06afd3489809a8f344d2c37015d81d2c7028e213315d3850e97f02f2bd0f8655"
+      },
+      {
+        "path": "lab/qa/center-mechanism-2026-10-10/W01-automatic-right-verified.json",
+        "sha256": "e51f401002e194ee9aad863b99aa96ab2a747a3d2572f1c962f9e2c805d7e738"
+      },
+      {
+        "path": "lab/qa/center-mechanism-2026-10-10/W01-first-movement.png",
+        "sha256": "21bd3166e4094b771bde9569bad15b8c88bcb95399609180880cc590983500d7"
+      },
+      {
+        "path": "lab/qa/center-mechanism-2026-10-10/W01-full-right-repeat-conditions.json",
+        "sha256": "f2bb4e474b0f643f890d3c8fe605eb2ee4a97153ff8f3ca718d02a16180e3a7a"
+      },
+      {
+        "path": "lab/qa/center-mechanism-2026-10-10/W01-full-right-repeat-early-windows.json",
+        "sha256": "a9c8e687ef91bc2c961d5f2675749c1dc22d11b8675cb7bafb6eaa83ddbdd9cc"
+      },
+      {
+        "path": "lab/qa/center-mechanism-2026-10-10/W01-full-right-repeat-LX64.png",
+        "sha256": "6f9839932ac08b741a491523b81a048a825318fca0ade79d3ac20c027febaa59"
+      },
+      {
+        "path": "lab/qa/center-mechanism-2026-10-10/W01-full-right-repeat-poll-status.json",
+        "sha256": "4c7a1ba541b17fd2bc8023832f3c0f0a08a25763686c56e1381d827b08f7e235"
+      },
+      {
+        "path": "lab/qa/center-mechanism-2026-10-10/W01-full-right-repeat-pre-reset-hold.json",
+        "sha256": "8e4b012af57a36aa9b65e519a424edb4ad8f885f49f38f794cf03a8359338ebb"
+      },
+      {
+        "path": "lab/qa/center-mechanism-2026-10-10/W01-full-right-repeat-rest.json",
+        "sha256": "df103160b39c6e2db4abf0de98e4b152a35b9a1b91270befe3a942e9daa432ca"
+      },
+      {
+        "path": "lab/qa/center-mechanism-2026-10-10/W01-full-right-repeat-UI.json",
+        "sha256": "ed5568fc13351e35bfb4f34c36e5531127c6b6ecc5efd8cfbd25e2d37fdc8204"
+      },
+      {
+        "path": "lab/qa/center-mechanism-2026-10-10/W01-full-startup-neutral-comparison.json",
+        "sha256": "5249d9d73ee012d87fc7aef8e3040ebabef5c09449281fb386a42b3d906bef7b"
+      },
+      {
+        "path": "lab/qa/center-mechanism-2026-10-10/W01-initial-control-dom.json",
+        "sha256": "0df326497be5ea2a58c44edd849360d4b97c80b697d919267c7fe35ceb721d6f"
+      },
+      {
+        "path": "lab/qa/center-mechanism-2026-10-10/W01-left-result-right-prepared.png",
+        "sha256": "42155b0bb971f2ba5881758e248ae934710ea0040154ab768d3abe294f7d40b8"
+      },
+      {
+        "path": "lab/qa/center-mechanism-2026-10-10/W01-left-up-full-armed.png",
+        "sha256": "634f1e9bbb2027e4303ca991c0a88b79d66937685b3761cd639752b66cbc16ca"
+      },
+      {
+        "path": "lab/qa/center-mechanism-2026-10-10/W01-manual-trial-ui-before-close.txt",
+        "sha256": "c778aba20cc692064bc1a4a03ab20b43fffd746236b8b7803d1719332b28bc98"
+      },
+      {
+        "path": "lab/qa/center-mechanism-2026-10-10/W01-marker.json",
+        "sha256": "a4a5b0b32df9c5481a533f22ebd6b394be5968951b52ca253080112980518a63"
+      },
+      {
+        "path": "lab/qa/center-mechanism-2026-10-10/W01-native-rest-windows-02.json",
+        "sha256": "36b8397248e7ca095ec6ae650ed94031aca5ceff0512bff1ab8e8b2bea4f1d2e"
+      },
+      {
+        "path": "lab/qa/center-mechanism-2026-10-10/W01-native-rest-windows.json",
+        "sha256": "70b7dc5e2065eea17b930957b76f4edc8e27cf35bced963ece0b254630ad6096"
+      },
+      {
+        "path": "lab/qa/center-mechanism-2026-10-10/W01-neutral-after-full-right-conditions.json",
+        "sha256": "f3ea92c823b0ca66fe24d8d59ed2df03c6a281a4b8e9082766a30a082f6488dd"
+      },
+      {
+        "path": "lab/qa/center-mechanism-2026-10-10/W01-neutral-after-full-right-LX128.png",
+        "sha256": "7cddc4b0ecbcdaa001a1eb7b2f73e273916c1f1c2df7308c9890b3163a2d00e8"
+      },
+      {
+        "path": "lab/qa/center-mechanism-2026-10-10/W01-neutral-after-full-right-native-snapshot.json",
+        "sha256": "9f2b4a3594ad67519f1efaac67a18c10a40f7f8926b6abeb2ed43abede5b4002"
+      },
+      {
+        "path": "lab/qa/center-mechanism-2026-10-10/W01-neutral-after-full-right-poll-status.json",
+        "sha256": "731131e160a6bdd2f88991f13e67f9bcef52498d2128f88902d67f17a797636a"
+      },
+      {
+        "path": "lab/qa/center-mechanism-2026-10-10/W01-neutral-after-full-right-rest.json",
+        "sha256": "f1f5205c05be80836681582a205685095482df6ca3be79aa0eb5a067db6b3629"
+      },
+      {
+        "path": "lab/qa/center-mechanism-2026-10-10/W01-neutral-after-full-right-UI.json",
+        "sha256": "90c8188a07ebb399ccb0f8972388339f392a206c7b2f8a20e253a7ac678f7a31"
+      },
+      {
+        "path": "lab/qa/center-mechanism-2026-10-10/W01-pilot-archive-dom.json",
+        "sha256": "59d41263d29b8f5b63a7d7939d024fca8082ce64becd179a8cb86d7074dded7d"
+      },
+      {
+        "path": "lab/qa/center-mechanism-2026-10-10/W01-pilot-manifest.json",
+        "sha256": "227344806e810b3c12b00094b073cc062016089993bb16c6ca8b49be60daa8d8"
+      },
+      {
+        "path": "lab/qa/center-mechanism-2026-10-10/W01-post-reenumeration-rest.png",
+        "sha256": "0aabf464154e1682a019e437c3ff7f5c1bfb51c97705a5605f2cbd5b6663cbb0"
+      },
+      {
+        "path": "lab/qa/center-mechanism-2026-10-10/W01-powered-full-left-after-both-conditions.json",
+        "sha256": "122a8abc97de20eb83d211ad26ccba5bbf27fb3da66239c6d1842b60417445c3"
+      },
+      {
+        "path": "lab/qa/center-mechanism-2026-10-10/W01-powered-full-left-after-both-motion.json",
+        "sha256": "49ec81aa9d39293bb9c6cd2d54b870d248de626f9ad25399897344d8c48a214b"
+      },
+      {
+        "path": "lab/qa/center-mechanism-2026-10-10/W01-powered-full-left-followup-conditions.json",
+        "sha256": "b756bb4fad3b3424fef11011f125522a844894d2a49dfb50b13c5320215935aa"
+      },
+      {
+        "path": "lab/qa/center-mechanism-2026-10-10/W01-powered-full-left-followup-motion.json",
+        "sha256": "2d0bd4b56210b1064964bb58b56834cb95fef179bb8354dd7a487ed11f524bbf"
+      },
+      {
+        "path": "lab/qa/center-mechanism-2026-10-10/W01-powered-full-left-followup-rest.json",
+        "sha256": "a241c5a9028b85f62e936de25b479357b1e262d4ec85d7ed7ed887fbf232af0f"
+      },
+      {
+        "path": "lab/qa/center-mechanism-2026-10-10/W01-powered-full-left-followup-UI.json",
+        "sha256": "b89a0ba1dcbfd77ab0b0c54213269ea17100af2e7c623bdfb30fcf8473562b41"
+      },
+      {
+        "path": "lab/qa/center-mechanism-2026-10-10/W01-powered-full-right-after-both-conditions.json",
+        "sha256": "fa35278ed572f4b1784fd9aad9ed2224d9763519890811eaf987fc5272c127b9"
+      },
+      {
+        "path": "lab/qa/center-mechanism-2026-10-10/W01-powered-full-right-after-both-motion.json",
+        "sha256": "e18498da0aec3b8b573ab51e3b2a14819ddbdc31bb159cee52c0231434d25300"
+      },
+      {
+        "path": "lab/qa/center-mechanism-2026-10-10/W01-powered-full-right-after-both-rest.json",
+        "sha256": "4b1f2c97ab8b900723767491b3fed529fd1d606b2f2a2405252e22df6962ebc5"
+      },
+      {
+        "path": "lab/qa/center-mechanism-2026-10-10/W01-powered-full-right-control-conditions.json",
+        "sha256": "5c857a40f8acdc415e5a9de03dc94ff2c71d24dd899c9581d938e41ba7aff241"
+      },
+      {
+        "path": "lab/qa/center-mechanism-2026-10-10/W01-powered-full-right-control-release-check01.json",
+        "sha256": "9a0d550cb44109ddf328b7da741b7e1b9bf0cf9a615f57525547badbea19a169"
+      },
+      {
+        "path": "lab/qa/center-mechanism-2026-10-10/W01-powered-full-right-long-hold-rest.json",
+        "sha256": "88507f0cef8d75860951dcb7470fcf3cb66c6797b75e93dc35a5396c2e0bcfc3"
+      },
+      {
+        "path": "lab/qa/center-mechanism-2026-10-10/W01-powered-full-right-long-hold.json",
+        "sha256": "4b868ec1f84cb59ab7fc20ec18c4824fadac9df8c1093316ee607969b3228ef5"
+      },
+      {
+        "path": "lab/qa/center-mechanism-2026-10-10/W01-powered-range-history-comparison.json",
+        "sha256": "6c60b62e3e85cd16fa48cd0c01ed9ad77c9b8f1320b6ce511458d0e5c57f9934"
+      },
+      {
+        "path": "lab/qa/center-mechanism-2026-10-10/W01-powered-three-circles-CCW-conditions.json",
+        "sha256": "efac8604d4f981650d1948f8bac0be46a20c447b8a64861b9f848e84f4979236"
+      },
+      {
+        "path": "lab/qa/center-mechanism-2026-10-10/W01-powered-three-circles-CCW-motion.json",
+        "sha256": "2aecedbdffeb344609b0f78bf2392150fd10672288620d0079e4bbff8e0d561c"
+      },
+      {
+        "path": "lab/qa/center-mechanism-2026-10-10/W01-powered-three-circles-CW-conditions.json",
+        "sha256": "b461c8551bb09c81a1f0adb326eb40e9d0fdafbe558a0f1a0601aed2595465f1"
+      },
+      {
+        "path": "lab/qa/center-mechanism-2026-10-10/W01-powered-three-circles-CW-motion.json",
+        "sha256": "4b24be82ece3e4681e7bc799a3bd10d8b859c7618c6453c41cc1cc66147be1e9"
+      },
+      {
+        "path": "lab/qa/center-mechanism-2026-10-10/W01-right-down-armed.png",
+        "sha256": "1727916454bd1144c3165cbaeb2ce859d3e1335816f05f1676ec87a102a4d5a6"
+      },
+      {
+        "path": "lab/qa/center-mechanism-2026-10-10/W01-right-left-armed.png",
+        "sha256": "082b778f4d6136895e7a94144f6f482df46ad98b92e180334e3ae82719731dbf"
+      },
+      {
+        "path": "lab/qa/center-mechanism-2026-10-10/W01-right-native-rest.json",
+        "sha256": "affb31253338bf445dd083b304ac53073701d2954097fb80311df24f28a6807a"
+      },
+      {
+        "path": "lab/qa/center-mechanism-2026-10-10/W01-right-right-armed.png",
+        "sha256": "ca6a6dc365f1fb8fac4358ead3faf19ac912149db59c18dd3d5a734280a02b5d"
+      },
+      {
+        "path": "lab/qa/center-mechanism-2026-10-10/W01-right-up-repeat-2-dom.json",
+        "sha256": "e095607481fcbaec686164217dc18ac850b5e58162b0f71d1f92154213aee9c3"
+      },
+      {
+        "path": "lab/qa/center-mechanism-2026-10-10/W01-right-up-repeat.png",
+        "sha256": "ab336b579e690ec471a28f7d0468d65dc2f27234bb2b9d349e6c5802768cbb09"
+      },
+      {
+        "path": "lab/qa/center-mechanism-2026-10-10/W01-small-motions-pilot.json",
+        "sha256": "0437a039efb3b3b603047149b350381d8e5a6f1139df56102822d6fc64a30411"
+      },
+      {
+        "path": "lab/qa/center-mechanism-2026-10-10/W01-startup-autoreconnect-01.jsonl",
+        "sha256": "2d718cb3326a6901ccf5272583a4df4c616175fbe0c09c370aa403dcff61dd9d"
+      },
+      {
+        "path": "lab/qa/center-mechanism-2026-10-10/W01-startup-autoreconnect-01.summary.json",
+        "sha256": "932c21c138469756518d21c580f5be6b6e16cfe5601558f56ca2d34603d31158"
+      },
+      {
+        "path": "lab/qa/center-mechanism-2026-10-10/W01-startup-autoreconnect-02.jsonl",
+        "sha256": "16d61a40e14528b10b2f29c25856ac749498524f6fcb56df81d19e98c0f70780"
+      },
+      {
+        "path": "lab/qa/center-mechanism-2026-10-10/W01-startup-autoreconnect-02.summary.json",
+        "sha256": "701766e8b6890bcb1b0b2c216ebd99626c99872fc2e8fdb549fdf73a13a6e968"
+      },
+      {
+        "path": "lab/qa/center-mechanism-2026-10-10/W01-startup-autoreconnect-03.jsonl",
+        "sha256": "d881842cdce0847d369cba4add21b1324a137b00d086a539a621a85a948e7452"
+      },
+      {
+        "path": "lab/qa/center-mechanism-2026-10-10/W01-startup-autoreconnect-03.summary.json",
+        "sha256": "ae132daef10e11c2a02c8b245afcbb2eb960ec97b401732a9c43b0228870f949"
+      },
+      {
+        "path": "lab/qa/center-mechanism-2026-10-10/W01-startup-autoreconnect-04.jsonl",
+        "sha256": "39ab0ae7c7038dcea25a71213b44461d3e8c641bfe2d9ae9117ec5fac1107213"
+      },
+      {
+        "path": "lab/qa/center-mechanism-2026-10-10/W01-startup-autoreconnect-04.summary.json",
+        "sha256": "7753f0d13a32bab89a5c1e0fd739974d1b0b263d849d1796bfe438f0eded704a"
+      }
+    ]
+  },
+  {
+    "file": "raw-02.zip",
+    "bytes": 442772,
+    "sha256": "1467c0039f70d825926e30a56467a60611978b958e821056109cc0daad8be0e2",
+    "files": [
+      {
+        "path": "lab/qa/center-mechanism-2026-10-10/W01-startup-autoreconnect-05.jsonl",
+        "sha256": "43b7d92f2f418e033850b7901b58c39cea6ee07a3e4d95955d6c36026b62e9d1"
+      },
+      {
+        "path": "lab/qa/center-mechanism-2026-10-10/W01-startup-autoreconnect-05.summary.json",
+        "sha256": "b3c7e4b7dcf0784fd0d2610343ca682964b59affebab85c6e77d4852b702fa94"
+      }
+    ]
+  },
+  {
+    "file": "raw-03.zip",
+    "bytes": 3558563,
+    "sha256": "b5a5f56d8a138e172810027a9ec292b0b9a15d01c4342771f4643fbfc86f16a9",
+    "files": [
+      {
+        "path": "lab/qa/center-mechanism-2026-10-10/W01-startup-autoreconnect-06.jsonl",
+        "sha256": "b7fa4dbc2067d4a047cdeb803d779116b1dcc073d961dcad7d5d447d05c04e20"
+      }
+    ]
+  },
+  {
+    "file": "raw-04.zip",
+    "bytes": 2874167,
+    "sha256": "ca9289e46329e6c160564b774bd964e052fd62e4463b12fa389a7b3f784e298d",
+    "files": [
+      {
+        "path": "lab/qa/center-mechanism-2026-10-10/W01-startup-autoreconnect-06.summary.json",
+        "sha256": "84c0e17bc7614a9cff3b4ef29d2d06bae97923b5f1f0c4f36e3baf80f5085f34"
+      },
+      {
+        "path": "lab/qa/center-mechanism-2026-10-10/W01-startup-autoreconnect-manifest.json",
+        "sha256": "8cb2d5a2e7d45fa9cc46732731594dcde50ef6e17501768a3c1440092c740f27"
+      },
+      {
+        "path": "lab/qa/center-mechanism-2026-10-10/W01-startup-conditions.json",
+        "sha256": "d09502f84b0ee6d04699ef265b29d775188dc8b32d954d09d971a861c5987aef"
+      },
+      {
+        "path": "lab/qa/center-mechanism-2026-10-10/W01-startup-L-conditions.json",
+        "sha256": "33d93dbd0190fcafff08ca6e1dec172a93dcf7ec1c868a99785f02886f08d159"
+      },
+      {
+        "path": "lab/qa/center-mechanism-2026-10-10/W01-startup-L-poll-status.json",
+        "sha256": "1ca572793930736def0d7103eae923eb1f2a53cb4c7febc39fced90b49f4000c"
+      },
+      {
+        "path": "lab/qa/center-mechanism-2026-10-10/W01-startup-L-rest.json",
+        "sha256": "6dd87dce12ec150a60c7ccab91abeb9f01c9948fe51e3ace7dd65c5225569f00"
+      },
+      {
+        "path": "lab/qa/center-mechanism-2026-10-10/W01-startup-L-result-N3-ready.png",
+        "sha256": "be73ee1ad59713ea83ce02d8b86b9744be474de4898acc31f182b725f892d7cb"
+      },
+      {
+        "path": "lab/qa/center-mechanism-2026-10-10/W01-startup-L-UI.json",
+        "sha256": "425d9e85937050f63076e351ae60bc16b38fb4e4e2c5a05ac7813852d8b43a84"
+      },
+      {
+        "path": "lab/qa/center-mechanism-2026-10-10/W01-startup-marker.json",
+        "sha256": "a706b47be49e2e90d90fd476b525d86c4243bcb2dca2e1e07c27c2f525738bbc"
+      },
+      {
+        "path": "lab/qa/center-mechanism-2026-10-10/W01-startup-N2-conditions.json",
+        "sha256": "e7ceb10c38f99e76729846b61d6a85d2d563555545f53c4bae11fe13e2d7ed47"
+      },
+      {
+        "path": "lab/qa/center-mechanism-2026-10-10/W01-startup-N2-poll-status.json",
+        "sha256": "6579c8343f02d09fa24f3fec909bd9b0f9eb252dd7d782e393ee8b9880ddfead"
+      },
+      {
+        "path": "lab/qa/center-mechanism-2026-10-10/W01-startup-N2-rest.json",
+        "sha256": "b5fd3594d7ea3719ccbbfc98ebc0f0482dc219e631c42c9c712cf99d2163b84d"
+      },
+      {
+        "path": "lab/qa/center-mechanism-2026-10-10/W01-startup-N2-result-L-ready.png",
+        "sha256": "4b389114bcd1c3d5c12d5ffefdec444ce934495276cd0fc5260685d60677a41f"
+      },
+      {
+        "path": "lab/qa/center-mechanism-2026-10-10/W01-startup-N2-UI.json",
+        "sha256": "6de0822d495ee6c0e0d73c707943cfc7c93ba0fced25a2054ad7b6eb4f77695b"
+      },
+      {
+        "path": "lab/qa/center-mechanism-2026-10-10/W01-startup-N3-conditions.json",
+        "sha256": "2d1c90289f79d0b5dfc54f321ee1bbf0c213cfa1f4655c987c69ca91a94f961b"
+      },
+      {
+        "path": "lab/qa/center-mechanism-2026-10-10/W01-startup-N3-poll-status.json",
+        "sha256": "6ddb07aebd91b71c8778031c053073ded80706438d986813972746e6a3144ea9"
+      },
+      {
+        "path": "lab/qa/center-mechanism-2026-10-10/W01-startup-N3-rest.json",
+        "sha256": "a4b8508fbb9c32732e831aaa0f21af4a473467124c80636b04c688b405093b55"
+      },
+      {
+        "path": "lab/qa/center-mechanism-2026-10-10/W01-startup-N3-UI.json",
+        "sha256": "50ccdb0b60ebb7e80ba8b76cb46a7224849947235cb99779fe9e6d8b7be7edb6"
+      },
+      {
+        "path": "lab/qa/center-mechanism-2026-10-10/W01-startup-neutral-armed.png",
+        "sha256": "3d2d07e785d92315fa62f0528d6517ec2cba15a002d2d166c8ef3762ecc09fb8"
+      },
+      {
+        "path": "lab/qa/center-mechanism-2026-10-10/W01-startup-neutral-UI-recheck.json",
+        "sha256": "01afb9abc1c17df4af352f1fedd5ae5dc51a94639536e0a5ffa3df8f2e4baabd"
+      },
+      {
+        "path": "lab/qa/center-mechanism-2026-10-10/W01-startup-P-attempt2-conditions.json",
+        "sha256": "92c80fc9e5b5d1acaa636ed53322c1399eed9c1225fe9288eacb31f7ccbd69a2"
+      },
+      {
+        "path": "lab/qa/center-mechanism-2026-10-10/W01-startup-P-attempt2-poll-status.json",
+        "sha256": "7cdddc98c67ec912bd93cac09ca14a5a96e162dd4be71ac530a4959e3d4b3f02"
+      },
+      {
+        "path": "lab/qa/center-mechanism-2026-10-10/W01-startup-P-attempt2-rest.json",
+        "sha256": "94d33930d06c5cca3a4d5208d339178e1da6f9f3868f43059a081a3889ad0157"
+      },
+      {
+        "path": "lab/qa/center-mechanism-2026-10-10/W01-startup-P-attempt2-UI.json",
+        "sha256": "e8faa28920e01f9e734d7098a49dd1a9120539e6621bdded929ee69467077dce"
+      },
+      {
+        "path": "lab/qa/center-mechanism-2026-10-10/W01-startup-P-reset-unverified.json",
+        "sha256": "9b69cc27fa8ef827bcc6668715194d992db021ca1b9d3b803e445dd07a8aad64"
+      },
+      {
+        "path": "lab/qa/center-mechanism-2026-10-10/W01-startup-P-result-N2-ready.png",
+        "sha256": "800aa282d82922bb248a735d1bfbdd202aba1bb15b79057cc1401a6712dd5527"
+      },
+      {
+        "path": "lab/qa/center-mechanism-2026-10-10/W01-startup-P-unverified-rest.json",
+        "sha256": "ffa99bb466f183e277cdd912530ddb6952e83880ae289e9d1128059780645e9b"
+      },
+      {
+        "path": "lab/qa/center-mechanism-2026-10-10/W01-startup-post-USB-rest.json",
+        "sha256": "d8deebe679a8635a59c1f2fa4e8c98eba26741feca4fa66a24b098bed4083f9c"
+      },
+      {
+        "path": "lab/qa/center-mechanism-2026-10-10/W01-startup-rep2-N1-conditions.json",
+        "sha256": "d5517fe0cdb24575654b9bc1ac306a0d03c2d64732f55e2d1894fa6b917cccff"
+      },
+      {
+        "path": "lab/qa/center-mechanism-2026-10-10/W01-startup-rep2-N1-poll-status.json",
+        "sha256": "e6611058b9600c42f8484b27458ffa027acad2d681837c9e073da08097976387"
+      },
+      {
+        "path": "lab/qa/center-mechanism-2026-10-10/W01-startup-rep2-N1-rest.json",
+        "sha256": "f4c75003654abb91a7702f52348fdce60d6f9a135f6c1f3b8587d611f1358ee5"
+      },
+      {
+        "path": "lab/qa/center-mechanism-2026-10-10/W01-startup-rep2-N1-result-P-ready.png",
+        "sha256": "5187dba7919eb421f1e779c1b2f9afc1384ee131cb7ee3b9ce796dc70194ea7c"
+      },
+      {
+        "path": "lab/qa/center-mechanism-2026-10-10/W01-startup-rep2-N1-UI.json",
+        "sha256": "381ff4720284b167b5e1c71ec9bf50224f331c0a50f338638a09019c60ba160c"
+      },
+      {
+        "path": "lab/qa/center-mechanism-2026-10-10/W01-startup-rep2-P-clarification.png",
+        "sha256": "831d09cf62b6fbfb5e47893c5a5d4cb2e48ca327a7eddbfc09526742366846d3"
+      },
+      {
+        "path": "lab/qa/center-mechanism-2026-10-10/W01-startup-rep2-P-conditions-pending.json",
+        "sha256": "f6ec09253f49154e83d4cf7e19ba1139abe7edfebb3f64b3044b982f770464b5"
+      },
+      {
+        "path": "lab/qa/center-mechanism-2026-10-10/W01-startup-rep2-P-early-windows.json",
+        "sha256": "3ef3f0a8b8e93bfce7ab72d1933f834690971613328633a5d84988d972fc2912"
+      },
+      {
+        "path": "lab/qa/center-mechanism-2026-10-10/W01-startup-rep2-P-pending-rest.json",
+        "sha256": "4cf2e633b1a827007eede8b87e736d4bd5a519e0c74599c654cd0a062ea2a73c"
+      },
+      {
+        "path": "lab/qa/center-mechanism-2026-10-10/W01-startup-rep2-P-repeat-conditions.json",
+        "sha256": "9f454a95a1307200b84660a01c36905c55993bd4d966645554ddd6ad50446ae6"
+      },
+      {
+        "path": "lab/qa/center-mechanism-2026-10-10/W01-startup-rep2-P-repeat-position-check01.json",
+        "sha256": "c215956b8bc63b062d8716dce3d5592c4cf8ad5af1570e704b5751b3c269a976"
+      },
+      {
+        "path": "lab/qa/center-mechanism-2026-10-10/W01-startup-rep2-P-repeat-positioning.png",
+        "sha256": "6aaa308f6aa7bc2a5424b73b43088b9b3cd2713481824b1e39d10bebc7398ef5"
+      },
+      {
+        "path": "lab/qa/center-mechanism-2026-10-10/W01-startup-repetition1-result-rep2-ready.png",
+        "sha256": "9f37aefc4a81fdf8d0acf9a2971733763502ec517cf7018e28e4aafc02061f47"
+      },
+      {
+        "path": "lab/qa/center-mechanism-2026-10-10/W01-startup-repetition1-summary.json",
+        "sha256": "687d007f09e408c4eacc4bdf35c945ae96f700b505a552f8aa3f52f7758268bc"
+      },
+      {
+        "path": "lab/qa/center-mechanism-2026-10-10/W01-startup-stream-01.jsonl",
+        "sha256": "1a32f13d160e79cb16550584c426d7fc7dd14f193202676cbaed77032a02afd8"
+      },
+      {
+        "path": "lab/qa/center-mechanism-2026-10-10/W01-startup-stream-01.summary.json",
+        "sha256": "f3c333fee29c3ae613844ef8e948b13481292e9abe5f1af27e6e2231ca08d10d"
+      },
+      {
+        "path": "lab/qa/center-mechanism-2026-10-10/W01-startup-stream-02.jsonl",
+        "sha256": "23ac24f6c71167e7a280feb5e64ed7889f2d86b483594f2e825cfeea96fee777"
+      },
+      {
+        "path": "lab/qa/center-mechanism-2026-10-10/W01-startup-stream-02.summary.json",
+        "sha256": "e0626117a1542b98d5a4b86a1ad757e830026cfb678ac2d3e1ea7859aa30d600"
+      }
+    ]
+  },
+  {
+    "file": "raw-05.zip",
+    "bytes": 1972813,
+    "sha256": "f21e50a6b329a26105b11e41ba6d90cfa7a289823008b7254a2e30ddb1b24663",
+    "files": [
+      {
+        "path": "lab/qa/center-mechanism-2026-10-10/W01-startup-stream-03.jsonl",
+        "sha256": "f69bf275c8e723d59a0c48a1ca25492c41e25e398c5f4936681a86c1923c459b"
+      },
+      {
+        "path": "lab/qa/center-mechanism-2026-10-10/W01-startup-stream-03.summary.json",
+        "sha256": "30b877cc8408e5554fbf2bef1a156497e1b71109424ce25348d746a7b67a6c2f"
+      },
+      {
+        "path": "lab/qa/center-mechanism-2026-10-10/W01-startup-stream-04.jsonl",
+        "sha256": "71ca93c751649296f39013e0f5eb3a36f421a5f468a98570fa26e13a5af18d4b"
+      },
+      {
+        "path": "lab/qa/center-mechanism-2026-10-10/W01-startup-stream-04.summary.json",
+        "sha256": "6aead38ead91580b8ebd3e950d8fe368b1be2a08f8bc2ae274e410c869895053"
+      },
+      {
+        "path": "lab/qa/center-mechanism-2026-10-10/W01-startup-stream-05.jsonl",
+        "sha256": "cf1726a2a125dcc96f890545392c5ca0ac0a6fc34804f7c8c606030789bed2f4"
+      },
+      {
+        "path": "lab/qa/center-mechanism-2026-10-10/W01-startup-stream-05.summary.json",
+        "sha256": "dab646e6ae12ddf1e8bc55f0b4b83dc465e68d790a15548a2d8128b47fb9d009"
+      }
+    ]
+  },
+  {
+    "file": "raw-06.zip",
+    "bytes": 1419266,
+    "sha256": "648509fee7cdd7d7a310a663c12bae431d0c5a264d99c52c75a6dd49c4dc03c9",
+    "files": [
+      {
+        "path": "lab/qa/center-mechanism-2026-10-10/W01-startup-stream-06.jsonl",
+        "sha256": "a0cb7d8d1ed6152c99e51e7302437c61852916ff98ef6275843cbbdab1814aae"
+      },
+      {
+        "path": "lab/qa/center-mechanism-2026-10-10/W01-startup-stream-06.summary.json",
+        "sha256": "749c23ac91df0b52a33d02fde10f4792e8706a5d5960a135f05e499d52c55e88"
+      },
+      {
+        "path": "lab/qa/center-mechanism-2026-10-10/W01-startup-stream-07.jsonl",
+        "sha256": "da2ad50ec6d8fbdde98ff817d21c411184ca035814ebe8d36460e2b10f782bfb"
+      },
+      {
+        "path": "lab/qa/center-mechanism-2026-10-10/W01-startup-stream-07.summary.json",
+        "sha256": "cc35a65baaebc69adbeb0f7736e253bb0a904ea27ac35908a2bbf56ddb5200da"
+      },
+      {
+        "path": "lab/qa/center-mechanism-2026-10-10/W01-startup-USB-interruption.json",
+        "sha256": "c662e38c46c89f66337434a72758d6cd463435985576b8a19b6dc75c5c85e98c"
+      },
+      {
+        "path": "lab/qa/center-mechanism-2026-10-10/W01-startup-USB-right-armed.png",
+        "sha256": "4892953a50bfeee7cbf7a35f0f0216f48fbb47707b5f818624180085bfe0a4dc"
+      }
+    ]
+  },
+  {
+    "file": "raw-07.zip",
+    "bytes": 2645249,
+    "sha256": "5f3330201246c3e9c45d457e5da56308cc2c51bdafdf76c95f76c25afb8ca8b5",
+    "files": [
+      {
+        "path": "lab/qa/center-mechanism-2026-10-10/W01-stream-01.jsonl",
+        "sha256": "e7709f783069dafc8bbb64841da58eb5f260e37d1002d012c65e8368a093a651"
+      }
+    ]
+  },
+  {
+    "file": "raw-08.zip",
+    "bytes": 1311733,
+    "sha256": "4cd65fd05e07d7080f05ec0ad70b64db3d57e9ebf809e6c69e4eb008e77b2afa",
+    "files": [
+      {
+        "path": "lab/qa/center-mechanism-2026-10-10/W01-stream-01.summary.json",
+        "sha256": "480f5b26dfed15c17f92be4fa6c57b8325d596c7ee3bf3bfacf603c2a18aa8f6"
+      },
+      {
+        "path": "lab/qa/center-mechanism-2026-10-10/W01-stream-02.jsonl",
+        "sha256": "e58eb66c7c1d08af5b444c997309cc452c1b624f5bdad185c7bf1c9b1fe648b7"
+      },
+      {
+        "path": "lab/qa/center-mechanism-2026-10-10/W01-stream-02.summary.json",
+        "sha256": "b1df5ca88c106ee00563dcd8d121d8400a779d6609b381bbf9b5f5855382a6ad"
+      },
+      {
+        "path": "lab/qa/center-mechanism-2026-10-10/W02-PS2-autoreconnect-01.jsonl",
+        "sha256": "d6a01ce2748e3614fd5d536408f9408a2879c9f70c672c9c9da7a4a4f62b9f45"
+      },
+      {
+        "path": "lab/qa/center-mechanism-2026-10-10/W02-PS2-autoreconnect-01.summary.json",
+        "sha256": "5988b9a3010b8044f3353662ed2719f71d3279222470b575276efdbeb85cb845"
+      }
+    ]
+  },
+  {
+    "file": "raw-09.zip",
+    "bytes": 6235453,
+    "sha256": "bdf69c3c2d0afce15aed6fc80aeea80933723ac49d3047dac8238725448854f0",
+    "files": [
+      {
+        "path": "lab/qa/center-mechanism-2026-10-10/W02-PS2-autoreconnect-02.jsonl",
+        "sha256": "f608a25c87b6f794b56f37ee67dec4aa2d777b3182eb9f31a2258be9b493e598"
+      }
+    ]
+  },
+  {
+    "file": "raw-10.zip",
+    "bytes": 1829912,
+    "sha256": "31c9f4ce95bb12cea3044ff0f9221cc20c8821a3f8aea64e77890629e91ea716",
+    "files": [
+      {
+        "path": "lab/qa/center-mechanism-2026-10-10/W02-PS2-autoreconnect-02.summary.json",
+        "sha256": "48d15b6ec9f26913d3623933d9afcd2ecc070d15efa405e9ece4691485bdbac2"
+      },
+      {
+        "path": "lab/qa/center-mechanism-2026-10-10/W02-PS2-autoreconnect-manifest.json",
+        "sha256": "4d5bc6f79d1d6159daf92ba83378ac76164c3979ad352b09ed35ffd04a277e3b"
+      },
+      {
+        "path": "lab/qa/center-mechanism-2026-10-10/W02-PS2-before-after-new-modules-comparison.json",
+        "sha256": "ff931fa8029b0f7826f6bbbc7dba7f463236dca9a408e41080f5c7a6b5ae0a99"
+      },
+      {
+        "path": "lab/qa/center-mechanism-2026-10-10/W02-PS2-circle-vs-directions-counterbalanced-comparison.json",
+        "sha256": "dfbb28c4e3e51283ef29d4e41d3894af0a9faaa045c361277519208d52e9dfd2"
+      },
+      {
+        "path": "lab/qa/center-mechanism-2026-10-10/W02-PS2-circles-automatic-conditions.json",
+        "sha256": "6ab8b606e3a09e351407a2a9c698243bf508001c1b102f5518fed7de58dcb197"
+      },
+      {
+        "path": "lab/qa/center-mechanism-2026-10-10/W02-PS2-circles-automatic-ready.png",
+        "sha256": "586aaa38f0abe573f8ee9dd34a98186a91a6081dde7daa46e1e466e5bc0341de"
+      },
+      {
+        "path": "lab/qa/center-mechanism-2026-10-10/W02-PS2-circles-automatic-verified.json",
+        "sha256": "558df5ab2f150f3ea963c447b456b478b1b0346aec6c0c269dc6b1b95d063c92"
+      },
+      {
+        "path": "lab/qa/center-mechanism-2026-10-10/W02-PS2-conditions.json",
+        "sha256": "f96984e0c6ba197f2f0354e6a9f138079290644cc51f7d0bf76e93f6e2e4ac7c"
+      },
+      {
+        "path": "lab/qa/center-mechanism-2026-10-10/W02-PS2-continuation-01.jsonl",
+        "sha256": "40bbba518fbda8dd98cd83cec9b72073552dac468856bab38c4f73b33ffc18f2"
+      },
+      {
+        "path": "lab/qa/center-mechanism-2026-10-10/W02-PS2-continuation-01.summary.json",
+        "sha256": "734547e9a4f2528e584bacb172acd549b67d94f3231c85338a8ef95672c2042b"
+      },
+      {
+        "path": "lab/qa/center-mechanism-2026-10-10/W02-PS2-continuation-02.jsonl",
+        "sha256": "6e78473a0e706563db2beb978242af07c54c6937291ee36b95e9a1aff58f4782"
+      },
+      {
+        "path": "lab/qa/center-mechanism-2026-10-10/W02-PS2-continuation-02.summary.json",
+        "sha256": "d34e19b3beeb87f820c22cac0e56ccef118b215962ddca57a74083d37dc543bf"
+      },
+      {
+        "path": "lab/qa/center-mechanism-2026-10-10/W02-PS2-continuation-manifest.json",
+        "sha256": "2faa5526d9edc76fd16f6c3865288d8f4829c5c685e55922031cc6764f695df2"
+      }
+    ]
+  },
+  {
+    "file": "raw-11.zip",
+    "bytes": 1504565,
+    "sha256": "ac93a270582d53d481ea6aa83c0e850682014990ef122a6cc7293db175ec06c4",
+    "files": [
+      {
+        "path": "lab/qa/center-mechanism-2026-10-10/W02-PS2-final-circles-01.jsonl",
+        "sha256": "b6275127fb7e4b5f09a3483904cec5b00f0b5611642da28029ee9cd7fbbc70c7"
+      },
+      {
+        "path": "lab/qa/center-mechanism-2026-10-10/W02-PS2-final-circles-01.summary.json",
+        "sha256": "750a1e56f5b1f5932f6884f015ede878b6ea5ef7160b4780e669d73aa8d2f249"
+      },
+      {
+        "path": "lab/qa/center-mechanism-2026-10-10/W02-PS2-final-circles-manifest.json",
+        "sha256": "4da346ccbdd16b49f673828bbe295fe962cdc53534667f239afaec59155500db"
+      },
+      {
+        "path": "lab/qa/center-mechanism-2026-10-10/W02-PS2-left-done-right-ready.png",
+        "sha256": "fb0a286646e9004e8d96e9c1404dbe6141ab9074767f414bdaabe194be2d00db"
+      },
+      {
+        "path": "lab/qa/center-mechanism-2026-10-10/W02-PS2-manual-circle-vs-directions-20261011T002927Z-01.jsonl",
+        "sha256": "99d3d29357c6c741a247564f7011f2b1e2b4a9ad0e17903cd6742ad5cee679a3"
+      },
+      {
+        "path": "lab/qa/center-mechanism-2026-10-10/W02-PS2-manual-circle-vs-directions-20261011T002927Z-01.summary.json",
+        "sha256": "810313101f0cbf02bf5e2d79953b6059cbd7a4d891f9e428d154f5e91b3dacaa"
+      },
+      {
+        "path": "lab/qa/center-mechanism-2026-10-10/W02-PS2-manual-circle-vs-directions-20261011T002927Z-analysis.json",
+        "sha256": "69f9e20c58dfe61a2f9ca7f1f97f31b88fe0a551f123613332cb75f0e65b45cf"
+      },
+      {
+        "path": "lab/qa/center-mechanism-2026-10-10/W02-PS2-manual-circle-vs-directions-20261011T002927Z-conditions.json",
+        "sha256": "0da668ac501f081df4779eb9a722655822662cc340ecaa5e51937fd38e4f82a3"
+      },
+      {
+        "path": "lab/qa/center-mechanism-2026-10-10/W02-PS2-manual-circle-vs-directions-20261011T002927Z-manifest.json",
+        "sha256": "3cf56eccb882d82464048ca248724c9ab5090f515f9ab90915152d858ba5e720"
+      },
+      {
+        "path": "lab/qa/center-mechanism-2026-10-10/W02-PS2-manual-circle-vs-directions-20261011T002927Z-marker.json",
+        "sha256": "320af4ec5251a3bad82dd61a1671e8f251fc3a1a34d3266495efa7c8bfd131e3"
+      },
+      {
+        "path": "lab/qa/center-mechanism-2026-10-10/W02-PS2-manual-circle-vs-directions-reversed-20261011T003309Z-01.jsonl",
+        "sha256": "795127b650876d3d762daabc6ceb052467c1e3d834134b02bba5bd8def531501"
+      },
+      {
+        "path": "lab/qa/center-mechanism-2026-10-10/W02-PS2-manual-circle-vs-directions-reversed-20261011T003309Z-01.summary.json",
+        "sha256": "c6f339094d4cd0f30413c57640ab3b4ca10ca7154c49801d85073aa64910b33a"
+      },
+      {
+        "path": "lab/qa/center-mechanism-2026-10-10/W02-PS2-manual-circle-vs-directions-reversed-20261011T003309Z-analysis.json",
+        "sha256": "61e87115a1c309370b2fed31759504911015947136a833571d5ce6fa29e73cb3"
+      },
+      {
+        "path": "lab/qa/center-mechanism-2026-10-10/W02-PS2-manual-circle-vs-directions-reversed-20261011T003309Z-conditions.json",
+        "sha256": "109695de3d875d7d0e6a0474e3c32bd16cd84c581cd68a82cd5a016d4b7c8c6a"
+      },
+      {
+        "path": "lab/qa/center-mechanism-2026-10-10/W02-PS2-manual-circle-vs-directions-reversed-20261011T003309Z-manifest.json",
+        "sha256": "984865aa0a758cdfd87ebbbca690f53b551c564ff6ff0682a488c83173973d07"
+      },
+      {
+        "path": "lab/qa/center-mechanism-2026-10-10/W02-PS2-manual-circle-vs-directions-reversed-20261011T003309Z-marker.json",
+        "sha256": "b2f7220a2775aa618f9af593ac42184ae8188d60945fd290f17f90195f05723d"
+      },
+      {
+        "path": "lab/qa/center-mechanism-2026-10-10/W02-PS2-manual-per-return-left-circle-20261011T003858Z-01.jsonl",
+        "sha256": "969b07858f66f7e09a3ddbf17024c0a9925a0924100abeb5480057832a36fbf6"
+      },
+      {
+        "path": "lab/qa/center-mechanism-2026-10-10/W02-PS2-manual-per-return-left-circle-20261011T003858Z-01.summary.json",
+        "sha256": "b7e78e2031257a7d9dcc94a9663360f100cc41de7219ca6b9bac08cf8f38a99f"
+      },
+      {
+        "path": "lab/qa/center-mechanism-2026-10-10/W02-PS2-manual-per-return-left-circle-20261011T003858Z-analysis.json",
+        "sha256": "533a489dba709118ed19263ae6d8b0cb385ad9a4d90bf7d64f20a3f47c710a82"
+      },
+      {
+        "path": "lab/qa/center-mechanism-2026-10-10/W02-PS2-manual-per-return-left-circle-20261011T003858Z-conditions.json",
+        "sha256": "2592a6dece110591316c9ba1e5d26c3c41bbe35823175d8b7896c289e4d9f4e8"
+      },
+      {
+        "path": "lab/qa/center-mechanism-2026-10-10/W02-PS2-manual-per-return-left-circle-20261011T003858Z-manifest.json",
+        "sha256": "5f9437a57093da75ca590d2cb00a3c071428531ed8f478fcf440517ca3be4952"
+      },
+      {
+        "path": "lab/qa/center-mechanism-2026-10-10/W02-PS2-manual-per-return-left-circle-20261011T003858Z-marker.json",
+        "sha256": "3a9329295a1b8adbcf2ce747872f9da827ab5cc686e1eea70bcc788ec34e679c"
+      },
+      {
+        "path": "lab/qa/center-mechanism-2026-10-10/W02-PS2-marker.json",
+        "sha256": "21c14323eca9e5456600874fab93f1e85884d4f65be41e36d971c4880132c6d7"
+      },
+      {
+        "path": "lab/qa/center-mechanism-2026-10-10/W02-PS2-micro-movement-20261011T004432Z-01.jsonl",
+        "sha256": "1679e5e5cd606e05e3f492e2762d1290eb38d3c0cbe5ab2a55d2256833313ce9"
+      },
+      {
+        "path": "lab/qa/center-mechanism-2026-10-10/W02-PS2-micro-movement-20261011T004432Z-01.summary.json",
+        "sha256": "f94606fa9ecfe7736cb64dd8980e08f00c754644e13232efb7ef909490d2a970"
+      },
+      {
+        "path": "lab/qa/center-mechanism-2026-10-10/W02-PS2-micro-movement-20261011T004432Z-analysis.json",
+        "sha256": "036a3085a958126f2a63f4962c48b6f1510e1620baa220f49b48fe3b163a8717"
+      },
+      {
+        "path": "lab/qa/center-mechanism-2026-10-10/W02-PS2-micro-movement-20261011T004432Z-conditions.json",
+        "sha256": "fe8280a1136c5ab66baabaeb4e7016438ce677da28d2c233646d612aa31416a7"
+      },
+      {
+        "path": "lab/qa/center-mechanism-2026-10-10/W02-PS2-micro-movement-20261011T004432Z-manifest.json",
+        "sha256": "31299ccc9d76e61f40b0e5d411590a78ba8a9b7d5fa16e52b5c7a86f723fa36d"
+      },
+      {
+        "path": "lab/qa/center-mechanism-2026-10-10/W02-PS2-micro-movement-20261011T004432Z-marker.json",
+        "sha256": "56977fb6f386b8d03dc1b7ccd5176b9ba7afa051fb1882e4792e5cd746fa63ce"
+      },
+      {
+        "path": "lab/qa/center-mechanism-2026-10-10/W02-PS2-native-continuation-conditions.json",
+        "sha256": "e3389fd52f6e48d344e9ed5c967483f2f0b75e286ab025674c86316ae9c9d7b5"
+      },
+      {
+        "path": "lab/qa/center-mechanism-2026-10-10/W02-PS2-neutral-baseline.json",
+        "sha256": "5a0394a2a2d2129df335425dce208ecdd60ae1e3b68ff93aa91ae32ccbd2a168"
+      },
+      {
+        "path": "lab/qa/center-mechanism-2026-10-10/W02-PS2-neutral-baseline.png",
+        "sha256": "f9acd3310e7163ba936ebdcf560ff9a0e9ae306164724857d84b0e6771f1a06b"
+      }
+    ]
+  },
+  {
+    "file": "raw-12.zip",
+    "bytes": 2685085,
+    "sha256": "5a308cf17503db10d07d530b0308f23e677fe8b35dd66edc2a952dd7858dfa4b",
+    "files": [
+      {
+        "path": "lab/qa/center-mechanism-2026-10-10/W02-PS2-new-modules-20261011-01.jsonl",
+        "sha256": "0173395de46e358685d00ad77436fbe9a20ab0234beebea3d19c68b20e5a7f25"
+      },
+      {
+        "path": "lab/qa/center-mechanism-2026-10-10/W02-PS2-new-modules-20261011-01.summary.json",
+        "sha256": "ba31104b8285707de1d2600e56e1ad580dd4d5a7b897fb9e7284ce891f4e3005"
+      },
+      {
+        "path": "lab/qa/center-mechanism-2026-10-10/W02-PS2-new-modules-20261011-manifest.json",
+        "sha256": "b1e383380735f1e69e7b6e7692fd30b590defd4e01cd876ecfbc7f6b66f12eba"
+      },
+      {
+        "path": "lab/qa/center-mechanism-2026-10-10/W02-PS2-new-modules-circles-log-review.json",
+        "sha256": "50e436c8daa1b5fc1b5de2d397a62b5b4b3e4b93eee6dae719ad905a89285c13"
+      },
+      {
+        "path": "lab/qa/center-mechanism-2026-10-10/W02-PS2-new-modules-conditions.json",
+        "sha256": "95b7a3e352f764826036549e023b06a12accee77c7c4577329195de2fc694ba8"
+      },
+      {
+        "path": "lab/qa/center-mechanism-2026-10-10/W02-PS2-new-modules-first-vs-repeat-comparison.json",
+        "sha256": "dbe34d4413671553d286cbdfd08d046dbedd76872435b6447c50e60e38f3edfa"
+      },
+      {
+        "path": "lab/qa/center-mechanism-2026-10-10/W02-PS2-new-modules-left-result.png",
+        "sha256": "e299b59e7d751b70dc8d89de2edcc2aa5c4e251b4036227c0d3e57266e7faff0"
+      },
+      {
+        "path": "lab/qa/center-mechanism-2026-10-10/W02-PS2-new-modules-left-verified.json",
+        "sha256": "c11dee4feff53177f2087afaeec9aae6fd2617d739259fd645dc14fcc8aa4609"
+      },
+      {
+        "path": "lab/qa/center-mechanism-2026-10-10/W02-PS2-new-modules-marker.json",
+        "sha256": "6a6549154700897ef75a9d795d60022b1c41e9ed1a73151d2f7b0d60cf0867a5"
+      },
+      {
+        "path": "lab/qa/center-mechanism-2026-10-10/W02-PS2-new-modules-repeat2-01.jsonl",
+        "sha256": "aec2b590fcf34c12779a2dd85dfb96243497a78ded95fbfd309ad7a3ac2cdabc"
+      },
+      {
+        "path": "lab/qa/center-mechanism-2026-10-10/W02-PS2-new-modules-repeat2-01.summary.json",
+        "sha256": "a0427f8429878edf664dab71eefd9616a710327d745175ce41008679ce818f9e"
+      },
+      {
+        "path": "lab/qa/center-mechanism-2026-10-10/W02-PS2-new-modules-repeat2-conditions.json",
+        "sha256": "2086b5e20aab594bbadd812e5e4e3c0ea25212553a6d6ab9768296b6f29cbfc9"
+      },
+      {
+        "path": "lab/qa/center-mechanism-2026-10-10/W02-PS2-new-modules-repeat2-left-result.png",
+        "sha256": "d8c4bef3b7813e6c65e74c7cf3c0092275f7d8b8214fcd332e34f51e7265ed83"
+      },
+      {
+        "path": "lab/qa/center-mechanism-2026-10-10/W02-PS2-new-modules-repeat2-left-verified.json",
+        "sha256": "b313bb1272710e2d5823044294d5e81c7fb48d163d9fdbfb54b9c2818aaa9a9b"
+      },
+      {
+        "path": "lab/qa/center-mechanism-2026-10-10/W02-PS2-new-modules-repeat2-manifest.json",
+        "sha256": "d962c56631eb4a1cce799ad84fc00d609d52b8b17880343eb5bbcb9ec8f951c9"
+      },
+      {
+        "path": "lab/qa/center-mechanism-2026-10-10/W02-PS2-new-modules-repeat2-marker.json",
+        "sha256": "45787869072620c705a0189b048d68c2d50e19ad7dd068ef2cb7cd49c2f5e9dc"
+      },
+      {
+        "path": "lab/qa/center-mechanism-2026-10-10/W02-PS2-new-modules-repeat2-right-result.png",
+        "sha256": "8e0f71d7dea70d4a3d237da8d53cabd66156b241d7f1f934206db47b15aedfca"
+      },
+      {
+        "path": "lab/qa/center-mechanism-2026-10-10/W02-PS2-new-modules-repeat2-right-verified.json",
+        "sha256": "9bc180b2dbeabbfe4e3a3ee7c4bf7babc203dfcbcf96643517374a04ed234420"
+      },
+      {
+        "path": "lab/qa/center-mechanism-2026-10-10/W02-PS2-new-modules-right-result.png",
+        "sha256": "25db84d395a1e356873dd13a23ecae5e3c363d19175061780eb045cab8b5eded"
+      },
+      {
+        "path": "lab/qa/center-mechanism-2026-10-10/W02-PS2-new-modules-right-verified.json",
+        "sha256": "081808ab3c90a477a3b64ab9fd5302258686376a05cb15991ebbceb6dc706267"
+      },
+      {
+        "path": "lab/qa/center-mechanism-2026-10-10/W02-PS2-post-motion-neutral-USB-control-conditions.json",
+        "sha256": "76aaba20d5e379e10113254d76f322ea95865bd8f4e983f253009d9f6ac7b65d"
+      },
+      {
+        "path": "lab/qa/center-mechanism-2026-10-10/W02-PS2-post-motion-neutral-USB-control-result.json",
+        "sha256": "5d043d3e774c144cd9937c1b11b32379653ebb14ac0888040f99c0a5f0837368"
+      },
+      {
+        "path": "lab/qa/center-mechanism-2026-10-10/W02-PS2-post-reset-both-attempt1-quality.json",
+        "sha256": "d24358bc46d7449744cfd30e6b7a482ec07ea6309c1d8b2c360da06f1d261090"
+      },
+      {
+        "path": "lab/qa/center-mechanism-2026-10-10/W02-PS2-post-reset-both-attempt1-result.png",
+        "sha256": "d14a1ae0ca99030bd245078544bb625c1f6706713b132d2d498626762ebc1bd3"
+      },
+      {
+        "path": "lab/qa/center-mechanism-2026-10-10/W02-PS2-post-reset-both-automatic-conditions.json",
+        "sha256": "8906c7fc77c5cadedbd96081977b846ecb93fe52bc245f1dea1353fd60135f8a"
+      },
+      {
+        "path": "lab/qa/center-mechanism-2026-10-10/W02-PS2-post-reset-both-ready.png",
+        "sha256": "a33429786b0526610b3ccb2a42b4821f64dfc926fa2bda33f8baf06a32df63cc"
+      },
+      {
+        "path": "lab/qa/center-mechanism-2026-10-10/W02-PS2-post-reset-left-circles-attempt1-quality.json",
+        "sha256": "f157207bd98ddecb21f0cddc6df08b69b33a2413a80aba9ea67577d22d059d54"
+      },
+      {
+        "path": "lab/qa/center-mechanism-2026-10-10/W02-PS2-post-reset-left-circles-attempt2-quality.json",
+        "sha256": "918a9de2d6fbc7525b97962c3864913260884fb991af19267410cdfcea81feca"
+      },
+      {
+        "path": "lab/qa/center-mechanism-2026-10-10/W02-PS2-post-reset-left-circles-attempt2-result.png",
+        "sha256": "16118816ed9e7dfc959e6c62f912ea81dd0f5e676ab733169b5756525be6ba66"
+      },
+      {
+        "path": "lab/qa/center-mechanism-2026-10-10/W02-PS2-post-reset-left-circles-attempt3-conditions.json",
+        "sha256": "d4ca69eae7842b398f90730a6b22ad69e6b26e847c5aa0583b5cd1c20de3987e"
+      },
+      {
+        "path": "lab/qa/center-mechanism-2026-10-10/W02-PS2-post-reset-left-circles-attempt3-result.png",
+        "sha256": "aa4f460dd409f38a8605b48b54010f127a27a9a2b0f9c12d7ff0ec04e0f61a1c"
+      },
+      {
+        "path": "lab/qa/center-mechanism-2026-10-10/W02-PS2-post-reset-left-circles-attempt3-verified.json",
+        "sha256": "778b2a9541d8d6277f357f7c720ba7fbb386cf5da96f4e2aab15ef8e0f0a6063"
+      },
+      {
+        "path": "lab/qa/center-mechanism-2026-10-10/W02-PS2-post-reset-left-circles-conditions.json",
+        "sha256": "038c980d0d3e64b619ae3b3003811c491f6ded458deee48a03d9798f51850de5"
+      },
+      {
+        "path": "lab/qa/center-mechanism-2026-10-10/W02-PS2-post-reset-left-circles-ready.png",
+        "sha256": "d965fdb6a5bdbdfa3d7615964214e4fd16bf670022353e4832f20cfec04f33ef"
+      },
+      {
+        "path": "lab/qa/center-mechanism-2026-10-10/W02-PS2-post-reset-left-circles-result.png",
+        "sha256": "fbae74eb0ff62ebb9064bb301216bc5a266c9d66c049891169636af01641a546"
+      },
+      {
+        "path": "lab/qa/center-mechanism-2026-10-10/W02-PS2-powered-first-left-conditions.json",
+        "sha256": "5bb581828bec8850b62bff5fb4c21e2bb5a3ace285b7eef61d13e01915d15853"
+      },
+      {
+        "path": "lab/qa/center-mechanism-2026-10-10/W02-PS2-powered-first-left-motion.json",
+        "sha256": "d7bfba8827e5b7a9eed1c99c89c053dae75f92829bd462595731fdfb9e46d2fa"
+      },
+      {
+        "path": "lab/qa/center-mechanism-2026-10-10/W02-PS2-powered-first-right-conditions.json",
+        "sha256": "df16fe8ea785cb37926e42662f3cfc96a659837a5ee4f567c93e69be8231cecb"
+      },
+      {
+        "path": "lab/qa/center-mechanism-2026-10-10/W02-PS2-powered-first-right-motion.json",
+        "sha256": "22ac267843f9ebb89a2c3469d5c99fa1d76560fd5295a7a7cc1631aa38ed2bbb"
+      },
+      {
+        "path": "lab/qa/center-mechanism-2026-10-10/W02-PS2-powered-range-history-comparison.json",
+        "sha256": "743f326667a964a1f6980ab9aa78cf51d0ba700b108938f04143b62d4ba04ac3"
+      },
+      {
+        "path": "lab/qa/center-mechanism-2026-10-10/W02-PS2-powered-repeat-left-conditions.json",
+        "sha256": "7b16648479c7866379968b6ff091b409c4f010388cb65a5424afa96d5a7d8fcb"
+      },
+      {
+        "path": "lab/qa/center-mechanism-2026-10-10/W02-PS2-powered-repeat-left-motion.json",
+        "sha256": "58ac400e6399ecbcab7d621b59b9c954b44db832f119ea9f69ff9b0a8b3667ed"
+      },
+      {
+        "path": "lab/qa/center-mechanism-2026-10-10/W02-PS2-powered-repeat-right-conditions.json",
+        "sha256": "8844712b15605fbf4b3492516fd7f5c34ba84bb89aa79f693f6622a6f4d26629"
+      },
+      {
+        "path": "lab/qa/center-mechanism-2026-10-10/W02-PS2-powered-repeat-right-motion.json",
+        "sha256": "b709a2197d4942dd86680aff98150a9510c46bedc82b3d680aa5f69c76b29083"
+      },
+      {
+        "path": "lab/qa/center-mechanism-2026-10-10/W02-PS2-right-automatic-attempt1-quality.json",
+        "sha256": "31e1faeda5cca0e339390f22e272f9a278822abfaf3a5ebbea5476f0cc2532f6"
+      },
+      {
+        "path": "lab/qa/center-mechanism-2026-10-10/W02-PS2-right-automatic-attempt2-quality.json",
+        "sha256": "bf3475e6c98a3895bd151f6d8709adeeaef207119f3e8424353637ce589b8fda"
+      },
+      {
+        "path": "lab/qa/center-mechanism-2026-10-10/W02-PS2-right-automatic-conditions.json",
+        "sha256": "6865dc5fe965a9f94d487d23d2c06089ef52595ddcb15486f03bd31c9fcd5467"
+      },
+      {
+        "path": "lab/qa/center-mechanism-2026-10-10/W02-PS2-right-circles-attempt1-stopped.png",
+        "sha256": "a4d9e3007d1e6d166fc59d9c809be6365351cc4c06bea2fbc48a0dd8861506e3"
+      },
+      {
+        "path": "lab/qa/center-mechanism-2026-10-10/W02-PS2-right-circles-attempt2-result.png",
+        "sha256": "d9938b77099dbee4d217774bce7a7c63ff0fdbce4c9d64832792144fc5adb9d8"
+      },
+      {
+        "path": "lab/qa/center-mechanism-2026-10-10/W02-PS2-right-circles-automatic-attempt1-quality.json",
+        "sha256": "0f6151d8131c86be0fbbfb59c97486ba401368004995fa2583e56c7ff56195d5"
+      },
+      {
+        "path": "lab/qa/center-mechanism-2026-10-10/W02-PS2-right-circles-automatic-attempt2-verified.json",
+        "sha256": "9a717acfe753072e0168b2c14cd5530ed80056232670157da153221b123aa989"
+      },
+      {
+        "path": "lab/qa/center-mechanism-2026-10-10/W02-PS2-right-circles-automatic-conditions.json",
+        "sha256": "77c09cf807941a4bc955b742b1a439c8cb4ac224ec3b462cb7ebbcbad4b0adf4"
+      },
+      {
+        "path": "lab/qa/center-mechanism-2026-10-10/W02-PS2-right-circles-ready.png",
+        "sha256": "6e74c7a3b6b014e20384f30d236b23b05401125d1732367a0f261e5529680091"
+      },
+      {
+        "path": "lab/qa/center-mechanism-2026-10-10/W02-PS2-right-down-held-confirmed.json",
+        "sha256": "f0262e4842b195abe6d6758b0d77756c50fc91e4b0194225b7565ea0dab2fe92"
+      },
+      {
+        "path": "lab/qa/center-mechanism-2026-10-10/W02-PS2-right-down-release-check01.json",
+        "sha256": "65fff6f3c57b805011d08704dc418d24228ca7d3418dc824781fa8929ada9bf7"
+      },
+      {
+        "path": "lab/qa/center-mechanism-2026-10-10/W02-PS2-right-powered-down-conditions.json",
+        "sha256": "bb3fe7cdd0ed3578dbea6bf8b9d69be224395ab691384d691d42aa8d1dcd3d5a"
+      },
+      {
+        "path": "lab/qa/center-mechanism-2026-10-10/W02-PS2-right-powered-down-motion.json",
+        "sha256": "0cbd38ce5c1e1c4289f027938d3ea225cdcf86c36a26857e4c5e8cad9b52e843"
+      },
+      {
+        "path": "lab/qa/center-mechanism-2026-10-10/W02-PS2-right-powered-history-comparison.json",
+        "sha256": "4c8b05ea18083d332fffc3e24c601ff170d1d17cd34ac5d7bdd38081ae2bb210"
+      },
+      {
+        "path": "lab/qa/center-mechanism-2026-10-10/W02-PS2-right-powered-left-conditions.json",
+        "sha256": "0f2268ae4ac3dd675573fb596071aebac0b9086d8695dae48c161a4c3de75f94"
+      },
+      {
+        "path": "lab/qa/center-mechanism-2026-10-10/W02-PS2-right-powered-left-motion.json",
+        "sha256": "aedf3a37b7a1085ff036b15a54553e9ef370c9a9989a5d11b3dc0e3b25594034"
+      },
+      {
+        "path": "lab/qa/center-mechanism-2026-10-10/W02-PS2-right-powered-repeat-up-conditions.json",
+        "sha256": "a61ae4d80b1eed23e2d7418621f22fb56f2e13a0cc7d128d795a820e6d158871"
+      },
+      {
+        "path": "lab/qa/center-mechanism-2026-10-10/W02-PS2-right-powered-repeat-up-motion.json",
+        "sha256": "b053ede9be939822fdd9e86445dd67b4151790381104b393ff00ba0ccd1cd4c8"
+      },
+      {
+        "path": "lab/qa/center-mechanism-2026-10-10/W02-PS2-right-powered-right-conditions.json",
+        "sha256": "bebbc049e38974c8d19a4b3835938a761ca9785dab9a751f226e9ccd99ceacab"
+      },
+      {
+        "path": "lab/qa/center-mechanism-2026-10-10/W02-PS2-right-powered-right-motion.json",
+        "sha256": "a764ea7225ed701dfad29545e298f3ff3314887e0c7c6c647be0ec54f335fd6e"
+      },
+      {
+        "path": "lab/qa/center-mechanism-2026-10-10/W02-PS2-right-response-check-conditions.json",
+        "sha256": "02db48e205001cb38d11327a8c6a8c630c604515e13096fd9be598a96fbaccb7"
+      },
+      {
+        "path": "lab/qa/center-mechanism-2026-10-10/W02-PS2-right-response-check-held.json",
+        "sha256": "3ee25ccc3f4b1c470a69333d52bc65d2c68aeda74130e3e00f82f50084146947"
+      },
+      {
+        "path": "lab/qa/center-mechanism-2026-10-10/W02-PS2-right-response-check-ready.png",
+        "sha256": "92b924855bf98648eb8a093eb9c1bf7dfaa77874c5c388472e6011c56cfe6f3e"
+      },
+      {
+        "path": "lab/qa/center-mechanism-2026-10-10/W02-PS2-right-response-check-rest.json",
+        "sha256": "4f27feb6a4ee50c6088930337ebd8b4ccb00dbe817f1753cc342d016525eaa70"
+      },
+      {
+        "path": "lab/qa/center-mechanism-2026-10-10/W02-PS2-session-checkpoint.json",
+        "sha256": "31738af264080c6eccab4b38bdbdd9eadca80fa2c8d8202b4a95e13b81e057c2"
+      },
+      {
+        "path": "lab/sessions/auto-center-20261010T211116Z-5109805fc378.json",
+        "sha256": "055b98d253ade7895e9d31ef929b6fcd934d58ad3b765b0da7cacaf50d3d6174"
+      },
+      {
+        "path": "lab/sessions/auto-center-20261010T212507Z-aedbe42fdab0.json",
+        "sha256": "c171af46937674e758827e535ef6667edf3baafc2e9519e319ba448aa371b9c3"
+      },
+      {
+        "path": "lab/sessions/auto-center-20261010T212616Z-41a00078f38d.json",
+        "sha256": "0b155193890dcc2cae95e8ff066191287b8c822b5f1a45496dcd0db181fc5d30"
+      },
+      {
+        "path": "lab/sessions/auto-center-20261010T213003Z-531817a91033.json",
+        "sha256": "7f3ea5333a6e72583dba1b6be476e802e2443e8c808a10574fec8ff48c7e7134"
+      },
+      {
+        "path": "lab/sessions/auto-center-20261010T224012Z-c09f0cf86418.json",
+        "sha256": "3f71d658c3a326a8780fd4a120afbcd454720efd20d52ba1b8a3edb8444d6835"
+      },
+      {
+        "path": "lab/sessions/auto-center-20261010T224226Z-c8bfeaf20bf6.json",
+        "sha256": "6a07419c2a6d47cb819d4ae1f9f17815d6a09cf448c6894c209430ac95aeecf9"
+      },
+      {
+        "path": "lab/sessions/auto-center-20261010T224352Z-a3004da751ba.json",
+        "sha256": "c03dad1ef7d05f10efaa194e3bdab3692fd5299f921f78d17916deb8f132dc45"
+      }
+    ]
+  },
+  {
+    "file": "raw-13.zip",
+    "bytes": 604394,
+    "sha256": "843031bcf568fbfb19f89ec5f4e58837cceb1c8e43d3ea1f57740abe20317e99",
+    "files": [
+      {
+        "path": "lab/sessions/auto-center-20261010T225913Z-ec6220c3eebd.json",
+        "sha256": "60e15125f3d201eec2ecf161982407f014cd2fd3901769003ff41e14390f3191"
+      },
+      {
+        "path": "lab/sessions/auto-center-20261010T230309Z-348a6b6cb130.json",
+        "sha256": "4504f5c4bb32720c482241557ab26f86faa822f7d275a3df79b29bd79a4c5a18"
+      },
+      {
+        "path": "lab/sessions/auto-center-20261010T230645Z-fa37efcea321.json",
+        "sha256": "d41d1011d1b77c19837377d148b016a9c5b487d613d10ad6706df9f23c7a2f91"
+      },
+      {
+        "path": "lab/sessions/auto-center-20261010T230900Z-c4be70a120e1.json",
+        "sha256": "53449e93df88d5ab5dc81908451c680ee8cde86b6e3aeb83c7749deba1bdeee1"
+      },
+      {
+        "path": "lab/sessions/auto-center-20261010T231006Z-740bcced0243.json",
+        "sha256": "beb6f76a845b16c37aab793b3a28ed3fd1594ea34fcbc9c2d662d8991e8a0d61"
+      },
+      {
+        "path": "lab/sessions/auto-center-20261010T231157Z-744551fe668f.json",
+        "sha256": "5bd3f44fd1aa654ce0d9111145a3d9b9b7ff2335634756c6057914ebf33de8be"
+      },
+      {
+        "path": "lab/sessions/auto-center-20261011T001420Z-54db0fadd23f.json",
+        "sha256": "303cb09847ced98bd713765e8e9c95ed597b565f5717b027317d4c99be4d8b8a"
+      },
+      {
+        "path": "lab/sessions/auto-center-20261011T001546Z-c2ad121fb019.json",
+        "sha256": "669cfac71beca5d9cadac25f27a4cbb28b3ce005d421d17de8bc0215257862c5"
+      },
+      {
+        "path": "lab/sessions/auto-center-20261011T002039Z-6b698ebcf9c7.json",
+        "sha256": "74c1657478a6492cdb94c0e8136c4d463f7f4b164fae0f38cec35e3018113ef7"
+      },
+      {
+        "path": "lab/sessions/auto-center-20261011T002146Z-66c2c39aa2f4.json",
+        "sha256": "0a4334447a5ce68fac007bea61cb026856b81b22bdc64d844b9fdc436dce6d2c"
+      }
+    ]
+  },
+  {
+    "file": "raw-14.zip",
+    "bytes": 742089,
+    "sha256": "10e28941a4d2d65062bde3137c4ac85ee1a49c5650e591aa85e306fc49877046",
+    "files": [
+      {
+        "path": "lab/qa/hardware-ps2-baseline.json",
+        "sha256": "770f60df3cb4fd91a29e7d4f19f562ec72599c9eb25122dfbef6f7c2581ed990"
+      },
+      {
+        "path": "lab/qa/hardware-ps2-rest.json",
+        "sha256": "62216ce50ed6f9a220e9fb51199ff8b5f49797209543796dd11ada2bc81080d1"
+      },
+      {
+        "path": "lab/qa/hardware-app-observation.txt",
+        "sha256": "f4c067ee7f2fd1a69440f6640c04b126c9bd0497b7a31af0235bb86020033840"
+      },
+      {
+        "path": "lab/qa/hardware-final-observation.txt",
+        "sha256": "29b1c81aebdea90ceb585ad409c37eb99f5483f2d85863fd375469ae1e39f130"
+      },
+      {
+        "path": "lab/qa/hardware-pressure-observation.txt",
+        "sha256": "68cfda9164af38fb403ce0275337aa5237f81439024c36e0981b1ebaa9da1e55"
+      },
+      {
+        "path": "lab/qa/hardware-ps2-real.png",
+        "sha256": "e60d92b3dd97bd0ceb90403669e4564063e975e393d23ec573406919f81d9923"
+      },
+      {
+        "path": "lab/qa/hardware-result.png",
+        "sha256": "be95f4e15a7febe92f7a168215bf41e5c56457eef3f5abc3ac00293b65437e1b"
+      },
+      {
+        "path": "lab/qa/hardware-pressure-real.png",
+        "sha256": "ed1d1ed13558cfb141df8e1233ba6064a98684c8da784f14aa23fac6844f25ef"
+      }
+    ]
+  }
+]

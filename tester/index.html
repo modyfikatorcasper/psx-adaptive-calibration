@@ -1,0 +1,209 @@
+<!doctype html>
+<html lang="pl">
+<head>
+  <meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Odczyt RAW kontrolerów PS1 i PS2 przez Modi PSX Adapter.">
+  <title>Modi PSX RAW Tester</title>
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='16' fill='%232e3440'/%3E%3Ccircle cx='32' cy='32' r='19' fill='none' stroke='%2388c0d0' stroke-width='4'/%3E%3Cpath d='M32 8v48M8 32h48' stroke='%2381a1c1' stroke-width='2'/%3E%3Ccircle cx='39' cy='25' r='5' fill='%23a3be8c'/%3E%3C/svg%3E">
+  <style>:root{color-scheme:dark;--bg:#2e3440;--panel:#3b4252;--border:#4c566a;--text:#d8dee9;--muted:#aeb6c4;--accent:#88c0d0;--accent-2:#81a1c1;--accent-3:#5e81ac;--good:#a3be8c;--bad:#bf616a;--warn:#ebcb8b;--purple:#b48ead;--radius:12px}
+*{box-sizing:border-box}body{margin:0;font:14px/1.5 "Segoe UI",system-ui,sans-serif;background:var(--bg);color:var(--text)}button,input,a,summary{ -webkit-tap-highlight-color:transparent}button,input{font:inherit}button{border:1px solid var(--border);border-radius:8px;background:var(--bg);color:var(--text);padding:9px 14px;font-weight:600;cursor:pointer;white-space:nowrap;transition:background .15s,border-color .15s}button:hover:enabled{background:#434c5e;border-color:var(--accent-2)}button:disabled{opacity:.4;cursor:not-allowed}button.primary{background:var(--accent);border-color:var(--accent);color:#242c38}button.primary:hover:enabled{background:#9ed1df}button:focus-visible,a:focus-visible,summary:focus-visible,input:focus-visible{outline:2px solid var(--accent);outline-offset:4px}a{color:var(--accent);text-decoration:none}h1,h2,h3,p{margin:0}h1{font-size:32px;letter-spacing:-1px;line-height:1.2;font-weight:650}h2{font-size:18px;font-weight:600}h3{font-size:15px;font-weight:600}p{color:var(--muted)}small,.label{color:var(--muted)}.topbar{height:70px;border-bottom:1px solid var(--border);background:linear-gradient(180deg,#363d4a,var(--bg));display:flex;align-items:center;justify-content:space-between;padding:0 max(24px,calc((100vw - 1360px)/2));gap:20px}.brand{display:flex;align-items:center;gap:10px;color:var(--text);font-size:18px;letter-spacing:-.4px}.brand b{font-size:12px;color:var(--accent);border-left:1px solid var(--border);padding-left:12px;margin-left:10px;font-weight:600;letter-spacing:.5px}.brand svg{width:34px;height:34px;stroke:var(--accent);fill:none;stroke-width:1.8}.brand .dot{fill:var(--good);stroke:var(--bg)}.top-meta{display:flex;gap:16px;align-items:center;font-size:12px;color:var(--muted)}.pill,.mode-tag,.badge{border:1px solid var(--border);border-radius:6px;padding:4px 9px;font-size:10px;letter-spacing:.6px;color:var(--muted);font-weight:650}.mode-tag{font-size:11px;align-self:center}.mode-tag.demo{color:var(--warn);border-color:#82714b;background:#ebcb8b0a}.mode-tag.live{color:var(--good);border-color:#677958}.badge{padding:3px 7px;font-size:10px}.eyebrow{color:var(--accent);font-size:10px;font-weight:650;letter-spacing:1.8px;margin-bottom:8px}main{max-width:1408px;margin:auto;padding:28px 24px 0}.heading{display:flex;justify-content:space-between;gap:20px;margin-bottom:22px}.heading p{margin-top:10px;font-size:13px}.connection{display:flex;justify-content:space-between;align-items:center;gap:20px;padding:18px 20px;background:var(--panel);border:1px solid var(--border);border-radius:var(--radius)}.connection-copy{display:flex;gap:12px;align-items:center}.connection-copy strong{font-size:14px}.connection-copy p{font-size:12px;margin-top:3px}.status-dot{flex-shrink:0;width:8px;height:8px;border-radius:50%;background:var(--muted);box-shadow:0 0 0 5px #aeb6c40d}.status-dot.live{background:var(--good);box-shadow:0 0 0 5px #a3be8c12}.status-dot.demo,.status-dot.warning{background:var(--warn);box-shadow:0 0 0 5px #ebcb8b12}.actions{display:flex;gap:8px;flex-wrap:wrap;align-items:center}.notice{border:1px solid var(--warn);padding:12px;margin-top:14px;border-radius:8px;color:var(--warn)}.metrics{display:grid;grid-template-columns:1.5fr .8fr .8fr 1fr;gap:0;margin:18px 0 22px;background:var(--panel);border:1px solid var(--border);border-radius:var(--radius);overflow:hidden}.metric{padding:15px 20px;display:flex;flex-direction:column;border-right:1px solid var(--border);font-variant-numeric:tabular-nums}.metric:last-child{border:0}.metric>span{font-size:11px;color:var(--muted);margin-bottom:6px}.metric strong{font-size:23px;letter-spacing:-.6px;font-weight:600}.metric small{font-size:10px;margin-top:3px}.metric em{color:var(--muted);font-size:17px;font-style:normal}.workspace-title{display:flex;justify-content:space-between;align-items:center;margin-bottom:14px;gap:12px}.subtle{font-weight:400;color:var(--muted);font-size:12px;margin-left:5px}.workspace-title button{padding:7px 11px;font-size:11px}.toggle{display:flex;gap:6px;align-items:center;font-size:11px;color:var(--muted);margin-left:7px;cursor:pointer}.toggle input{accent-color:var(--accent);width:14px;height:14px}.stick-grid,.detail-grid{display:grid;grid-template-columns:1fr 1fr;gap:16px}.panel{background:var(--panel);border:1px solid var(--border);border-radius:var(--radius);box-shadow:0 6px 16px -12px #0006;padding:18px}.panel-heading{display:flex;align-items:center;justify-content:space-between;gap:10px;margin-bottom:16px}.panel-heading h3{display:flex;align-items:center;gap:9px}.stick-label{display:inline-grid;place-items:center;width:25px;height:25px;background:#88c0d01a;border-radius:6px;color:var(--accent);font-size:11px}.stick-label.right{color:var(--purple);background:#b48ead1a}.axis-code{font:11px Consolas,monospace;color:var(--muted)}.stick-content{display:grid;grid-template-columns:minmax(180px,1.15fr) minmax(145px,.85fr);gap:20px;align-items:center}canvas{width:100%;height:auto;display:block;background:var(--bg);border:1px solid var(--border);border-radius:8px;aspect-ratio:1}.label{font-size:9px;letter-spacing:1px}.raw-pair{font:600 clamp(20px,2vw,29px)/1.6 Consolas,monospace;color:var(--accent);margin:2px 0 15px}.raw-pair em{color:var(--border);font-style:normal;font-weight:400}.right .raw-pair{color:var(--purple)}.stick-stat{display:flex;justify-content:space-between;gap:10px;font-size:11px;margin:10px 0}.stick-stat>span{color:var(--muted)}.stick-stat b{font-weight:500;font-variant-numeric:tabular-nums}.hint{font-size:11px;line-height:1.7;color:var(--muted)}.stick-info .hint{margin-top:15px;font-size:10px}progress{display:block;height:5px;width:100%;border:0;border-radius:5px;overflow:hidden;background:var(--bg);accent-color:var(--accent)}progress::-webkit-progress-bar{background:var(--bg)}progress::-webkit-progress-value{background:var(--accent)}progress::-moz-progress-bar{background:var(--accent)}#rightProgress::-webkit-progress-value{background:var(--purple)}.table-panel{margin:16px 0}.table-scroll{overflow-x:auto}table{width:100%;border-collapse:collapse;font-size:12px;font-variant-numeric:tabular-nums;white-space:nowrap}th,td{text-align:right;padding:10px 13px;border-bottom:1px solid var(--border)}th{color:var(--muted);font-weight:400;font-size:10px;padding-top:0}th:first-child,td:first-child{text-align:left;padding-left:0}td:first-child{color:var(--accent);font-weight:600}td.raw{font:600 19px Consolas,monospace;color:var(--accent)}tbody tr:last-child td{border:0}.table-note{margin-top:12px;font-size:10px}.buttons{display:grid;grid-template-columns:repeat(4,1fr);gap:8px}.key{padding:9px 5px;border-radius:7px;background:var(--bg);border:1px solid var(--border);color:var(--muted);text-align:center;font-size:11px}.key.on{color:#273038;background:var(--accent);border-color:var(--accent)}.key[data-bit="12"].on{background:var(--good)}.key[data-bit="13"].on{background:var(--bad)}.key[data-bit="14"].on{background:var(--accent-2)}.key[data-bit="15"].on{background:var(--purple)}.detail-grid .hint{margin-top:16px;font-size:10px}.pressures{display:grid;grid-template-columns:repeat(4,1fr);gap:17px 14px}.pressure-label{display:flex;justify-content:space-between;font-size:10px;margin-bottom:7px}.pressure-label b{font:12px Consolas,monospace;color:var(--warn)}.pressures progress::-webkit-progress-value{background:var(--warn)}.session-panel{margin:16px 0;display:grid;grid-template-columns:1fr 1fr;align-items:center;gap:30px}.session-panel .eyebrow{margin-bottom:4px}.session-panel h3{font-size:17px}.session-panel .hint{margin-top:6px}.session-name{display:flex;align-items:center;gap:10px;font-size:11px;color:var(--muted);margin-top:14px}.session-name input{width:100%;max-width:330px;background:var(--bg);border:1px solid var(--border);border-radius:6px;padding:8px 10px;color:var(--text);font-size:11px}.record-meta{display:flex;justify-content:space-between;align-items:baseline;color:var(--muted);font-size:11px;margin-bottom:16px}.record-meta strong{font-size:23px;color:var(--text);font-weight:500;font-variant-numeric:tabular-nums}.record-meta small{font-size:10px}.session-controls .actions{justify-content:flex-end}.session-controls button{font-size:11px}.recording{color:var(--bad)!important;border-color:var(--bad)}details summary{cursor:pointer;display:flex;justify-content:space-between;gap:10px;font-size:12px}summary::before{content:'+';color:var(--accent);margin-right:7px}details[open] summary::before{content:'−'}summary span{margin-left:auto;font-size:10px;color:var(--muted)}pre{font:12px/1.8 Consolas,monospace;white-space:pre-wrap;overflow-wrap:anywhere;color:var(--accent);padding:12px;background:var(--bg);border-radius:6px}.steps{display:grid;grid-template-columns:repeat(3,1fr);gap:35px;padding:26px 4px}.steps>div{position:relative;padding-left:31px}.steps span{position:absolute;left:0;top:0;color:var(--accent-2);font:11px Consolas,monospace}.steps h3{font-size:12px;margin-bottom:5px}.steps p{font-size:11px}footer{border-top:1px solid var(--border);display:flex;justify-content:space-between;gap:20px;padding:17px 0;font-size:10px;color:var(--muted)}[hidden]{display:none!important}
+@media(min-width:1600px){main{padding-top:36px}.stick-content{grid-template-columns:280px 1fr}}
+@media(max-width:1050px){.stick-content{grid-template-columns:1fr;gap:14px}.stick-panel canvas{max-width:310px;margin:auto}.stick-info{display:grid;grid-template-columns:1fr 1fr;gap:0 16px}.stick-info .label,.raw-pair,.stick-info .hint,.stick-info progress{grid-column:1/-1}.raw-pair{margin-bottom:0}.stick-info .hint{margin-top:10px}.session-panel{gap:15px}.privacy{display:none}}
+@media(max-width:760px){main{padding:20px 16px 0}.topbar{padding:0 16px;height:60px}.brand{font-size:16px}.brand b{font-size:10px;padding-left:8px;margin-left:6px}h1{font-size:27px}.heading{align-items:start}.mode-tag{font-size:9px}.connection{flex-direction:column;align-items:stretch;padding:16px}.connection .actions{margin-left:20px}.metrics{grid-template-columns:1fr 1fr}.metric{padding:13px 16px}.metric:nth-child(2){border-right:0}.metric:nth-child(-n+2){border-bottom:1px solid var(--border)}.metric strong{font-size:21px}.workspace-title{flex-direction:column;align-items:flex-start}.stick-grid,.detail-grid,.session-panel{grid-template-columns:1fr}.stick-content{grid-template-columns:1fr 1fr}.stick-info{display:block}.raw-pair{font-size:23px;margin-bottom:12px}.session-controls .actions{justify-content:flex-start}.steps{gap:16px;grid-template-columns:1fr}footer{flex-wrap:wrap}.table-panel{padding:16px}.top-meta .pill{font-size:8px}.session-name input{max-width:none}.panel{padding:16px}.pressures{gap:15px 12px}}
+@media(max-width:420px){.stick-content{grid-template-columns:1fr}.stick-panel canvas{max-width:260px}.stick-info{display:grid}.raw-pair{margin-bottom:0}.mode-tag{max-width:100px;text-align:center}.heading p{font-size:12px}.brand b{display:none}.connection .actions{margin-left:0}button{font-size:12px;padding:9px 10px}.metrics{margin-bottom:18px}.metric strong{font-size:19px}.session-controls button{padding:8px}}
+</style>
+</head>
+<body>
+<header class="topbar">
+  <a class="brand" href="#" aria-label="Modi PSX RAW Tester — początek"><svg viewBox="0 0 40 40" aria-hidden="true"><circle cx="20" cy="20" r="14"/><path d="M20 2v36M2 20h36"/><circle class="dot" cx="26" cy="14" r="4"/></svg><span>Modi <b>PSX RAW</b></span></a>
+  <div class="top-meta"><span class="pill">RAW • 1.0</span><span class="privacy">Odczyty pozostają w przeglądarce</span></div>
+</header>
+<main>
+  <div class="heading"><div><div class="eyebrow">PS1 + PS2 / ODCZYT RAW</div><h1>Zobacz, co raportuje pad.</h1><p>Diagnostyka oryginalnych wartości RAW przez Modi PSX Adapter.</p></div><div class="mode-tag" id="sourceTag">BRAK ŹRÓDŁA</div></div>
+  <section class="connection" aria-label="Połączenie">
+    <div class="connection-copy"><span id="statusDot" class="status-dot"></span><div><strong id="statusTitle">Gotowy do testu</strong><p id="status" role="status">Podłącz adapter i wybierz go przyciskiem „Połącz adapter”.</p></div></div>
+    <div class="actions"><button class="primary" id="connect">Połącz adapter <span aria-hidden="true">↗</span></button><button id="disconnect" disabled>Rozłącz</button></div>
+  </section>
+  <div class="notice" id="compatibility" hidden></div>
+  <section class="metrics" aria-label="Stan adaptera">
+    <div class="metric"><span>Kontroler / protokół</span><strong id="family">—</strong><small id="mode">Oczekiwanie na dane</small></div>
+    <div class="metric"><span>PSX ID</span><strong id="psxId">—</strong><small id="connectionState">Brak połączenia</small></div>
+    <div class="metric"><span>Raporty USB / s</span><strong id="rate">0</strong><small>Ostatnia sekunda</small></div>
+    <div class="metric"><span>Błędy PSX / luki sekwencji</span><strong id="errors">0 <em>/ 0</em></strong><small>Liczniki transportu</small></div>
+  </section>
+  <div class="workspace-title"><h2>Analogi <span class="subtle">/ RAW 0–255</span></h2><div class="actions"><button id="center" disabled>Zapisz środek · 1 s</button><button id="reset">Reset pomiarów</button><label class="toggle"><input id="trail" type="checkbox" checked> Ślad ruchu</label></div></div>
+  <div class="stick-grid">
+    <section class="panel stick-panel"><div class="panel-heading"><h3><span class="stick-label">L</span> Lewy analog</h3><span class="axis-code">LX / LY</span></div><div class="stick-content"><canvas id="left" width="360" height="360" aria-label="Wykres XY lewego analoga, wartości RAW 0 do 255"></canvas><div class="stick-info"><span class="label">POZYCJA RAW</span><div class="raw-pair" id="leftRaw">— <em>/</em> —</div><div class="stick-stat"><span>Od środka</span><b id="leftDistance">—</b></div><div class="stick-stat"><span>Pokrycie okręgu</span><b id="leftCoverage">0 / 36</b></div><progress id="leftProgress" value="0" max="36" aria-label="Pokrycie lewego analoga"></progress><div class="stick-stat"><span>Promień min / max</span><b id="leftRadius">—</b></div><p class="hint">Wykonaj powoli pełne okręgi przy krawędzi zakresu.</p></div></div></section>
+    <section class="panel stick-panel"><div class="panel-heading"><h3><span class="stick-label right">R</span> Prawy analog</h3><span class="axis-code">RX / RY</span></div><div class="stick-content"><canvas id="right" width="360" height="360" aria-label="Wykres XY prawego analoga, wartości RAW 0 do 255"></canvas><div class="stick-info"><span class="label">POZYCJA RAW</span><div class="raw-pair" id="rightRaw">— <em>/</em> —</div><div class="stick-stat"><span>Od środka</span><b id="rightDistance">—</b></div><div class="stick-stat"><span>Pokrycie okręgu</span><b id="rightCoverage">0 / 36</b></div><progress id="rightProgress" value="0" max="36" aria-label="Pokrycie prawego analoga"></progress><div class="stick-stat"><span>Promień min / max</span><b id="rightRadius">—</b></div><p class="hint">Krzyżyk oznacza zmierzony środek. Punkt to bieżąca próbka.</p></div></div></section>
+  </div>
+  <section class="panel table-panel"><div class="panel-heading"><h3>Pomiar osi</h3><span class="badge" id="centerState">Środek: brak pomiaru</span></div><div class="table-scroll"><table><thead><tr><th>Oś</th><th>RAW</th><th>Środek*</th><th>Min / max</th><th>Zakres</th><th>Jitter p-p†</th><th>σ†</th><th>Δ środka*</th><th>Δ od 128</th></tr></thead><tbody id="axes"></tbody></table></div><p class="hint table-note">* Mediana z 1 s spoczynku, zapisana w aplikacji. † Jitter i σ z ostatniej 1 s; trzymaj gałkę nieruchomo. Pokrycie: 36 sektorów, promień ≥64 RAW. Okrąg tła: środek 127,5, promień 127,5.</p></section>
+  <div class="detail-grid">
+    <section class="panel"><div class="panel-heading"><h3>Przyciski</h3><span class="badge">16 bitów PSX</span></div><div class="buttons" id="buttons"></div><p class="hint">Podświetlenie oznacza wciśnięty przycisk w poprawnej ramce.</p></section>
+    <section class="panel"><div class="panel-heading"><h3>Nacisk przycisków</h3><span class="badge">DUALSHOCK 2</span></div><div class="pressures" id="pressures"></div><p class="hint" id="pressureNote">Dostępny w trybie pressure 0x79.</p></section>
+  </div>
+  <section class="panel session-panel"><div><div class="eyebrow">REJESTRATOR</div><h3>Zapisz sesję testową</h3><p class="hint">CSV do analizy lub JSON z metadanymi i oryginalnymi ramkami. Limit: 120 000 raportów.</p><label class="session-name" for="sessionName">Nazwa sesji<input id="sessionName" maxlength="80" placeholder="np. DS2 · spoczynek po podłączeniu"></label></div><div class="session-controls"><div class="record-meta"><span id="recordState">Gotowy do zapisu</span><strong id="recordCount">0 <small>raportów</small></strong></div><div class="actions"><button id="record" disabled>● Rozpocznij zapis</button><button id="csv" disabled>Eksport CSV</button><button id="json" disabled>Eksport JSON</button></div></div></section>
+  <details class="panel transport-panel"><summary>Ramka źródłowa i diagnostyka transportu <span>HEX / MPSX v1</span></summary><pre id="native">Brak ramki</pre><div id="transport" class="hint">Oczekiwanie na dane</div></details>
+  <section class="steps"><div><span>01</span><h3>Spoczynek</h3><p>Zostaw gałki nieruchomo i użyj „Zapisz środek”, żeby powtórzyć pomiar.</p></div><div><span>02</span><h3>Zakres i nacisk</h3><p>Obróć obie gałki do oporu. Sprawdź przyciski i wartości nacisku DS2, naciskając je stopniowo.</p></div><div><span>03</span><h3>Porównanie</h3><p>Zapisz sesje przed i po ponownym podłączeniu pada. Porównaj środek, zakres i jitter.</p></div></section>
+  <footer><span>Modi PSX RAW Tester · tester Modi PSX Adapter</span><span>Bez deadzone, skalowania i wygładzania. Pomiar środka nie kalibruje pada.</span><a href="README.html">Instrukcja</a><a href="https://github.com/modyfikatorcasper/psx-adaptive-calibration">Badania i adapter DIY</a></footer>
+</main>
+<script>
+
+'use strict';
+const AXES=['RX','RY','LX','LY'];
+const PRESSURE=['Right','Left','Up','Down','Triangle','Circle','Cross','Square','L1','R1','L2','R2'];
+const BUTTONS=['Select','L3','R3','Start','Up','Right','Down','Left','L2','R2','L1','R1','Triangle','Circle','Cross','Square'];
+const FAMILIES=['UNKNOWN_PSX','PS1_DIGITAL','PS1_DUAL_ANALOG','PS1_DUALSHOCK','PS2_DUALSHOCK2'];
+function decodeReport(view){
+ if(view.byteLength!==64)throw Error('Nieprawidłowa długość raportu');
+ if([77,80,83,88].some((v,i)=>view.getUint8(i)!==v))throw Error('To nie jest protokół Modi PSX');
+ if(view.getUint8(4)!==1)throw Error('Nieobsługiwana wersja protokołu');
+ const bytes=Array.from({length:64},(_,i)=>view.getUint8(i));
+ if(bytes[42]>21)throw Error('Nieprawidłowa długość ramki PSX');
+ return {family:bytes[5],id:bytes[6],mode:bytes[7],connected:bytes[8]===1,caps:bytes[9],
+ buttons:bytes[10]|bytes[11]<<8,axes:bytes.slice(12,16),pressure:bytes.slice(16,28),
+ sequence:view.getUint32(28,true),errors:view.getUint32(32,true),poll:view.getUint16(36,true),
+ timestamp:view.getUint32(38,true),native:bytes.slice(43,43+bytes[42])};
+}
+class Measurements{
+ constructor(){this.reset();}
+ reset(){this.min=[Infinity,Infinity,Infinity,Infinity];this.max=[-Infinity,-Infinity,-Infinity,-Infinity];this.window=[];this.trail=[];this.reference=null;this.capturing=false;this.capture=[];this.captureStart=null;this.sectors=[Array(36).fill(0),Array(36).fill(0)];}
+ captureCenter(){this.capturing=true;this.reference=null;this.capture=[];this.captureStart=null;this.sectors=[Array(36).fill(0),Array(36).fill(0)];}
+ add(r,t){
+  if(!r.connected || !(r.caps&16) || !(r.caps&2) || (r.caps&8)){if(!this.reference){this.capture=[];this.captureStart=null;}return;}
+  if(!this.reference && this.window.length && t-this.window[this.window.length-1].t>100){this.capture=[];this.captureStart=null;}
+  const a=r.axes.slice();for(let i=0;i<4;i++){this.min[i]=Math.min(this.min[i],a[i]);this.max[i]=Math.max(this.max[i],a[i]);}
+  this.window.push({t,a});while(this.window.length && this.window[0].t<t-1000)this.window.shift();
+  if(this.capturing){if(this.captureStart===null)this.captureStart=t;this.capture.push(a);if(t-this.captureStart>=1000 && this.capture.length>=20){this.reference=AXES.map((_,i)=>{const v=this.capture.map(a=>a[i]).sort((a,b)=>a-b),n=v.length;return n%2?v[n>>1]:(v[n/2-1]+v[n/2])/2;});this.capturing=false;}}
+  this.trail.push(a);if(this.trail.length>1500)this.trail.shift();
+  if(this.reference)for(let stick=0;stick<2;stick++){
+   const i=stick*2,x=a[i]-this.reference[i],y=a[i+1]-this.reference[i+1],radius=Math.hypot(x,y);
+   if(radius>=64){const bin=Math.min(35,Math.floor((Math.atan2(y,x)+Math.PI)/(2*Math.PI)*36));this.sectors[stick][bin]=Math.max(this.sectors[stick][bin],radius);}
+  }
+ }
+ axis(i){if(!this.window.length)return null;const values=this.window.map(x=>x.a[i]),mean=values.reduce((a,b)=>a+b,0)/values.length;return {min:this.min[i],max:this.max[i],jitter:Math.max(...values)-Math.min(...values),sigma:Math.sqrt(values.reduce((s,v)=>s+(v-mean)**2,0)/values.length)};}
+}
+if(typeof module!=='undefined')module.exports={decodeReport,Measurements};
+
+
+</script><script>
+'use strict';
+// This layer observes reports. It never changes values or sends HID commands.
+class ReportStream {
+  constructor(measurements){this.stats=measurements;this.reset();}
+  reset(){this.stats.reset();this.last=null;this.lastAt=null;this.previous=null;this.connected=null;this.lost=0;this.received=[];}
+  accept(r,t){
+    if(this.connected!==null && this.connected!==r.connected)this.stats.reset();
+    let duplicate=false;
+    if(this.previous!==null){const delta=(r.sequence-this.previous)>>>0;duplicate=delta===0;
+      if(delta>1&&delta<0x80000000)this.lost+=delta-1;
+      else if(delta>=0x80000000){this.stats.reset();this.lost=0;}
+    }
+    this.previous=r.sequence;this.connected=r.connected;this.last=r;this.lastAt=t;this.received.push(t);
+    if(!duplicate)this.stats.add(r,t);
+    this.expire(t);
+  }
+  expire(t){while(this.received.length&&this.received[0]<t-1000)this.received.shift();while(this.stats.window.length&&this.stats.window[0].t<t-1000)this.stats.window.shift();}
+  isFresh(t){return this.lastAt!==null&&t-this.lastAt<=1000;}
+  hasAxes(t){return this.isFresh(t)&&this.last.connected&&!!(this.last.caps&2)&&!!(this.last.caps&16)&&!(this.last.caps&8);}
+}
+class SessionRecorder {
+  constructor(limit=120000){this.limit=limit;this.active=false;this.rows=[];this.meta=null;this.start=null;}
+  begin(source,name,t,date=new Date().toISOString(),device=null){this.rows=[];this.start=t;this.active=true;this.meta={application:'Modi PSX RAW Tester',version:2,protocol:'MPSX v1',source,name,startedAt:date,device,axisOrder:['RX','RY','LX','LY'],pressureOrder:['Right','Left','Up','Down','Triangle','Circle','Cross','Square','L1','R1','L2','R2'],rawUnmodified:true};}
+  add(r,t){if(!this.active)return;this.rows.push({...r,elapsedMs:Math.round((t-this.start)*1000)/1000,axes:r.axes.slice(),pressure:r.pressure.slice(),native:r.native.slice()});if(this.rows.length>=this.limit)this.stop('limit');}
+  stop(reason='user'){if(this.active){this.active=false;this.meta.stopReason=reason;}}
+  json(){return JSON.stringify({metadata:this.meta,reports:this.rows},null,2);}
+  csv(){const header=['source','elapsed_ms','sequence','timestamp_us','connected','family','psx_id','mode','flags','buttons_active_low','RX','RY','LX','LY',...['Right','Left','Up','Down','Triangle','Circle','Cross','Square','L1','R1','L2','R2'].map(x=>'pressure_'+x),'errors','nominal_poll_us','native_hex'];
+    const rows=this.rows.map(r=>[this.meta.source,r.elapsedMs,r.sequence,r.timestamp,r.connected?1:0,r.family,r.id,r.mode,r.caps,r.buttons,...r.axes,...r.pressure,r.errors,r.poll,r.native.map(x=>x.toString(16).padStart(2,'0')).join(' ')]);
+    return '\ufeff'+[header,...rows].map(row=>row.join(',')).join('\r\n')+'\r\n';
+  }
+}
+if(typeof module!=='undefined')module.exports={ReportStream,SessionRecorder};
+
+</script><script>
+'use strict';
+const $=id=>document.getElementById(id);
+const stats=new Measurements(),stream=new ReportStream(stats),recorder=new SessionRecorder();
+let device=null,source=null,opening=false,notice='',openedAt=null,decodeErrors=0;
+const names=['Nieznany PSX','Digital Pad','Dual Analog','DualShock','DualShock 2'];
+const modes={0:'Tryb cyfrowy',1:'Tryb analogowy',2:'Tryb pressure',3:'Konfiguracja',255:'Tryb niedostępny'};
+const buttonNames=['Select','L3','R3','Start','↑','→','↓','←','L2','R2','L1','R1','△ Triangle','○ Circle','× Cross','□ Square'];
+const pressureNames=['→ Right','← Left','↑ Up','↓ Down','Triangle','Circle','Cross','Square','L1','R1','L2','R2'];
+const hex=(v,n=2)=>v.toString(16).padStart(n,'0').toUpperCase();
+$('axes').innerHTML=[2,3,0,1].map(i=>`<tr id="axis${i}"><td>${AXES[i]}</td>${'<td>—</td>'.repeat(8)}</tr>`).join('');
+$('buttons').innerHTML=BUTTONS.map((b,i)=>`<div class="key" data-bit="${i}" id="button${i}" aria-label="${b}">${buttonNames[i]}</div>`).join('');
+$('pressures').innerHTML=PRESSURE.map((p,i)=>`<div><div class="pressure-label"><span>${pressureNames[i]}</span><b id="p${i}">—</b></div><progress id="bar${i}" max="255" value="0" aria-label="Nacisk ${p}"></progress></div>`).join('');
+function text(id,value){if($(id).textContent!==String(value))$(id).textContent=value;}
+function status(title,body,tone=''){text('statusTitle',title);text('status',body);$('statusDot').className='status-dot '+tone;}
+function stopRecording(reason){recorder.stop(reason);}
+function receive(r,t=performance.now()){stream.accept(r,t);recorder.add(r,t);notice='';}
+function input(e){if(e.reportId!==0)return;try{receive(decodeReport(e.data));}catch(err){decodeErrors++;notice=err.message;}}
+async function disconnect(){stopRecording('disconnect');const d=device;device=null;source=null;openedAt=null;if(d){d.removeEventListener('inputreport',input);try{if(d.opened)await d.close();}catch(err){notice='Zamknięto widok urządzenia; USB: '+err.message;}}stream.reset();}
+$('connect').onclick=async()=>{
+  if(opening)return;opening=true;notice='';
+  try{
+    if(!navigator.hid||!isSecureContext)throw Error('Otwórz tester w Chrome lub Edge przez HTTPS albo localhost. WebHID jest niedostępny w tej przeglądarce.');
+    await disconnect();
+    const known=(await navigator.hid.getDevices()).filter(d=>d.collections.some(c=>c.usagePage===0xFF00&&c.usage===1));
+    const devices=known.length===1?known:await navigator.hid.requestDevice({filters:[{usagePage:0xFF00,usage:1}]});
+    const selected=devices.find(d=>d.collections.some(c=>c.usagePage===0xFF00&&c.usage===1));
+    if(!selected){notice='Nie wybrano adaptera. Podłącz Modi PSX Adapter i spróbuj ponownie.';return;}
+    await selected.open();device=selected;device.addEventListener('inputreport',input);source='hardware';openedAt=performance.now();
+  }catch(err){notice=err.name==='NotAllowedError'?'Nie udzielono dostępu do adaptera. Spróbuj ponownie.':err.message;}finally{opening=false;}
+};
+$('disconnect').onclick=()=>{disconnect().then(()=>{notice='Rozłączono.';});};
+if(navigator.hid)navigator.hid.addEventListener('disconnect',e=>{if(e.device===device)disconnect().then(()=>{notice='Adapter USB został odłączony.';});});
+$('reset').onclick=()=>{stream.reset();notice='Pomiary zresetowane. Pozostaw gałki w spoczynku przez 1 s.';};
+$('center').onclick=()=>{stats.captureCenter();notice='Pomiar środka: nie poruszaj gałkami przez 1 s.';};
+$('record').onclick=()=>{
+  if(recorder.active){stopRecording();return;}
+  if(!source||!stream.isFresh(performance.now()))return;
+  recorder.begin(source,$('sessionName').value.trim(),performance.now(),new Date().toISOString(),device?{name:device.productName,vid:device.vendorId,pid:device.productId}:null);
+};
+function download(format){if(!recorder.rows.length)return;const data=format==='csv'?recorder.csv():recorder.json(),blob=new Blob([data],{type:format==='csv'?'text/csv;charset=utf-8':'application/json'}),url=URL.createObjectURL(blob),a=document.createElement('a');a.href=url;a.download='modi-psx-raw-'+recorder.meta.source+'-'+recorder.meta.startedAt.replace(/[:.]/g,'-')+'.'+format;a.click();setTimeout(()=>URL.revokeObjectURL(url),10000);}
+$('csv').onclick=()=>download('csv');$('json').onclick=()=>download('json');
+if(!navigator.hid||!isSecureContext){$('compatibility').hidden=false;$('compatibility').textContent='Odczyt sprzętowy wymaga przeglądarki z WebHID, np. Chrome lub Edge na komputerze, oraz HTTPS albo localhost.';}
+function plot(id,stick,t){
+  const c=$(id),ctx=c.getContext('2d'),i=stick*2,xy=(x,y)=>[26+x*308/255,26+y*308/255],color=stick===1?'#88c0d0':'#b48ead';
+  ctx.clearRect(0,0,360,360);ctx.lineWidth=1;ctx.strokeStyle='#434c5e';
+  for(let v=0;v<=255;v+=51){ctx.beginPath();ctx.moveTo(...xy(v,0));ctx.lineTo(...xy(v,255));ctx.moveTo(...xy(0,v));ctx.lineTo(...xy(255,v));ctx.stroke();}
+  ctx.strokeStyle='#5a657a';ctx.beginPath();ctx.arc(180,180,154,0,2*Math.PI);ctx.stroke();
+  ctx.setLineDash([3,5]);ctx.beginPath();ctx.moveTo(26,180);ctx.lineTo(334,180);ctx.moveTo(180,26);ctx.lineTo(180,334);ctx.stroke();ctx.setLineDash([]);
+  ctx.fillStyle='#aeb6c4';ctx.font='10px Consolas,monospace';ctx.fillText('0',25,16);ctx.fillText('255',313,16);ctx.fillText('255',1,338);ctx.fillText('128',170,351);
+  if($('trail').checked&&stats.trail.length){ctx.strokeStyle=color;ctx.globalAlpha=.45;ctx.lineWidth=1.5;ctx.beginPath();stats.trail.forEach((a,n)=>{const p=xy(a[i],a[i+1]);if(n)ctx.lineTo(...p);else ctx.moveTo(...p);});ctx.stroke();ctx.globalAlpha=1;}
+  if(stats.reference){const p=xy(stats.reference[i],stats.reference[i+1]);ctx.strokeStyle='#d8dee9';ctx.lineWidth=1.5;ctx.beginPath();ctx.moveTo(p[0]-7,p[1]);ctx.lineTo(p[0]+7,p[1]);ctx.moveTo(p[0],p[1]-7);ctx.lineTo(p[0],p[1]+7);ctx.stroke();}
+  const valid=stream.hasAxes(t),r=stream.last;
+  if(valid){ctx.fillStyle=color;ctx.strokeStyle='#2e3440';ctx.lineWidth=2;ctx.beginPath();ctx.arc(...xy(r.axes[i],r.axes[i+1]),5,0,Math.PI*2);ctx.fill();ctx.stroke();}
+  text(id+'Raw',valid?r.axes[i]+' / '+r.axes[i+1]:'— / —');
+  text(id+'Distance',valid&&stats.reference?Math.hypot(r.axes[i]-stats.reference[i],r.axes[i+1]-stats.reference[i+1]).toFixed(2)+' RAW':'—');
+  const sectors=stats.sectors[stick].filter(v=>v>0);text(id+'Coverage',sectors.length+' / 36');$(id+'Progress').value=sectors.length;
+  text(id+'Radius',sectors.length?Math.min(...sectors).toFixed(1)+' / '+Math.max(...sectors).toFixed(1):'—');
+}
+function render(t){
+  stream.expire(t);const r=stream.last,fresh=stream.isFresh(t),valid=stream.hasAxes(t);
+  text('sourceTag',source==='hardware'?'USB · RAW':'BRAK ŹRÓDŁA');$('sourceTag').className='mode-tag '+(source?'live':'');
+  $('connect').disabled=opening||!!device;$('disconnect').disabled=!source;$('center').disabled=!valid;
+  if(notice)status('Informacja',notice,'warning');
+  else if(source&&!fresh)status('Oczekiwanie na raporty',openedAt!==null&&t-openedAt>1000?'Brak świeżych danych od ponad 1 s. Sprawdź USB i zgodność firmware MPSX v1.':'Adapter otwarty. Oczekiwanie na raport MPSX…','warning');
+  else if(r&&!r.connected)status('Kontroler odłączony','Adapter działa. Brak poprawnej ramki pada przez co najmniej 30 ms.','warning');
+  else if(r&&!(r.caps&16))status('Błąd odczytu PSX','Ostatnia ramka pozostaje w diagnostyce. Nie dodajemy jej ponownie do pomiarów.','warning');
+  else if(r&&(r.caps&8))status('Konfiguracja kontrolera','Ramka 0xF3 nie zawiera danych użytkownika. Poczekaj na zakończenie konfiguracji.','warning');
+  else if(r&&r.id===0x41)status('Tryb cyfrowy — kontroler aktywny','D-pad i przyciski pozostają dostępne. Gałki nie są raportowane w trybie cyfrowym.','live');
+  else if(r)status('Odczyt RAW aktywny',valid&&!stats.reference?'Użyj „Zapisz środek” do lokalnego porównania.':'Oryginalne dane kontrolera. Pomiar środka jest tylko punktem odniesienia.','live');
+  else status('Gotowy do testu','Podłącz adapter i wybierz go przyciskiem „Połącz adapter”.');
+  text('family',r?names[r.family]||names[0]:'—');text('mode',r?(modes[r.mode]||'Nieznany tryb')+' · '+(FAMILIES[r.family]||FAMILIES[0]):'Oczekiwanie na dane');
+  text('psxId',r?'0x'+hex(r.id):'—');text('connectionState',!fresh?'Brak świeżych danych':r.connected?'Kontroler podłączony':'Kontroler odłączony');text('rate',stream.received.length);text('errors',(r?r.errors:0)+' / '+stream.lost);
+  text('centerState',stats.reference?'Środek: zapisany lokalnie':stats.capturing?'Środek: pomiar 1 s…':'Środek: brak pomiaru');
+  for(let i=0;i<4;i++){const m=stats.axis(i),ref=stats.reference?.[i],v=[valid?r.axes[i]:'—',ref===undefined?'—':ref.toFixed(2),m?m.min+' / '+m.max:'—',m?m.max-m.min:'—',m?m.jitter:'—',m?m.sigma.toFixed(2):'—',valid&&ref!==undefined?(r.axes[i]-ref).toFixed(2):'—',valid?r.axes[i]-128:'—'];Array.from($('axis'+i).children).slice(1).forEach((td,j)=>{td.textContent=v[j];td.className=j===0?'raw':'';});}
+  const userFrame=fresh&&r&&r.connected&&!!(r.caps&16)&&!(r.caps&8);
+  BUTTONS.forEach((_,i)=>$('button'+i).classList.toggle('on',userFrame&&!!(r.caps&1)&&!(r.buttons&(1<<i))));
+  const pressure=userFrame&&!!(r.caps&4);PRESSURE.forEach((_,i)=>{text('p'+i,pressure?r.pressure[i]:'—');$('bar'+i).value=pressure?r.pressure[i]:0;});text('pressureNote',pressure?'Oryginalne wartości nacisku 0–255.':'Bieżący tryb nie udostępnia świeżych danych pressure.');
+  text('native',r?r.native.map(v=>hex(v)).join(' ')||'Brak ramki natywnej':'Brak ramki');text('transport',r?'Sequence '+r.sequence+' · timestamp '+r.timestamp+' µs · nominal poll '+r.poll+' µs · flags 0x'+hex(r.caps)+' · błędy dekodera '+decodeErrors+(device?' · USB '+hex(device.vendorId,4)+':'+hex(device.productId,4):''):'Oczekiwanie na dane');
+  $('record').disabled=!recorder.active&&(!source||!fresh);$('record').textContent=recorder.active?'■ Zatrzymaj zapis':'● Rozpocznij zapis';$('record').className=recorder.active?'recording':'';
+  text('recordState',recorder.active?'Nagrywanie · '+('USB RAW'):recorder.meta?'Zapis zakończony · '+('USB RAW')+(recorder.meta.stopReason==='limit'?' · limit raportów':''):'Gotowy do zapisu');
+  text('recordCount',recorder.rows.length.toLocaleString('pl-PL')+' raportów');$('csv').disabled=$('json').disabled=!recorder.rows.length;
+  plot('left',1,t);plot('right',0,t);
+}
+let rendered=0;function tick(t){if(t-rendered>=33){render(t);rendered=t;}requestAnimationFrame(tick);}render(performance.now());requestAnimationFrame(tick);
+
+</script>
+</body></html>

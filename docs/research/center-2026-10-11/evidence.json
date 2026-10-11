@@ -1,0 +1,4180 @@
+{
+  "schema": "modi-center-publication-evidence-v1",
+  "closedDate": "2026-10-11",
+  "timezone": "Europe/Warsaw",
+  "studyStatus": "closed; no further hardware tests scheduled",
+  "sourceCodeCommit": "6b1dce03fc6efcbcb3350d61257be0b3eefa71ba",
+  "scope": "Observed controller protocol outputs on specified PS1/PS2 specimens",
+  "nominalComparisonPoint": 128,
+  "mathematicalMidpoint": 127.5,
+  "axisOrderInNativeReports": [
+    "RX",
+    "RY",
+    "LX",
+    "LY"
+  ],
+  "publishedPairOrder": [
+    "X",
+    "Y"
+  ],
+  "moduleAngle": {
+    "degrees": 60,
+    "source": "owner statement at study closure",
+    "independentlyMeasured": false,
+    "electricalVsMechanicalAngle": "not established",
+    "partNumbersAndResistanceCurves": "not established"
+  },
+  "headlineResult": {
+    "rightFirstReturnSpanXY": [
+      27,
+      27
+    ],
+    "rightSecondReturnSpanXY": [
+      2.0,
+      0
+    ],
+    "maxSingleAxisDistanceFrom128": {
+      "first": 23,
+      "second": 6
+    },
+    "leftAfterCircleReturnSpanXY": [
+      1.0,
+      0.0
+    ]
+  },
+  "percentageDefinition": "100 * RAW difference / 255 for full-span percentages",
+  "percentages": [
+    {
+      "rawDifference": 1,
+      "fullSpanPercent": 0.39
+    },
+    {
+      "rawDifference": 6,
+      "fullSpanPercent": 2.35
+    },
+    {
+      "rawDifference": 10,
+      "fullSpanPercent": 3.92
+    },
+    {
+      "rawDifference": 16,
+      "fullSpanPercent": 6.27
+    },
+    {
+      "rawDifference": 23,
+      "fullSpanPercent": 9.02
+    },
+    {
+      "rawDifference": 27,
+      "fullSpanPercent": 10.59
+    }
+  ],
+  "interpretation": "Per-return stabilization supports movement-history-dependent adaptive calibration. Exact internal formula is not established.",
+  "scopeOfOlderInterpretations": "Earlier analysis prose reflects the comparison made at that time. The final report uses every directional return, not only terminal series centers.",
+  "rawLogPolicy": "Local complete logs preserved; this package contains analyses and hashes, not complete raw streams.",
+  "sourceDataPolicy": "Source JSON data is preserved apart from removal of an absolute workstation prefix when present. sourceSha256 always identifies the original file.",
+  "verifiedPayloads": [
+    {
+      "path": "lab/sessions/auto-center-20261011T001420Z-54db0fadd23f.json",
+      "sha256": "303cb09847ced98bd713765e8e9c95ed597b565f5717b027317d4c99be4d8b8a",
+      "bytes": 1971899
+    },
+    {
+      "path": "lab/sessions/auto-center-20261011T001546Z-c2ad121fb019.json",
+      "sha256": "669cfac71beca5d9cadac25f27a4cbb28b3ce005d421d17de8bc0215257862c5",
+      "bytes": 1963876
+    },
+    {
+      "path": "lab/sessions/auto-center-20261011T002039Z-6b698ebcf9c7.json",
+      "sha256": "74c1657478a6492cdb94c0e8136c4d463f7f4b164fae0f38cec35e3018113ef7",
+      "bytes": 1974376
+    },
+    {
+      "path": "lab/sessions/auto-center-20261011T002146Z-66c2c39aa2f4.json",
+      "sha256": "0a4334447a5ce68fac007bea61cb026856b81b22bdc64d844b9fdc436dce6d2c",
+      "bytes": 1980250
+    },
+    {
+      "path": "lab/qa/center-mechanism-2026-10-10/W02-PS2-manual-circle-vs-directions-20261011T002927Z-01.jsonl",
+      "sha256": "99d3d29357c6c741a247564f7011f2b1e2b4a9ad0e17903cd6742ad5cee679a3",
+      "bytes": 4323061
+    },
+    {
+      "path": "lab/qa/center-mechanism-2026-10-10/W02-PS2-manual-circle-vs-directions-reversed-20261011T003309Z-01.jsonl",
+      "sha256": "795127b650876d3d762daabc6ceb052467c1e3d834134b02bba5bd8def531501",
+      "bytes": 4553564
+    },
+    {
+      "path": "lab/qa/center-mechanism-2026-10-10/W02-PS2-manual-per-return-left-circle-20261011T003858Z-01.jsonl",
+      "sha256": "969b07858f66f7e09a3ddbf17024c0a9925a0924100abeb5480057832a36fbf6",
+      "bytes": 7281449
+    },
+    {
+      "path": "lab/qa/center-mechanism-2026-10-10/W02-PS2-micro-movement-20261011T004432Z-01.jsonl",
+      "sha256": "1679e5e5cd606e05e3f492e2762d1290eb38d3c0cbe5ab2a55d2256833313ce9",
+      "bytes": 3792449
+    }
+  ],
+  "records": [
+    {
+      "source": "lab/qa/center-mechanism-2026-10-10/W01-powered-range-history-comparison.json",
+      "sourceSha256": "6c60b62e3e85cd16fa48cd0c01ed9ad77c9b8f1320b6ce511458d0e5c57f9934",
+      "sourceBytes": 2636,
+      "data": {
+        "specimen": "W01-PS1-MOD-BARE",
+        "axis": "LX",
+        "powerPolicy": "Continuously powered, same native segment06, no reset between movements",
+        "observations": [
+          {
+            "condition": "neutral USB startup",
+            "restLX": 128
+          },
+          {
+            "condition": "first full-right long hold",
+            "restLX": 62,
+            "nearEndpointMs": 29584.982
+          },
+          {
+            "condition": "full-left",
+            "restLX": 126,
+            "nearEndpointMs": 4887.003
+          },
+          {
+            "condition": "repeat full-right after both endpoints",
+            "restLX": 126,
+            "nearEndpointMs": 1236.99,
+            "restLY": 130,
+            "restReports": 667,
+            "restGaps": 0,
+            "stageMissingReports": 60
+          },
+          {
+            "condition": "repeat full-left after both endpoints",
+            "restLX": 126,
+            "restLY": 135,
+            "nearEndpointMs": 2101.996999999974,
+            "restReports": 667,
+            "restGaps": 0,
+            "stageSequenceDiscontinuities": []
+          },
+          {
+            "condition": "clockwise circle series",
+            "restLX": 126,
+            "restLY": 130,
+            "observedNetClockwiseTurns": 5.400914167448536,
+            "restReports": 667,
+            "restGaps": 0
+          },
+          {
+            "condition": "counterclockwise circle series",
+            "restLX": 126,
+            "restLY": 137,
+            "observedNetCounterClockwiseTurns": 3.3599670301324522,
+            "restReports": 667,
+            "restGaps": 0
+          }
+        ],
+        "inference": "After both endpoints, repeated right and left each return LX126 without power reset. Supports a range-history/calibration hypothesis, does not prove internal algorithm. Bare modified PS1 and varying LY limit generalization to stock PS2.",
+        "sources": [
+          "W01-powered-full-right-long-hold.json",
+          "W01-powered-full-left-followup-motion.json",
+          "W01-powered-full-right-after-both-motion.json",
+          "W01-powered-full-left-after-both-motion.json",
+          "W01-powered-three-circles-CW-motion.json",
+          "W01-powered-three-circles-CCW-motion.json"
+        ],
+        "status": "Powered motion sequence completed and retained",
+        "limits": "LX stayed126 after both horizontal endpoints and both circle directions; LY varied130-137. First one-sided motion changed LX128 to62 without USB reset. Does not establish exact internal formula or performance of stock PS2.",
+        "nativeCaptureManifest": "W01-startup-autoreconnect-manifest.json",
+        "nativeSegment06Sha256": "b7fa4dbc2067d4a047cdeb803d779116b1dcc073d961dcad7d5d447d05c04e20",
+        "completedFinalRest": {
+          "axisOrder": [
+            "RX",
+            "RY",
+            "LX",
+            "LY"
+          ],
+          "medians": [
+            128,
+            123,
+            126,
+            137
+          ]
+        }
+      }
+    },
+    {
+      "source": "lab/qa/center-mechanism-2026-10-10/W01-full-startup-neutral-comparison.json",
+      "sourceSha256": "5249d9d73ee012d87fc7aef8e3040ebabef5c09449281fb386a42b3d906bef7b",
+      "sourceBytes": 1470,
+      "data": {
+        "specimen": "W01-PS1-MOD-BARE",
+        "axisOrder": [
+          "RX",
+          "RY",
+          "LX",
+          "LY"
+        ],
+        "biasedStartReleased": [
+          128,
+          123,
+          64,
+          128
+        ],
+        "nextNeutralStartReleased": [
+          128,
+          123,
+          128,
+          128
+        ],
+        "shift": [
+          0,
+          0,
+          64,
+          0
+        ],
+        "nativeFiles": [
+          "W01-startup-autoreconnect-05.jsonl",
+          "W01-startup-autoreconnect-06.jsonl"
+        ],
+        "controlsPending": [
+          "Repeat biased plus neutral starts with matched motion duration if estimating a startup-specific effect"
+        ],
+        "limits": [
+          "Full right condition distinct from unverified quarter trials",
+          "Post-enumeration input capture misses early initialization",
+          "Held LY moved during biased startup",
+          "Physical release confirmed by operator, not independently measured",
+          "USB restarts both adapter and controller; standard initialization part of tested hardware path"
+        ],
+        "controlsCompleted": [
+          "Same full motion while continuously powered: first long right returnedLX62; left and subsequent right/left returnedLX126",
+          "Both circle directions completed while powered: LX126, LY130 afterCW and137 afterCCW"
+        ],
+        "interpretation": "Startup observations alone do not isolate a power-cycle effect: LX can shift without USB restart. Powered response depends on movement history. Compare stock PS2 before generalizing.",
+        "poweredControlEvidence": "W01-powered-range-history-comparison.json"
+      }
+    },
+    {
+      "source": "lab/qa/center-mechanism-2026-10-10/W02-PS2-powered-range-history-comparison.json",
+      "sourceSha256": "743f326667a964a1f6980ab9aa78cf51d0ba700b108938f04143b62d4ba04ac3",
+      "sourceBytes": 2256,
+      "data": {
+        "specimen": "W02-PS2-STOCK",
+        "axisOrder": [
+          "RX",
+          "RY",
+          "LX",
+          "LY"
+        ],
+        "powerPolicy": "No reset during powered moves; same segment02",
+        "observations": [
+          {
+            "condition": "neutral baseline",
+            "medians": [
+              136,
+              142,
+              117,
+              128
+            ]
+          },
+          {
+            "condition": "first full right",
+            "medians": [
+              137,
+              142,
+              114,
+              130
+            ]
+          },
+          {
+            "condition": "first full left",
+            "medians": [
+              137,
+              142,
+              143,
+              129
+            ]
+          },
+          {
+            "condition": "repeated full right after both endpoints",
+            "medians": [
+              136,
+              142,
+              139,
+              128
+            ]
+          },
+          {
+            "condition": "repeated full left after both endpoints",
+            "medians": [
+              137,
+              142,
+              144,
+              131
+            ]
+          },
+          {
+            "condition": "Spoczynek początkowy",
+            "medians": [
+              136.5,
+              142,
+              143,
+              128
+            ],
+            "method": "App last1s of2s release interval",
+            "observedTurns": null
+          },
+          {
+            "condition": "Lewy · 3 okręgi zgodnie z zegarem",
+            "medians": [
+              137,
+              142,
+              138,
+              127
+            ],
+            "method": "App last1s of2s release interval",
+            "observedTurns": 3.003945232350036
+          },
+          {
+            "condition": "Lewy · 3 okręgi przeciwnie do zegara",
+            "medians": [
+              136.5,
+              142,
+              143,
+              128
+            ],
+            "method": "App last1s of2s release interval",
+            "observedTurns": 3.1716471418286223
+          }
+        ],
+        "sources": [
+          "W02-PS2-neutral-baseline.json",
+          "W02-PS2-powered-first-right-motion.json",
+          "W02-PS2-powered-first-left-motion.json",
+          "W02-PS2-powered-repeat-right-motion.json",
+          "W02-PS2-powered-repeat-left-motion.json",
+          "W02-PS2-circles-automatic-verified.json"
+        ],
+        "interpretation": "LX series117,114,143,139,144. Second horizontal round differs by5RAW between directions; first round differed29RAW. Supports movement-history dependence, with residual return variation. Internal calibration and mechanical contributions are not isolated."
+      }
+    },
+    {
+      "source": "lab/qa/center-mechanism-2026-10-10/W02-PS2-post-motion-neutral-USB-control-result.json",
+      "sourceSha256": "5d043d3e774c144cd9937c1b11b32379653ebb14ac0888040f99c0a5f0837368",
+      "sourceBytes": 2177,
+      "data": {
+        "specimen": "W02-PS2-STOCK",
+        "method": "Independent later native rest windows; not atomic/shared timing with browser results. Host/operator stage labels; no independent physical motion witness.",
+        "captureSegment": "lab\\qa\\center-mechanism-2026-10-10\\W02-PS2-continuation-02.jsonl",
+        "firstCapturedAfterEnumeration": {
+          "elapsedMs": 3.531,
+          "sequence": 155,
+          "axesRXRYLXLY": [
+            149,
+            141,
+            126,
+            131
+          ],
+          "nativeID": "0x79",
+          "caps": 23
+        },
+        "preResetRestRXRYLXLY": [
+          134,
+          108,
+          138,
+          128
+        ],
+        "postResetRestRXRYLXLY": [
+          149,
+          141,
+          126,
+          131
+        ],
+        "deltaRXRYLXLY": [
+          15,
+          33,
+          -12,
+          3
+        ],
+        "rest": {
+          "stage": "W02-PS2-post-motion-neutral-USB-control",
+          "phase": "released-confirmed-rest",
+          "source": "hardware ReadFile",
+          "window": "last3000ms of this rest block, after at least2000ms settling",
+          "windowElapsedMs": [
+            37930.59,
+            40927.68
+          ],
+          "count": 667,
+          "validRestWindow": true,
+          "sequenceGaps": 0,
+          "sequenceFirstLast": [
+            8583,
+            9249
+          ],
+          "packetErrorsFirstLast": [
+            0,
+            0
+          ],
+          "axes": [
+            {
+              "axis": "RX",
+              "median": 149,
+              "min": 149,
+              "max": 149
+            },
+            {
+              "axis": "RY",
+              "median": 141,
+              "min": 141,
+              "max": 141
+            },
+            {
+              "axis": "LX",
+              "median": 126,
+              "min": 126,
+              "max": 126
+            },
+            {
+              "axis": "LY",
+              "median": 131,
+              "min": 130,
+              "max": 131
+            }
+          ]
+        },
+        "nativeFrameAxesEqual": true,
+        "nativeFrameMatchCount": 667,
+        "commandsSentByNativeLogger": 0,
+        "conditions": "Operator reported USB reinserted after instruction to keep both sticks released. Physical insertion/release time not independently measured. Standard adapter initialization active; browser monitoring reconnected.",
+        "interpretation": "Observed centers changed after USB power cycle and standard initialization. This does not isolate internal PS2 algorithm nor prove exact calibration formula."
+      }
+    },
+    {
+      "source": "lab/qa/center-mechanism-2026-10-10/startup-and-motion-inference-comparison.json",
+      "sourceSha256": "01a95693c5c68a2dc308301217403a7604bcb017392368336d375722b0e6799a",
+      "sourceBytes": 5789,
+      "data": {
+        "analysisDateEuropeWarsaw": "2026-10-11",
+        "reference": "128/128 used as conventional RAW center comparison; native range0..255 midpoint127.5",
+        "neutralStarts": [
+          {
+            "specimen": "W01-PS1-MOD-BARE",
+            "condition": "N1 neutral",
+            "axesRXRYLXLY": [
+              130,
+              128,
+              126,
+              138
+            ],
+            "source": "W01-startup-repetition1-summary.json",
+            "limits": [
+              "Initial N1 unplug duration unconfirmed",
+              "Startup deflections described by operator; not measured during USB insertion",
+              "Early initialization not captured in native RAW; TX/RX trace overflow occurred",
+              "Bare PCB handling and mechanics may affect results; intended stationary right stick changed after L",
+              "No internal calibration mechanism established; repetitions and powered motion control needed"
+            ],
+            "allFourExactly128": false
+          },
+          {
+            "specimen": "W01-PS1-MOD-BARE",
+            "condition": "N2 neutral",
+            "axesRXRYLXLY": [
+              130,
+              128,
+              128,
+              130
+            ],
+            "source": "W01-startup-repetition1-summary.json",
+            "limits": [
+              "Initial N1 unplug duration unconfirmed",
+              "Startup deflections described by operator; not measured during USB insertion",
+              "Early initialization not captured in native RAW; TX/RX trace overflow occurred",
+              "Bare PCB handling and mechanics may affect results; intended stationary right stick changed after L",
+              "No internal calibration mechanism established; repetitions and powered motion control needed"
+            ],
+            "allFourExactly128": false
+          },
+          {
+            "specimen": "W01-PS1-MOD-BARE",
+            "condition": "N3 neutral",
+            "axesRXRYLXLY": [
+              131,
+              123,
+              128,
+              138
+            ],
+            "source": "W01-startup-repetition1-summary.json",
+            "limits": [
+              "Initial N1 unplug duration unconfirmed",
+              "Startup deflections described by operator; not measured during USB insertion",
+              "Early initialization not captured in native RAW; TX/RX trace overflow occurred",
+              "Bare PCB handling and mechanics may affect results; intended stationary right stick changed after L",
+              "No internal calibration mechanism established; repetitions and powered motion control needed"
+            ],
+            "allFourExactly128": false
+          },
+          {
+            "specimen": "W01-PS1-MOD-BARE",
+            "condition": "N1 neutral repetition2",
+            "axesRXRYLXLY": [
+              131,
+              123,
+              128,
+              138
+            ],
+            "source": "W01-startup-rep2-N1-rest.json",
+            "allFourExactly128": false
+          },
+          {
+            "specimen": "W01-PS1-MOD-BARE",
+            "condition": "Neutral USB after full-right startup control",
+            "axesRXRYLXLY": [
+              128,
+              123,
+              128,
+              128
+            ],
+            "source": "W01-full-startup-neutral-comparison.json",
+            "limits": [
+              "Full right condition distinct from unverified quarter trials",
+              "Post-enumeration input capture misses early initialization",
+              "Held LY moved during biased startup",
+              "Physical release confirmed by operator, not independently measured",
+              "USB restarts both adapter and controller; standard initialization part of tested hardware path"
+            ],
+            "allFourExactly128": false
+          },
+          {
+            "specimen": "W02-PS2-STOCK",
+            "condition": "Initial neutral startup baseline",
+            "axesRXRYLXLY": [
+              136,
+              142,
+              117,
+              128
+            ],
+            "source": "W02-PS2-neutral-baseline.json",
+            "allFourExactly128": false
+          },
+          {
+            "specimen": "W02-PS2-STOCK",
+            "condition": "Neutral USB after motion series",
+            "axesRXRYLXLY": [
+              149,
+              141,
+              126,
+              131
+            ],
+            "source": "W02-PS2-post-motion-neutral-USB-control-result.json",
+            "allFourExactly128": false
+          }
+        ],
+        "startsWithAllFourExactly128": 0,
+        "selectedNeutralStartsCount": 7,
+        "PS2SameRestartDistanceFrom128": {
+          "right": {
+            "before": 20.8806130178211,
+            "after": 24.698178070456937
+          },
+          "left": {
+            "before": 10.0,
+            "after": 3.605551275463989
+          }
+        },
+        "counterexampleToMoreCirclesAlwaysBetter": {
+          "specimen": "W02-PS2-STOCK",
+          "leftBaseline": [
+            143,
+            128
+          ],
+          "afterCW": [
+            138,
+            127
+          ],
+          "afterCCW": [
+            143,
+            128
+          ],
+          "source": "W02-PS2-powered-range-history-comparison.json"
+        },
+        "facts": [
+          "Restart does not guarantee nominal center.",
+          "Changed centers already present in controller protocol response.",
+          "Within powered PS1 sequence, first unilateral extreme shiftedLX128to62; both horizontal endpoints followed by repeat movements producedLX126.",
+          "PS1 powered circle LY130 then137 is counterexample to universal improvement with repeated circles."
+        ],
+        "workingHypothesis": "Controller axis mapping depends on movement/range history and initialization; quality of mechanical return may affect obtainable repeatability.",
+        "notEstablished": [
+          "Exact internal algorithm; continuous rest-state detection; filtering/clamping formula; resistance-track geometry effect.",
+          "Monotonic improvement as circle count increases.",
+          "Isolated hardware-quality causal correlation across PS1 versus PS2, different boards/firmware/modules/bare versus assembled conditions.",
+          "Absence of calibration during boot: a non128 result cannot establish that boot calibration did not occur."
+        ],
+        "powerControlLimit": "USB reinitializes both adapter and controller; standard initialization remains part of observed effect.",
+        "newHardwareTestsStarted": false
+      }
+    },
+    {
+      "source": "lab/qa/center-mechanism-2026-10-10/W02-PS2-before-after-new-modules-comparison.json",
+      "sourceSha256": "ff931fa8029b0f7826f6bbbc7dba7f463236dca9a408e41080f5c7a6b5ae0a99",
+      "sourceBytes": 3861,
+      "data": {
+        "specimenAfter": "W02-PS2-NEW-MODULES",
+        "specimenBefore": "W02-PS2-STOCK",
+        "newRawReportsTotal": 20905,
+        "allNewReportsMatchedIndependentUSB": true,
+        "comparisonReference": "128/128 conventional nominal point; exact range midpoint127.5",
+        "comparisons": [
+          {
+            "stick": "left",
+            "beforeFile": "W02-PS2-post-reset-left-circles-attempt3-verified.json",
+            "afterFile": "W02-PS2-new-modules-left-verified.json",
+            "rows": [
+              {
+                "circleDirection": 1,
+                "beforeCenter": [
+                  143,
+                  123
+                ],
+                "afterCenter": [
+                  128,
+                  125
+                ],
+                "beforeDistanceTo128": 15.811388300841896,
+                "afterDistanceTo128": 3.0,
+                "beforeObservedTurns": 2.9769515062914147,
+                "afterObservedTurns": 4.542476277465448
+              },
+              {
+                "circleDirection": -1,
+                "beforeCenter": [
+                  138,
+                  119
+                ],
+                "afterCenter": [
+                  129,
+                  126
+                ],
+                "beforeDistanceTo128": 13.45362404707371,
+                "afterDistanceTo128": 2.23606797749979,
+                "beforeObservedTurns": 2.9843177723783043,
+                "afterObservedTurns": 3.6821902108757967
+              }
+            ],
+            "beforeBetweenCircleCenterDelta": [
+              -5,
+              -4
+            ],
+            "afterBetweenCircleCenterDelta": [
+              1,
+              1
+            ]
+          },
+          {
+            "stick": "right",
+            "beforeFile": "W02-PS2-right-circles-automatic-attempt2-verified.json",
+            "afterFile": "W02-PS2-new-modules-right-verified.json",
+            "rows": [
+              {
+                "circleDirection": 1,
+                "beforeCenter": [
+                  125,
+                  107
+                ],
+                "afterCenter": [
+                  131,
+                  121
+                ],
+                "beforeDistanceTo128": 21.213203435596427,
+                "afterDistanceTo128": 7.615773105863909,
+                "beforeObservedTurns": 3.384588533583745,
+                "afterObservedTurns": 3.399726670982626
+              },
+              {
+                "circleDirection": -1,
+                "beforeCenter": [
+                  134,
+                  108
+                ],
+                "afterCenter": [
+                  134,
+                  124
+                ],
+                "beforeDistanceTo128": 20.8806130178211,
+                "afterDistanceTo128": 7.211102550927978,
+                "beforeObservedTurns": 3.134281735426524,
+                "afterObservedTurns": 4.345593747677874
+              }
+            ],
+            "beforeBetweenCircleCenterDelta": [
+              9,
+              1
+            ],
+            "afterBetweenCircleCenterDelta": [
+              3,
+              3
+            ]
+          }
+        ],
+        "facts": [
+          "Both after-replacement runs completed4directions and both circles.",
+          "After-replacement first unilateral directions still cause large center shifts, then opposite endpoints bring centers back toward nominal.",
+          "Selected post-circle centers are nearer nominal after replacement in both sticks.",
+          "Neither stick returns exactly128/128 after all circles."
+        ],
+        "inference": "New modules improve reported post-range centering in this paired same-board specimen; history-dependent adaptation remains visible. Supports module/board interaction, not exact internal formula or universal monotonic improvement.",
+        "limits": [
+          "Before circle runs followed different preceding manual/automatic movement histories. Same circle timing used, actual turns retained.",
+          "One board, one replacement; no repeated matched power/motion cycles after repair.",
+          "Replacement module model, assembly condition and electrical module characteristics not yet specified.",
+          "Physical neutral inferred from timed cues.",
+          "A two-return difference is descriptive, not statistically established repeatability over many returns."
+        ],
+        "nextTestStarted": false
+      }
+    },
+    {
+      "source": "lab/qa/center-mechanism-2026-10-10/W02-PS2-new-modules-first-vs-repeat-comparison.json",
+      "sourceSha256": "dbe34d4413671553d286cbdfd08d046dbedd76872435b6447c50e60e38f3edfa",
+      "sourceBytes": 5351,
+      "data": {
+        "specimen": "W02-PS2-NEW-MODULES",
+        "USBResetPerformed": false,
+        "axisOrder": [
+          "RX",
+          "RY",
+          "LX",
+          "LY"
+        ],
+        "interpretation": "Second full-range series has small reported return changes, unlike first series. Consistent with history-dependent adaptation; no internal firmware formula or RAM implementation established.",
+        "limits": [
+          "Same-board replacement reported by operator. Module model/resistance/assembly unknown.",
+          "Release timing follows visible cue; mechanical neutral not independently measured.",
+          "Circle counts vary; do not claim exact movement-dose matching.",
+          "One specimen, one replacement, no population-level inference."
+        ],
+        "trials": {
+          "left": {
+            "pairs": [
+              {
+                "name": "Spoczynek początkowy",
+                "firstCenter": [
+                  135,
+                  126
+                ],
+                "repeatCenter": [
+                  128,
+                  125
+                ],
+                "firstObservedTurns": null,
+                "repeatObservedTurns": null
+              },
+              {
+                "name": "Lewy · góra",
+                "firstCenter": [
+                  133,
+                  156
+                ],
+                "repeatCenter": [
+                  129,
+                  125
+                ],
+                "firstObservedTurns": 0,
+                "repeatObservedTurns": 0
+              },
+              {
+                "name": "Lewy · prawo",
+                "firstCenter": [
+                  105,
+                  156
+                ],
+                "repeatCenter": [
+                  129,
+                  125
+                ],
+                "firstObservedTurns": 0,
+                "repeatObservedTurns": 0
+              },
+              {
+                "name": "Lewy · dół",
+                "firstCenter": [
+                  107,
+                  127
+                ],
+                "repeatCenter": [
+                  128,
+                  125
+                ],
+                "firstObservedTurns": 0,
+                "repeatObservedTurns": 0
+              },
+              {
+                "name": "Lewy · lewo",
+                "firstCenter": [
+                  129,
+                  127
+                ],
+                "repeatCenter": [
+                  127,
+                  125
+                ],
+                "firstObservedTurns": 0,
+                "repeatObservedTurns": 0
+              },
+              {
+                "name": "Lewy · 3 okręgi zgodnie z zegarem",
+                "firstCenter": [
+                  128,
+                  125
+                ],
+                "repeatCenter": [
+                  129,
+                  126
+                ],
+                "firstObservedTurns": 4.542476277465448,
+                "repeatObservedTurns": 3.206866582970144
+              },
+              {
+                "name": "Lewy · 3 okręgi przeciwnie do zegara",
+                "firstCenter": [
+                  129,
+                  126
+                ],
+                "repeatCenter": [
+                  130,
+                  126
+                ],
+                "firstObservedTurns": 3.6821902108757967,
+                "repeatObservedTurns": 3.096849806421334
+              }
+            ],
+            "repeatMaximumAxisShiftFromBaseline": 2,
+            "firstMaximumAxisShiftFromBaseline": 30,
+            "verifiedRepeatReports": 10453
+          },
+          "right": {
+            "pairs": [
+              {
+                "name": "Spoczynek początkowy",
+                "firstCenter": [
+                  127,
+                  134
+                ],
+                "repeatCenter": [
+                  132,
+                  124
+                ],
+                "firstObservedTurns": null,
+                "repeatObservedTurns": null
+              },
+              {
+                "name": "Prawy · góra",
+                "firstCenter": [
+                  130,
+                  150
+                ],
+                "repeatCenter": [
+                  132,
+                  123
+                ],
+                "firstObservedTurns": 0,
+                "repeatObservedTurns": 0
+              },
+              {
+                "name": "Prawy · prawo",
+                "firstCenter": [
+                  106,
+                  150
+                ],
+                "repeatCenter": [
+                  134,
+                  124
+                ],
+                "firstObservedTurns": 0,
+                "repeatObservedTurns": 0
+              },
+              {
+                "name": "Prawy · dół",
+                "firstCenter": [
+                  106,
+                  122
+                ],
+                "repeatCenter": [
+                  133,
+                  124
+                ],
+                "firstObservedTurns": 0,
+                "repeatObservedTurns": 0
+              },
+              {
+                "name": "Prawy · lewo",
+                "firstCenter": [
+                  131,
+                  122
+                ],
+                "repeatCenter": [
+                  132,
+                  124
+                ],
+                "firstObservedTurns": 0,
+                "repeatObservedTurns": 0
+              },
+              {
+                "name": "Prawy · 3 okręgi zgodnie z zegarem",
+                "firstCenter": [
+                  131,
+                  121
+                ],
+                "repeatCenter": [
+                  132,
+                  124
+                ],
+                "firstObservedTurns": 3.399726670982626,
+                "repeatObservedTurns": 3.4984137906302357
+              },
+              {
+                "name": "Prawy · 3 okręgi przeciwnie do zegara",
+                "firstCenter": [
+                  134,
+                  124
+                ],
+                "repeatCenter": [
+                  133,
+                  124
+                ],
+                "firstObservedTurns": 4.345593747677874,
+                "repeatObservedTurns": 3.0475075804695884
+              }
+            ],
+            "repeatMaximumAxisShiftFromBaseline": 2,
+            "firstMaximumAxisShiftFromBaseline": 21,
+            "verifiedRepeatReports": 10450
+          }
+        }
+      }
+    },
+    {
+      "source": "lab/qa/center-mechanism-2026-10-10/W02-PS2-new-modules-left-verified.json",
+      "sourceSha256": "c11dee4feff53177f2087afaeec9aae6fd2617d739259fd645dc14fcc8aa4609",
+      "sourceBytes": 9695,
+      "data": {
+        "specimen": "W02-PS2-NEW-MODULES",
+        "source": "hardware",
+        "archive": "lab\\sessions\\auto-center-20261011T001420Z-54db0fadd23f.json",
+        "sha256": "303cb09847ced98bd713765e8e9c95ed597b565f5717b027317d4c99be4d8b8a",
+        "phase": "done",
+        "config": {
+          "stick": "left",
+          "fraction": 1,
+          "repetitions": 1,
+          "test": "both",
+          "prepareMs": 3000,
+          "moveMs": 3000,
+          "restMs": 2000,
+          "settleMs": 1000,
+          "captureMs": 1000,
+          "circleMs": 9000,
+          "circleCount": 3,
+          "minimumObservedTurns": 2.95
+        },
+        "axisOrder": [
+          "RX",
+          "RY",
+          "LX",
+          "LY"
+        ],
+        "rawReports": 10454,
+        "matchedIndependentReports": 10454,
+        "independentMismatches": [],
+        "nonUnitSequenceDeltas": 0,
+        "invalidCaps": 0,
+        "nonzeroErrorReports": 0,
+        "nativeFrameAxesEqual": true,
+        "commandsSent": 0,
+        "results": [
+          {
+            "name": "Spoczynek początkowy",
+            "step": null,
+            "axes": [
+              {
+                "median": 127,
+                "min": 127,
+                "max": 127,
+                "spread": 0,
+                "count": 223
+              },
+              {
+                "median": 134,
+                "min": 134,
+                "max": 134,
+                "spread": 0,
+                "count": 223
+              },
+              {
+                "median": 135,
+                "min": 135,
+                "max": 135,
+                "spread": 0,
+                "count": 223
+              },
+              {
+                "median": 126,
+                "min": 126,
+                "max": 126,
+                "spread": 0,
+                "count": 223
+              }
+            ],
+            "shift": [
+              0,
+              0,
+              0,
+              0
+            ],
+            "movement": null,
+            "releaseConfirmation": "timed cue; no independent physical neutral-position witness",
+            "elapsedMs": 5002.299999952316
+          },
+          {
+            "name": "Lewy · góra",
+            "step": {
+              "kind": "direction",
+              "stick": 1,
+              "direction": 0,
+              "rep": 1,
+              "name": "Lewy · góra"
+            },
+            "axes": [
+              {
+                "median": 127,
+                "min": 127,
+                "max": 127,
+                "spread": 0,
+                "count": 222
+              },
+              {
+                "median": 134,
+                "min": 134,
+                "max": 134,
+                "spread": 0,
+                "count": 222
+              },
+              {
+                "median": 133,
+                "min": 133,
+                "max": 133,
+                "spread": 0,
+                "count": 222
+              },
+              {
+                "median": 156,
+                "min": 155,
+                "max": 156,
+                "spread": 1,
+                "count": 222
+              }
+            ],
+            "shift": [
+              0,
+              0,
+              -2,
+              30
+            ],
+            "movement": {
+              "peak": {
+                "value": 0,
+                "error": 0,
+                "target": 0,
+                "axis": 3
+              },
+              "excursion": 126,
+              "arc": 0,
+              "observedTurns": 0,
+              "lastAngle": null
+            },
+            "releaseConfirmation": "timed cue; no independent physical neutral-position witness",
+            "elapsedMs": 10010.299999952316
+          },
+          {
+            "name": "Lewy · prawo",
+            "step": {
+              "kind": "direction",
+              "stick": 1,
+              "direction": 1,
+              "rep": 1,
+              "name": "Lewy · prawo"
+            },
+            "axes": [
+              {
+                "median": 127,
+                "min": 127,
+                "max": 127,
+                "spread": 0,
+                "count": 222
+              },
+              {
+                "median": 134,
+                "min": 134,
+                "max": 134,
+                "spread": 0,
+                "count": 222
+              },
+              {
+                "median": 105,
+                "min": 105,
+                "max": 105,
+                "spread": 0,
+                "count": 222
+              },
+              {
+                "median": 156,
+                "min": 156,
+                "max": 156,
+                "spread": 0,
+                "count": 222
+              }
+            ],
+            "shift": [
+              0,
+              0,
+              -30,
+              30
+            ],
+            "movement": {
+              "peak": {
+                "value": 255,
+                "error": 0,
+                "target": 255,
+                "axis": 2
+              },
+              "excursion": 120,
+              "arc": 0,
+              "observedTurns": 0,
+              "lastAngle": null
+            },
+            "releaseConfirmation": "timed cue; no independent physical neutral-position witness",
+            "elapsedMs": 15015.299999952316
+          },
+          {
+            "name": "Lewy · dół",
+            "step": {
+              "kind": "direction",
+              "stick": 1,
+              "direction": 2,
+              "rep": 1,
+              "name": "Lewy · dół"
+            },
+            "axes": [
+              {
+                "median": 127,
+                "min": 127,
+                "max": 127,
+                "spread": 0,
+                "count": 221
+              },
+              {
+                "median": 134,
+                "min": 134,
+                "max": 134,
+                "spread": 0,
+                "count": 221
+              },
+              {
+                "median": 107,
+                "min": 107,
+                "max": 107,
+                "spread": 0,
+                "count": 221
+              },
+              {
+                "median": 127,
+                "min": 127,
+                "max": 127,
+                "spread": 0,
+                "count": 221
+              }
+            ],
+            "shift": [
+              0,
+              0,
+              -28,
+              1
+            ],
+            "movement": {
+              "peak": {
+                "value": 255,
+                "error": 0,
+                "target": 255,
+                "axis": 3
+              },
+              "excursion": 129,
+              "arc": 0,
+              "observedTurns": 0,
+              "lastAngle": null
+            },
+            "releaseConfirmation": "timed cue; no independent physical neutral-position witness",
+            "elapsedMs": 20016.199999928474
+          },
+          {
+            "name": "Lewy · lewo",
+            "step": {
+              "kind": "direction",
+              "stick": 1,
+              "direction": 3,
+              "rep": 1,
+              "name": "Lewy · lewo"
+            },
+            "axes": [
+              {
+                "median": 127,
+                "min": 127,
+                "max": 127,
+                "spread": 0,
+                "count": 220
+              },
+              {
+                "median": 134,
+                "min": 134,
+                "max": 134,
+                "spread": 0,
+                "count": 220
+              },
+              {
+                "median": 129,
+                "min": 129,
+                "max": 129,
+                "spread": 0,
+                "count": 220
+              },
+              {
+                "median": 127,
+                "min": 127,
+                "max": 127,
+                "spread": 0,
+                "count": 220
+              }
+            ],
+            "shift": [
+              0,
+              0,
+              -6,
+              1
+            ],
+            "movement": {
+              "peak": {
+                "value": 0,
+                "error": 0,
+                "target": 0,
+                "axis": 2
+              },
+              "excursion": 135,
+              "arc": 0,
+              "observedTurns": 0,
+              "lastAngle": null
+            },
+            "releaseConfirmation": "timed cue; no independent physical neutral-position witness",
+            "elapsedMs": 25022
+          },
+          {
+            "name": "Lewy · 3 okręgi zgodnie z zegarem",
+            "step": {
+              "kind": "circle",
+              "stick": 1,
+              "sign": 1,
+              "rep": 1,
+              "name": "Lewy · 3 okręgi zgodnie z zegarem"
+            },
+            "axes": [
+              {
+                "median": 127,
+                "min": 127,
+                "max": 127,
+                "spread": 0,
+                "count": 217
+              },
+              {
+                "median": 134,
+                "min": 134,
+                "max": 134,
+                "spread": 0,
+                "count": 217
+              },
+              {
+                "median": 128,
+                "min": 128,
+                "max": 128,
+                "spread": 0,
+                "count": 217
+              },
+              {
+                "median": 125,
+                "min": 125,
+                "max": 125,
+                "spread": 0,
+                "count": 217
+              }
+            ],
+            "shift": [
+              0,
+              0,
+              -7,
+              -1
+            ],
+            "movement": {
+              "peak": null,
+              "excursion": 175.06855799943062,
+              "arc": 28.541220204782725,
+              "observedTurns": 4.542476277465448,
+              "lastAngle": null
+            },
+            "releaseConfirmation": "timed cue; no independent physical neutral-position witness",
+            "elapsedMs": 36028.39999997616
+          },
+          {
+            "name": "Lewy · 3 okręgi przeciwnie do zegara",
+            "step": {
+              "kind": "circle",
+              "stick": 1,
+              "sign": -1,
+              "rep": 1,
+              "name": "Lewy · 3 okręgi przeciwnie do zegara"
+            },
+            "axes": [
+              {
+                "median": 127,
+                "min": 127,
+                "max": 127,
+                "spread": 0,
+                "count": 222
+              },
+              {
+                "median": 134,
+                "min": 134,
+                "max": 134,
+                "spread": 0,
+                "count": 222
+              },
+              {
+                "median": 129,
+                "min": 129,
+                "max": 129,
+                "spread": 0,
+                "count": 222
+              },
+              {
+                "median": 126,
+                "min": 126,
+                "max": 126,
+                "spread": 0,
+                "count": 222
+              }
+            ],
+            "shift": [
+              0,
+              0,
+              -6,
+              0
+            ],
+            "movement": {
+              "peak": null,
+              "excursion": 164.80594649465777,
+              "arc": 23.13588343121531,
+              "observedTurns": 3.6821902108757967,
+              "lastAngle": null
+            },
+            "releaseConfirmation": "timed cue; no independent physical neutral-position witness",
+            "elapsedMs": 47035.799999952316
+          }
+        ],
+        "unselectedRightAxesMinMax": [
+          [
+            127,
+            127
+          ],
+          [
+            133,
+            134
+          ]
+        ],
+        "limits": [
+          "Operator-reported module replacement and same PS2 board; module model and assembly not specified.",
+          "Timed release cue, no independent mechanical neutral witness.",
+          "First native capture follows startup and enumeration."
+        ]
+      }
+    },
+    {
+      "source": "lab/qa/center-mechanism-2026-10-10/W02-PS2-new-modules-right-verified.json",
+      "sourceSha256": "081808ab3c90a477a3b64ab9fd5302258686376a05cb15991ebbceb6dc706267",
+      "sourceBytes": 9662,
+      "data": {
+        "specimen": "W02-PS2-NEW-MODULES",
+        "source": "hardware",
+        "archive": "lab\\sessions\\auto-center-20261011T001546Z-c2ad121fb019.json",
+        "sha256": "669cfac71beca5d9cadac25f27a4cbb28b3ce005d421d17de8bc0215257862c5",
+        "phase": "done",
+        "config": {
+          "stick": "right",
+          "fraction": 1,
+          "repetitions": 1,
+          "test": "both",
+          "prepareMs": 3000,
+          "moveMs": 3000,
+          "restMs": 2000,
+          "settleMs": 1000,
+          "captureMs": 1000,
+          "circleMs": 9000,
+          "circleCount": 3,
+          "minimumObservedTurns": 2.95
+        },
+        "axisOrder": [
+          "RX",
+          "RY",
+          "LX",
+          "LY"
+        ],
+        "rawReports": 10451,
+        "matchedIndependentReports": 10451,
+        "independentMismatches": [],
+        "nonUnitSequenceDeltas": 0,
+        "invalidCaps": 0,
+        "nonzeroErrorReports": 0,
+        "nativeFrameAxesEqual": true,
+        "commandsSent": 0,
+        "results": [
+          {
+            "name": "Spoczynek początkowy",
+            "step": null,
+            "axes": [
+              {
+                "median": 127,
+                "min": 127,
+                "max": 127,
+                "spread": 0,
+                "count": 222
+              },
+              {
+                "median": 134,
+                "min": 134,
+                "max": 134,
+                "spread": 0,
+                "count": 222
+              },
+              {
+                "median": 129,
+                "min": 129,
+                "max": 129,
+                "spread": 0,
+                "count": 222
+              },
+              {
+                "median": 126,
+                "min": 126,
+                "max": 126,
+                "spread": 0,
+                "count": 222
+              }
+            ],
+            "shift": [
+              0,
+              0,
+              0,
+              0
+            ],
+            "movement": null,
+            "releaseConfirmation": "timed cue; no independent physical neutral-position witness",
+            "elapsedMs": 5003.399999976158
+          },
+          {
+            "name": "Prawy · góra",
+            "step": {
+              "kind": "direction",
+              "stick": 0,
+              "direction": 0,
+              "rep": 1,
+              "name": "Prawy · góra"
+            },
+            "axes": [
+              {
+                "median": 130,
+                "min": 130,
+                "max": 130,
+                "spread": 0,
+                "count": 222
+              },
+              {
+                "median": 150,
+                "min": 150,
+                "max": 150,
+                "spread": 0,
+                "count": 222
+              },
+              {
+                "median": 129,
+                "min": 129,
+                "max": 129,
+                "spread": 0,
+                "count": 222
+              },
+              {
+                "median": 126,
+                "min": 126,
+                "max": 126,
+                "spread": 0,
+                "count": 222
+              }
+            ],
+            "shift": [
+              3,
+              16,
+              0,
+              0
+            ],
+            "movement": {
+              "peak": {
+                "value": 0,
+                "error": 0,
+                "target": 0,
+                "axis": 1
+              },
+              "excursion": 134,
+              "arc": 0,
+              "observedTurns": 0,
+              "lastAngle": null
+            },
+            "releaseConfirmation": "timed cue; no independent physical neutral-position witness",
+            "elapsedMs": 10004.699999928474
+          },
+          {
+            "name": "Prawy · prawo",
+            "step": {
+              "kind": "direction",
+              "stick": 0,
+              "direction": 1,
+              "rep": 1,
+              "name": "Prawy · prawo"
+            },
+            "axes": [
+              {
+                "median": 106,
+                "min": 106,
+                "max": 106,
+                "spread": 0,
+                "count": 222
+              },
+              {
+                "median": 150,
+                "min": 150,
+                "max": 150,
+                "spread": 0,
+                "count": 222
+              },
+              {
+                "median": 129,
+                "min": 129,
+                "max": 129,
+                "spread": 0,
+                "count": 222
+              },
+              {
+                "median": 125,
+                "min": 125,
+                "max": 125,
+                "spread": 0,
+                "count": 222
+              }
+            ],
+            "shift": [
+              -21,
+              16,
+              0,
+              -1
+            ],
+            "movement": {
+              "peak": {
+                "value": 255,
+                "error": 0,
+                "target": 255,
+                "axis": 0
+              },
+              "excursion": 128,
+              "arc": 0,
+              "observedTurns": 0,
+              "lastAngle": null
+            },
+            "releaseConfirmation": "timed cue; no independent physical neutral-position witness",
+            "elapsedMs": 15008.699999928474
+          },
+          {
+            "name": "Prawy · dół",
+            "step": {
+              "kind": "direction",
+              "stick": 0,
+              "direction": 2,
+              "rep": 1,
+              "name": "Prawy · dół"
+            },
+            "axes": [
+              {
+                "median": 106,
+                "min": 106,
+                "max": 106,
+                "spread": 0,
+                "count": 222
+              },
+              {
+                "median": 122,
+                "min": 122,
+                "max": 122,
+                "spread": 0,
+                "count": 222
+              },
+              {
+                "median": 129,
+                "min": 129,
+                "max": 129,
+                "spread": 0,
+                "count": 222
+              },
+              {
+                "median": 125,
+                "min": 125,
+                "max": 125,
+                "spread": 0,
+                "count": 222
+              }
+            ],
+            "shift": [
+              -21,
+              -12,
+              0,
+              -1
+            ],
+            "movement": {
+              "peak": {
+                "value": 255,
+                "error": 0,
+                "target": 255,
+                "axis": 1
+              },
+              "excursion": 121,
+              "arc": 0,
+              "observedTurns": 0,
+              "lastAngle": null
+            },
+            "releaseConfirmation": "timed cue; no independent physical neutral-position witness",
+            "elapsedMs": 20013.299999952316
+          },
+          {
+            "name": "Prawy · lewo",
+            "step": {
+              "kind": "direction",
+              "stick": 0,
+              "direction": 3,
+              "rep": 1,
+              "name": "Prawy · lewo"
+            },
+            "axes": [
+              {
+                "median": 131,
+                "min": 131,
+                "max": 131,
+                "spread": 0,
+                "count": 223
+              },
+              {
+                "median": 122,
+                "min": 122,
+                "max": 122,
+                "spread": 0,
+                "count": 223
+              },
+              {
+                "median": 129,
+                "min": 129,
+                "max": 129,
+                "spread": 0,
+                "count": 223
+              },
+              {
+                "median": 125,
+                "min": 125,
+                "max": 125,
+                "spread": 0,
+                "count": 223
+              }
+            ],
+            "shift": [
+              4,
+              -12,
+              0,
+              -1
+            ],
+            "movement": {
+              "peak": {
+                "value": 0,
+                "error": 0,
+                "target": 0,
+                "axis": 0
+              },
+              "excursion": 127,
+              "arc": 0,
+              "observedTurns": 0,
+              "lastAngle": null
+            },
+            "releaseConfirmation": "timed cue; no independent physical neutral-position witness",
+            "elapsedMs": 25020.399999976158
+          },
+          {
+            "name": "Prawy · 3 okręgi zgodnie z zegarem",
+            "step": {
+              "kind": "circle",
+              "stick": 0,
+              "sign": 1,
+              "rep": 1,
+              "name": "Prawy · 3 okręgi zgodnie z zegarem"
+            },
+            "axes": [
+              {
+                "median": 131,
+                "min": 131,
+                "max": 131,
+                "spread": 0,
+                "count": 223
+              },
+              {
+                "median": 121,
+                "min": 121,
+                "max": 121,
+                "spread": 0,
+                "count": 223
+              },
+              {
+                "median": 129,
+                "min": 129,
+                "max": 129,
+                "spread": 0,
+                "count": 223
+              },
+              {
+                "median": 125,
+                "min": 125,
+                "max": 125,
+                "spread": 0,
+                "count": 223
+              }
+            ],
+            "shift": [
+              4,
+              -13,
+              0,
+              -1
+            ],
+            "movement": {
+              "peak": null,
+              "excursion": 173.35801106380978,
+              "arc": 21.361112667544603,
+              "observedTurns": 3.399726670982626,
+              "lastAngle": null
+            },
+            "releaseConfirmation": "timed cue; no independent physical neutral-position witness",
+            "elapsedMs": 36027.299999952316
+          },
+          {
+            "name": "Prawy · 3 okręgi przeciwnie do zegara",
+            "step": {
+              "kind": "circle",
+              "stick": 0,
+              "sign": -1,
+              "rep": 1,
+              "name": "Prawy · 3 okręgi przeciwnie do zegara"
+            },
+            "axes": [
+              {
+                "median": 134,
+                "min": 134,
+                "max": 134,
+                "spread": 0,
+                "count": 222
+              },
+              {
+                "median": 124,
+                "min": 124,
+                "max": 124,
+                "spread": 0,
+                "count": 222
+              },
+              {
+                "median": 129,
+                "min": 129,
+                "max": 129,
+                "spread": 0,
+                "count": 222
+              },
+              {
+                "median": 125,
+                "min": 125,
+                "max": 125,
+                "spread": 0,
+                "count": 222
+              }
+            ],
+            "shift": [
+              7,
+              -10,
+              0,
+              -1
+            ],
+            "movement": {
+              "peak": null,
+              "excursion": 175.56765077883796,
+              "arc": 27.304170786381093,
+              "observedTurns": 4.345593747677874,
+              "lastAngle": null
+            },
+            "releaseConfirmation": "timed cue; no independent physical neutral-position witness",
+            "elapsedMs": 47033.299999952316
+          }
+        ],
+        "unselectedLeftAxesMinMax": [
+          [
+            129,
+            129
+          ],
+          [
+            125,
+            126
+          ]
+        ],
+        "limits": [
+          "Operator reports same PS2 board with new modules. Module type and assembly condition unknown.",
+          "Timed release cues; no independent physical neutral witness."
+        ]
+      }
+    },
+    {
+      "source": "lab/qa/center-mechanism-2026-10-10/W02-PS2-new-modules-repeat2-left-verified.json",
+      "sourceSha256": "b313bb1272710e2d5823044294d5e81c7fb48d163d9fdbfb54b9c2818aaa9a9b",
+      "sourceBytes": 9658,
+      "data": {
+        "specimen": "W02-PS2-NEW-MODULES",
+        "source": "hardware",
+        "archive": "lab\\sessions\\auto-center-20261011T002039Z-6b698ebcf9c7.json",
+        "sha256": "74c1657478a6492cdb94c0e8136c4d463f7f4b164fae0f38cec35e3018113ef7",
+        "phase": "done",
+        "config": {
+          "stick": "left",
+          "fraction": 1,
+          "repetitions": 1,
+          "test": "both",
+          "prepareMs": 3000,
+          "moveMs": 3000,
+          "restMs": 2000,
+          "settleMs": 1000,
+          "captureMs": 1000,
+          "circleMs": 9000,
+          "circleCount": 3,
+          "minimumObservedTurns": 2.95
+        },
+        "axisOrder": [
+          "RX",
+          "RY",
+          "LX",
+          "LY"
+        ],
+        "rawReports": 10453,
+        "matchedIndependentReports": 10453,
+        "independentMismatches": [],
+        "nonUnitSequenceDeltas": 0,
+        "invalidCaps": 0,
+        "nonzeroErrorReports": 0,
+        "nativeFrameAxesEqual": true,
+        "commandsSent": 0,
+        "results": [
+          {
+            "name": "Spoczynek początkowy",
+            "step": null,
+            "axes": [
+              {
+                "median": 132,
+                "min": 132,
+                "max": 132,
+                "spread": 0,
+                "count": 222
+              },
+              {
+                "median": 124,
+                "min": 124,
+                "max": 124,
+                "spread": 0,
+                "count": 222
+              },
+              {
+                "median": 128,
+                "min": 128,
+                "max": 128,
+                "spread": 0,
+                "count": 222
+              },
+              {
+                "median": 125,
+                "min": 125,
+                "max": 125,
+                "spread": 0,
+                "count": 222
+              }
+            ],
+            "shift": [
+              0,
+              0,
+              0,
+              0
+            ],
+            "movement": null,
+            "releaseConfirmation": "timed cue; no independent physical neutral-position witness",
+            "elapsedMs": 5012
+          },
+          {
+            "name": "Lewy · góra",
+            "step": {
+              "kind": "direction",
+              "stick": 1,
+              "direction": 0,
+              "rep": 1,
+              "name": "Lewy · góra"
+            },
+            "axes": [
+              {
+                "median": 132,
+                "min": 132,
+                "max": 132,
+                "spread": 0,
+                "count": 221
+              },
+              {
+                "median": 124,
+                "min": 124,
+                "max": 124,
+                "spread": 0,
+                "count": 221
+              },
+              {
+                "median": 129,
+                "min": 129,
+                "max": 129,
+                "spread": 0,
+                "count": 221
+              },
+              {
+                "median": 125,
+                "min": 125,
+                "max": 125,
+                "spread": 0,
+                "count": 221
+              }
+            ],
+            "shift": [
+              0,
+              0,
+              1,
+              0
+            ],
+            "movement": {
+              "peak": {
+                "value": 0,
+                "error": 0,
+                "target": 0,
+                "axis": 3
+              },
+              "excursion": 125,
+              "arc": 0,
+              "observedTurns": 0,
+              "lastAngle": null
+            },
+            "releaseConfirmation": "timed cue; no independent physical neutral-position witness",
+            "elapsedMs": 10017.599999904633
+          },
+          {
+            "name": "Lewy · prawo",
+            "step": {
+              "kind": "direction",
+              "stick": 1,
+              "direction": 1,
+              "rep": 1,
+              "name": "Lewy · prawo"
+            },
+            "axes": [
+              {
+                "median": 132,
+                "min": 132,
+                "max": 132,
+                "spread": 0,
+                "count": 222
+              },
+              {
+                "median": 124,
+                "min": 124,
+                "max": 124,
+                "spread": 0,
+                "count": 222
+              },
+              {
+                "median": 129,
+                "min": 129,
+                "max": 129,
+                "spread": 0,
+                "count": 222
+              },
+              {
+                "median": 125,
+                "min": 125,
+                "max": 125,
+                "spread": 0,
+                "count": 222
+              }
+            ],
+            "shift": [
+              0,
+              0,
+              1,
+              0
+            ],
+            "movement": {
+              "peak": {
+                "value": 255,
+                "error": 0,
+                "target": 255,
+                "axis": 2
+              },
+              "excursion": 127,
+              "arc": 0,
+              "observedTurns": 0,
+              "lastAngle": null
+            },
+            "releaseConfirmation": "timed cue; no independent physical neutral-position witness",
+            "elapsedMs": 15019.699999928474
+          },
+          {
+            "name": "Lewy · dół",
+            "step": {
+              "kind": "direction",
+              "stick": 1,
+              "direction": 2,
+              "rep": 1,
+              "name": "Lewy · dół"
+            },
+            "axes": [
+              {
+                "median": 132,
+                "min": 132,
+                "max": 132,
+                "spread": 0,
+                "count": 223
+              },
+              {
+                "median": 124,
+                "min": 124,
+                "max": 124,
+                "spread": 0,
+                "count": 223
+              },
+              {
+                "median": 128,
+                "min": 128,
+                "max": 128,
+                "spread": 0,
+                "count": 223
+              },
+              {
+                "median": 125,
+                "min": 125,
+                "max": 125,
+                "spread": 0,
+                "count": 223
+              }
+            ],
+            "shift": [
+              0,
+              0,
+              0,
+              0
+            ],
+            "movement": {
+              "peak": {
+                "value": 255,
+                "error": 0,
+                "target": 255,
+                "axis": 3
+              },
+              "excursion": 130,
+              "arc": 0,
+              "observedTurns": 0,
+              "lastAngle": null
+            },
+            "releaseConfirmation": "timed cue; no independent physical neutral-position witness",
+            "elapsedMs": 20024.299999952316
+          },
+          {
+            "name": "Lewy · lewo",
+            "step": {
+              "kind": "direction",
+              "stick": 1,
+              "direction": 3,
+              "rep": 1,
+              "name": "Lewy · lewo"
+            },
+            "axes": [
+              {
+                "median": 132,
+                "min": 132,
+                "max": 132,
+                "spread": 0,
+                "count": 222
+              },
+              {
+                "median": 124,
+                "min": 124,
+                "max": 124,
+                "spread": 0,
+                "count": 222
+              },
+              {
+                "median": 127,
+                "min": 127,
+                "max": 127,
+                "spread": 0,
+                "count": 222
+              },
+              {
+                "median": 125,
+                "min": 125,
+                "max": 125,
+                "spread": 0,
+                "count": 222
+              }
+            ],
+            "shift": [
+              0,
+              0,
+              -1,
+              0
+            ],
+            "movement": {
+              "peak": {
+                "value": 0,
+                "error": 0,
+                "target": 0,
+                "axis": 2
+              },
+              "excursion": 128,
+              "arc": 0,
+              "observedTurns": 0,
+              "lastAngle": null
+            },
+            "releaseConfirmation": "timed cue; no independent physical neutral-position witness",
+            "elapsedMs": 25028.799999952316
+          },
+          {
+            "name": "Lewy · 3 okręgi zgodnie z zegarem",
+            "step": {
+              "kind": "circle",
+              "stick": 1,
+              "sign": 1,
+              "rep": 1,
+              "name": "Lewy · 3 okręgi zgodnie z zegarem"
+            },
+            "axes": [
+              {
+                "median": 132,
+                "min": 132,
+                "max": 132,
+                "spread": 0,
+                "count": 223
+              },
+              {
+                "median": 124,
+                "min": 124,
+                "max": 124,
+                "spread": 0,
+                "count": 223
+              },
+              {
+                "median": 129,
+                "min": 129,
+                "max": 129,
+                "spread": 0,
+                "count": 223
+              },
+              {
+                "median": 126,
+                "min": 126,
+                "max": 126,
+                "spread": 0,
+                "count": 223
+              }
+            ],
+            "shift": [
+              0,
+              0,
+              1,
+              1
+            ],
+            "movement": {
+              "peak": null,
+              "excursion": 169.71151993898354,
+              "arc": 20.149336996203214,
+              "observedTurns": 3.206866582970144,
+              "lastAngle": null
+            },
+            "releaseConfirmation": "timed cue; no independent physical neutral-position witness",
+            "elapsedMs": 36042.59999990463
+          },
+          {
+            "name": "Lewy · 3 okręgi przeciwnie do zegara",
+            "step": {
+              "kind": "circle",
+              "stick": 1,
+              "sign": -1,
+              "rep": 1,
+              "name": "Lewy · 3 okręgi przeciwnie do zegara"
+            },
+            "axes": [
+              {
+                "median": 132,
+                "min": 132,
+                "max": 132,
+                "spread": 0,
+                "count": 221
+              },
+              {
+                "median": 124,
+                "min": 124,
+                "max": 124,
+                "spread": 0,
+                "count": 221
+              },
+              {
+                "median": 130,
+                "min": 130,
+                "max": 130,
+                "spread": 0,
+                "count": 221
+              },
+              {
+                "median": 126,
+                "min": 126,
+                "max": 126,
+                "spread": 0,
+                "count": 221
+              }
+            ],
+            "shift": [
+              0,
+              0,
+              2,
+              1
+            ],
+            "movement": {
+              "peak": null,
+              "excursion": 168.58232410309213,
+              "arc": 19.458081202248472,
+              "observedTurns": 3.096849806421334,
+              "lastAngle": null
+            },
+            "releaseConfirmation": "timed cue; no independent physical neutral-position witness",
+            "elapsedMs": 47048.39999997616
+          }
+        ],
+        "limits": [
+          "Same-board replacement reported by operator. Module model/resistance/assembly unknown.",
+          "Release timing follows visible cue; mechanical neutral not independently measured.",
+          "Circle counts vary; do not claim exact movement-dose matching.",
+          "One specimen, one replacement, no population-level inference."
+        ]
+      }
+    },
+    {
+      "source": "lab/qa/center-mechanism-2026-10-10/W02-PS2-new-modules-repeat2-right-verified.json",
+      "sourceSha256": "9bc180b2dbeabbfe4e3a3ee7c4bf7babc203dfcbcf96643517374a04ed234420",
+      "sourceBytes": 9686,
+      "data": {
+        "specimen": "W02-PS2-NEW-MODULES",
+        "source": "hardware",
+        "archive": "lab\\sessions\\auto-center-20261011T002146Z-66c2c39aa2f4.json",
+        "sha256": "0a4334447a5ce68fac007bea61cb026856b81b22bdc64d844b9fdc436dce6d2c",
+        "phase": "done",
+        "config": {
+          "stick": "right",
+          "fraction": 1,
+          "repetitions": 1,
+          "test": "both",
+          "prepareMs": 3000,
+          "moveMs": 3000,
+          "restMs": 2000,
+          "settleMs": 1000,
+          "captureMs": 1000,
+          "circleMs": 9000,
+          "circleCount": 3,
+          "minimumObservedTurns": 2.95
+        },
+        "axisOrder": [
+          "RX",
+          "RY",
+          "LX",
+          "LY"
+        ],
+        "rawReports": 10450,
+        "matchedIndependentReports": 10450,
+        "independentMismatches": [],
+        "nonUnitSequenceDeltas": 0,
+        "invalidCaps": 0,
+        "nonzeroErrorReports": 0,
+        "nativeFrameAxesEqual": true,
+        "commandsSent": 0,
+        "results": [
+          {
+            "name": "Spoczynek początkowy",
+            "step": null,
+            "axes": [
+              {
+                "median": 132,
+                "min": 132,
+                "max": 132,
+                "spread": 0,
+                "count": 222
+              },
+              {
+                "median": 124,
+                "min": 124,
+                "max": 124,
+                "spread": 0,
+                "count": 222
+              },
+              {
+                "median": 130,
+                "min": 130,
+                "max": 130,
+                "spread": 0,
+                "count": 222
+              },
+              {
+                "median": 126,
+                "min": 126,
+                "max": 126,
+                "spread": 0,
+                "count": 222
+              }
+            ],
+            "shift": [
+              0,
+              0,
+              0,
+              0
+            ],
+            "movement": null,
+            "releaseConfirmation": "timed cue; no independent physical neutral-position witness",
+            "elapsedMs": 5001.899999976158
+          },
+          {
+            "name": "Prawy · góra",
+            "step": {
+              "kind": "direction",
+              "stick": 0,
+              "direction": 0,
+              "rep": 1,
+              "name": "Prawy · góra"
+            },
+            "axes": [
+              {
+                "median": 132,
+                "min": 132,
+                "max": 132,
+                "spread": 0,
+                "count": 222
+              },
+              {
+                "median": 123,
+                "min": 123,
+                "max": 123,
+                "spread": 0,
+                "count": 222
+              },
+              {
+                "median": 130,
+                "min": 130,
+                "max": 130,
+                "spread": 0,
+                "count": 222
+              },
+              {
+                "median": 125,
+                "min": 125,
+                "max": 125,
+                "spread": 0,
+                "count": 222
+              }
+            ],
+            "shift": [
+              0,
+              -1,
+              0,
+              -1
+            ],
+            "movement": {
+              "peak": {
+                "value": 0,
+                "error": 0,
+                "target": 0,
+                "axis": 1
+              },
+              "excursion": 124,
+              "arc": 0,
+              "observedTurns": 0,
+              "lastAngle": null
+            },
+            "releaseConfirmation": "timed cue; no independent physical neutral-position witness",
+            "elapsedMs": 10005.599999904633
+          },
+          {
+            "name": "Prawy · prawo",
+            "step": {
+              "kind": "direction",
+              "stick": 0,
+              "direction": 1,
+              "rep": 1,
+              "name": "Prawy · prawo"
+            },
+            "axes": [
+              {
+                "median": 134,
+                "min": 134,
+                "max": 134,
+                "spread": 0,
+                "count": 221
+              },
+              {
+                "median": 124,
+                "min": 124,
+                "max": 124,
+                "spread": 0,
+                "count": 221
+              },
+              {
+                "median": 130,
+                "min": 130,
+                "max": 130,
+                "spread": 0,
+                "count": 221
+              },
+              {
+                "median": 125,
+                "min": 125,
+                "max": 126,
+                "spread": 1,
+                "count": 221
+              }
+            ],
+            "shift": [
+              2,
+              0,
+              0,
+              -1
+            ],
+            "movement": {
+              "peak": {
+                "value": 255,
+                "error": 0,
+                "target": 255,
+                "axis": 0
+              },
+              "excursion": 123,
+              "arc": 0,
+              "observedTurns": 0,
+              "lastAngle": null
+            },
+            "releaseConfirmation": "timed cue; no independent physical neutral-position witness",
+            "elapsedMs": 15007.899999976158
+          },
+          {
+            "name": "Prawy · dół",
+            "step": {
+              "kind": "direction",
+              "stick": 0,
+              "direction": 2,
+              "rep": 1,
+              "name": "Prawy · dół"
+            },
+            "axes": [
+              {
+                "median": 133,
+                "min": 133,
+                "max": 133,
+                "spread": 0,
+                "count": 222
+              },
+              {
+                "median": 124,
+                "min": 124,
+                "max": 124,
+                "spread": 0,
+                "count": 222
+              },
+              {
+                "median": 130,
+                "min": 130,
+                "max": 130,
+                "spread": 0,
+                "count": 222
+              },
+              {
+                "median": 126,
+                "min": 126,
+                "max": 126,
+                "spread": 0,
+                "count": 222
+              }
+            ],
+            "shift": [
+              1,
+              0,
+              0,
+              0
+            ],
+            "movement": {
+              "peak": {
+                "value": 255,
+                "error": 0,
+                "target": 255,
+                "axis": 1
+              },
+              "excursion": 131,
+              "arc": 0,
+              "observedTurns": 0,
+              "lastAngle": null
+            },
+            "releaseConfirmation": "timed cue; no independent physical neutral-position witness",
+            "elapsedMs": 20014.699999928474
+          },
+          {
+            "name": "Prawy · lewo",
+            "step": {
+              "kind": "direction",
+              "stick": 0,
+              "direction": 3,
+              "rep": 1,
+              "name": "Prawy · lewo"
+            },
+            "axes": [
+              {
+                "median": 132,
+                "min": 132,
+                "max": 132,
+                "spread": 0,
+                "count": 223
+              },
+              {
+                "median": 124,
+                "min": 124,
+                "max": 124,
+                "spread": 0,
+                "count": 223
+              },
+              {
+                "median": 130,
+                "min": 130,
+                "max": 130,
+                "spread": 0,
+                "count": 223
+              },
+              {
+                "median": 126,
+                "min": 126,
+                "max": 126,
+                "spread": 0,
+                "count": 223
+              }
+            ],
+            "shift": [
+              0,
+              0,
+              0,
+              0
+            ],
+            "movement": {
+              "peak": {
+                "value": 0,
+                "error": 0,
+                "target": 0,
+                "axis": 0
+              },
+              "excursion": 132,
+              "arc": 0,
+              "observedTurns": 0,
+              "lastAngle": null
+            },
+            "releaseConfirmation": "timed cue; no independent physical neutral-position witness",
+            "elapsedMs": 25018.799999952316
+          },
+          {
+            "name": "Prawy · 3 okręgi zgodnie z zegarem",
+            "step": {
+              "kind": "circle",
+              "stick": 0,
+              "sign": 1,
+              "rep": 1,
+              "name": "Prawy · 3 okręgi zgodnie z zegarem"
+            },
+            "axes": [
+              {
+                "median": 132,
+                "min": 132,
+                "max": 132,
+                "spread": 0,
+                "count": 222
+              },
+              {
+                "median": 124,
+                "min": 124,
+                "max": 124,
+                "spread": 0,
+                "count": 222
+              },
+              {
+                "median": 130,
+                "min": 130,
+                "max": 130,
+                "spread": 0,
+                "count": 222
+              },
+              {
+                "median": 126,
+                "min": 126,
+                "max": 126,
+                "spread": 0,
+                "count": 222
+              }
+            ],
+            "shift": [
+              0,
+              0,
+              0,
+              0
+            ],
+            "movement": {
+              "peak": null,
+              "excursion": 169.729196074217,
+              "arc": 21.981182127722338,
+              "observedTurns": 3.4984137906302357,
+              "lastAngle": null
+            },
+            "releaseConfirmation": "timed cue; no independent physical neutral-position witness",
+            "elapsedMs": 36023.199999928474
+          },
+          {
+            "name": "Prawy · 3 okręgi przeciwnie do zegara",
+            "step": {
+              "kind": "circle",
+              "stick": 0,
+              "sign": -1,
+              "rep": 1,
+              "name": "Prawy · 3 okręgi przeciwnie do zegara"
+            },
+            "axes": [
+              {
+                "median": 133,
+                "min": 133,
+                "max": 133,
+                "spread": 0,
+                "count": 223
+              },
+              {
+                "median": 124,
+                "min": 124,
+                "max": 124,
+                "spread": 0,
+                "count": 223
+              },
+              {
+                "median": 130,
+                "min": 130,
+                "max": 130,
+                "spread": 0,
+                "count": 223
+              },
+              {
+                "median": 125,
+                "min": 125,
+                "max": 125,
+                "spread": 0,
+                "count": 223
+              }
+            ],
+            "shift": [
+              1,
+              0,
+              0,
+              -1
+            ],
+            "movement": {
+              "peak": null,
+              "excursion": 173.761330565808,
+              "arc": 19.14805485312493,
+              "observedTurns": 3.0475075804695884,
+              "lastAngle": null
+            },
+            "releaseConfirmation": "timed cue; no independent physical neutral-position witness",
+            "elapsedMs": 47031.799999952316
+          }
+        ],
+        "limits": [
+          "Same-board replacement reported by operator. Module model/resistance/assembly unknown.",
+          "Release timing follows visible cue; mechanical neutral not independently measured.",
+          "Circle counts vary; do not claim exact movement-dose matching.",
+          "One specimen, one replacement, no population-level inference."
+        ]
+      }
+    },
+    {
+      "source": "lab/qa/center-mechanism-2026-10-10/W02-PS2-manual-circle-vs-directions-20261011T002927Z-analysis.json",
+      "sourceSha256": "69f9e20c58dfe61a2f9ca7f1f97f31b88fe0a551f123613332cb75f0e65b45cf",
+      "sourceBytes": 5983,
+      "data": {
+        "specimen": "W02-PS2-NEW-MODULES",
+        "source": "native hardware input-only capture",
+        "rawFile": "lab\\qa\\center-mechanism-2026-10-10\\W02-PS2-manual-circle-vs-directions-20261011T002927Z-01.jsonl",
+        "sha256": "99d3d29357c6c741a247564f7011f2b1e2b4a9ad0e17903cd6742ad5cee679a3",
+        "reports": 15774,
+        "nonUnitSequenceDeltas": 0,
+        "nonzeroErrors": 0,
+        "invalidCapsOrDisconnected": 0,
+        "nativeFrameAxesEqual": true,
+        "axisOrder": [
+          "RX",
+          "RY",
+          "LX",
+          "LY"
+        ],
+        "windows": {
+          "initial": {
+            "fromSeconds": 1,
+            "toSeconds": 6,
+            "reports": 1112,
+            "axisIndices": [
+              0,
+              1,
+              2,
+              3
+            ],
+            "median": [
+              129.0,
+              134.0,
+              136.0,
+              126.0
+            ],
+            "minMax": [
+              [
+                129,
+                129
+              ],
+              [
+                134,
+                134
+              ],
+              [
+                135,
+                136
+              ],
+              [
+                126,
+                126
+              ]
+            ]
+          },
+          "beforeLeftCircle": {
+            "fromSeconds": 9,
+            "toSeconds": 12,
+            "reports": 667,
+            "axisIndices": [
+              0,
+              1,
+              2,
+              3
+            ],
+            "median": [
+              129,
+              134,
+              136,
+              126
+            ],
+            "minMax": [
+              [
+                129,
+                129
+              ],
+              [
+                134,
+                134
+              ],
+              [
+                135,
+                136
+              ],
+              [
+                126,
+                126
+              ]
+            ]
+          },
+          "leftAfterCircleBeforeDirections": {
+            "fromSeconds": 15.099,
+            "toSeconds": 15.705,
+            "reports": 135,
+            "axisIndices": [
+              2,
+              3
+            ],
+            "median": [
+              127,
+              126
+            ],
+            "minMax": [
+              [
+                127,
+                127
+              ],
+              [
+                126,
+                126
+              ]
+            ]
+          },
+          "leftAfterFourDirections": {
+            "fromSeconds": 20,
+            "toSeconds": 23,
+            "reports": 666,
+            "axisIndices": [
+              2,
+              3
+            ],
+            "median": [
+              128.0,
+              126.0
+            ],
+            "minMax": [
+              [
+                128,
+                128
+              ],
+              [
+                126,
+                126
+              ]
+            ]
+          },
+          "rightBeforeDirections": {
+            "fromSeconds": 24,
+            "toSeconds": 27,
+            "reports": 667,
+            "axisIndices": [
+              0,
+              1
+            ],
+            "median": [
+              129,
+              133
+            ],
+            "minMax": [
+              [
+                129,
+                129
+              ],
+              [
+                133,
+                133
+              ]
+            ]
+          },
+          "rightAfterFirstFourDirections": {
+            "fromSeconds": 33.3,
+            "toSeconds": 36.3,
+            "reports": 667,
+            "axisIndices": [
+              0,
+              1
+            ],
+            "median": [
+              135,
+              121
+            ],
+            "minMax": [
+              [
+                135,
+                135
+              ],
+              [
+                121,
+                121
+              ]
+            ]
+          },
+          "rightAfterSecondFourDirections": {
+            "fromSeconds": 41,
+            "toSeconds": 44,
+            "reports": 667,
+            "axisIndices": [
+              0,
+              1
+            ],
+            "median": [
+              134,
+              120
+            ],
+            "minMax": [
+              [
+                134,
+                134
+              ],
+              [
+                120,
+                120
+              ]
+            ]
+          },
+          "final": {
+            "fromSeconds": 67.98795799999999,
+            "toSeconds": 70.98795799999999,
+            "reports": 667,
+            "axisIndices": [
+              0,
+              1,
+              2,
+              3
+            ],
+            "median": [
+              134,
+              120,
+              128,
+              126
+            ],
+            "minMax": [
+              [
+                134,
+                134
+              ],
+              [
+                120,
+                120
+              ],
+              [
+                128,
+                128
+              ],
+              [
+                125,
+                126
+              ]
+            ]
+          }
+        },
+        "movementDetection": {
+          "centerForPathAnalysis": [
+            128,
+            128
+          ],
+          "excursionThreshold": 45,
+          "mergeIdleGapSeconds": 0.15,
+          "leftCircleStartSeconds": 12.355,
+          "leftCircleEndSeconds": 14.699,
+          "leftCircleApproximateSignedTurns": 1.03,
+          "leftCircleProtocolMinMax": [
+            [
+              0,
+              255
+            ],
+            [
+              0,
+              255
+            ]
+          ],
+          "leftDirectionBouts": [
+            [
+              15.905,
+              16.279
+            ],
+            [
+              16.958,
+              17.224
+            ],
+            [
+              17.917,
+              18.277
+            ],
+            [
+              18.889,
+              19.222
+            ]
+          ],
+          "rightDirectionBouts": [
+            [
+              28.123,
+              28.429
+            ],
+            [
+              29.892,
+              30.198
+            ],
+            [
+              31.309,
+              31.642
+            ],
+            [
+              32.484,
+              32.871
+            ],
+            [
+              37.088,
+              37.326
+            ],
+            [
+              38.114,
+              38.366
+            ],
+            [
+              39.113,
+              39.378
+            ],
+            [
+              40.179,
+              40.512
+            ]
+          ]
+        },
+        "finding": "On this attempt the left stick return changed from 136/126 before the single circular movement to 127/126 before cardinal movements, then 128/126 after them. The right stick had 135/121 after one cardinal sequence and 134/120 after the repeat, without a circular movement in the observed capture.",
+        "limits": [
+          "Capture starts at adapter report sequence 69, not at power-on; previous input before this point is not observed.",
+          "Single-circle angle estimate calculated from protocol coordinates about 128/128, not a physical rotation sensor.",
+          "First circle return window is shorter than later three-second windows because next movement followed quickly.",
+          "No independent physical neutral-position witness.",
+          "Treatment is confounded with stick identity: left received circle plus directions, right directions alone. This does not establish circles are universally better than directions."
+        ]
+      }
+    },
+    {
+      "source": "lab/qa/center-mechanism-2026-10-10/W02-PS2-manual-circle-vs-directions-reversed-20261011T003309Z-analysis.json",
+      "sourceSha256": "61e87115a1c309370b2fed31759504911015947136a833571d5ce6fa29e73cb3",
+      "sourceBytes": 4772,
+      "data": {
+        "specimen": "W02-PS2-NEW-MODULES",
+        "source": "native hardware input-only capture",
+        "rawFile": "lab\\qa\\center-mechanism-2026-10-10\\W02-PS2-manual-circle-vs-directions-reversed-20261011T003309Z-01.jsonl",
+        "sha256": "795127b650876d3d762daabc6ceb052467c1e3d834134b02bba5bd8def531501",
+        "reports": 16077,
+        "nonUnitSequenceDeltas": 0,
+        "nonzeroErrors": 0,
+        "invalidCapsOrDisconnected": 0,
+        "nativeFrameAxesEqual": true,
+        "axisOrder": [
+          "RX",
+          "RY",
+          "LX",
+          "LY"
+        ],
+        "firstRecordedSequence": 1520,
+        "USBDisconnectObservedInCapture": false,
+        "windows": {
+          "beforeRightCircle": {
+            "fromSeconds": 2,
+            "toSeconds": 5,
+            "reports": 667,
+            "medianRXRYLXLY": [
+              130,
+              134,
+              134,
+              126
+            ],
+            "minMax": [
+              [
+                130,
+                130
+              ],
+              [
+                134,
+                134
+              ],
+              [
+                134,
+                134
+              ],
+              [
+                125,
+                126
+              ]
+            ]
+          },
+          "rightAfterCircleBeforeDirections": {
+            "fromSeconds": 9.1,
+            "toSeconds": 10.4,
+            "reports": 289,
+            "medianRXRYLXLY": [
+              133,
+              122,
+              134,
+              125
+            ],
+            "minMax": [
+              [
+                133,
+                134
+              ],
+              [
+                122,
+                122
+              ],
+              [
+                134,
+                134
+              ],
+              [
+                125,
+                125
+              ]
+            ]
+          },
+          "rightAfterFourDirectionsAndLeftBaseline": {
+            "fromSeconds": 15.6,
+            "toSeconds": 17.3,
+            "reports": 378,
+            "medianRXRYLXLY": [
+              133.0,
+              122.0,
+              134.0,
+              125.0
+            ],
+            "minMax": [
+              [
+                133,
+                133
+              ],
+              [
+                122,
+                122
+              ],
+              [
+                134,
+                134
+              ],
+              [
+                125,
+                125
+              ]
+            ]
+          },
+          "leftAfterFirstFourDirections": {
+            "fromSeconds": 23,
+            "toSeconds": 24.3,
+            "reports": 289,
+            "medianRXRYLXLY": [
+              133,
+              122,
+              127,
+              128
+            ],
+            "minMax": [
+              [
+                133,
+                133
+              ],
+              [
+                122,
+                122
+              ],
+              [
+                127,
+                127
+              ],
+              [
+                127,
+                128
+              ]
+            ]
+          },
+          "leftAfterAdditionalRightMovement": {
+            "fromSeconds": 29.6,
+            "toSeconds": 32.6,
+            "reports": 667,
+            "medianRXRYLXLY": [
+              133,
+              122,
+              122,
+              127
+            ],
+            "minMax": [
+              [
+                133,
+                133
+              ],
+              [
+                122,
+                122
+              ],
+              [
+                122,
+                122
+              ],
+              [
+                127,
+                127
+              ]
+            ]
+          },
+          "final": {
+            "fromSeconds": 69.348326,
+            "toSeconds": 72.348326,
+            "reports": 667,
+            "medianRXRYLXLY": [
+              133,
+              122,
+              122,
+              127
+            ],
+            "minMax": [
+              [
+                133,
+                133
+              ],
+              [
+                122,
+                122
+              ],
+              [
+                122,
+                122
+              ],
+              [
+                127,
+                127
+              ]
+            ]
+          }
+        },
+        "movementSummary": {
+          "right": "One approximately 1.074-turn clockwise circular movement, then up/right/down/left; circle and four-direction returns both 133/122.",
+          "left": "First sequence up/down/right/left, then additional up/right/left/down/right movements; no circular movement detected. First four-direction return 127/128; final return after additional right movement 122/127."
+        },
+        "finding": "This reversed attempt does not reproduce a rule that circle gives a better center than cardinal directions. Left reached 127/128 with directions alone; right reached 133/122 after the circle, not closer to 128/128 than its pre-circle 130/134. Later left return changes show movement-history dependence.",
+        "limits": [
+          "One segment only. USB reset was requested, but its physical disconnect/reconnect was outside the recorded stream or not observed.",
+          "Initial report sequence 1520 is lower than prior attempt final 15842, compatible with counter reset between recordings, not direct evidence of its cause.",
+          "First left direction order differs from requested up/right/down/left; there were five extra directional bouts. Do not compare only final values as a matched four-direction treatment.",
+          "Physical neutral is not independently measured; short return windows follow detected movements.",
+          "Rotation is an estimate from 8-bit protocol coordinates about 128/128."
+        ]
+      }
+    },
+    {
+      "source": "lab/qa/center-mechanism-2026-10-10/W02-PS2-manual-per-return-left-circle-20261011T003858Z-analysis.json",
+      "sourceSha256": "533a489dba709118ed19263ae6d8b0cb385ad9a4d90bf7d64f20a3f47c710a82",
+      "sourceBytes": 12966,
+      "data": {
+        "specimen": "W02-PS2-NEW-MODULES",
+        "rawFile": "lab\\qa\\center-mechanism-2026-10-10\\W02-PS2-manual-per-return-left-circle-20261011T003858Z-01.jsonl",
+        "sha256": "969b07858f66f7e09a3ddbf17024c0a9925a0924100abeb5480057832a36fbf6",
+        "axisOrder": [
+          "RX",
+          "RY",
+          "LX",
+          "LY"
+        ],
+        "reports": 26330,
+        "gaps": 0,
+        "nonzeroErrors": 0,
+        "invalidCapsOrDisconnected": 0,
+        "nativeFrameAxesEqual": true,
+        "returns": {
+          "left": [
+            {
+              "bout": 0,
+              "direction": "operator-reported circle",
+              "moveStartSeconds": 28.133067,
+              "moveEndSeconds": 30.95,
+              "moveMinMax": [
+                [
+                  0,
+                  255
+                ],
+                [
+                  0,
+                  255
+                ]
+              ],
+              "endpointVotes": {
+                "left": 126,
+                "right": 351,
+                "up": 126,
+                "down": 72
+              },
+              "returnWindowSeconds": [
+                31.45,
+                32.45
+              ],
+              "returnReports": 222,
+              "returnMedian": [
+                127.0,
+                125.0
+              ],
+              "returnMinMax": [
+                [
+                  127,
+                  127
+                ],
+                [
+                  125,
+                  125
+                ]
+              ]
+            },
+            {
+              "bout": 1,
+              "direction": "up",
+              "moveStartSeconds": 34.990978999999996,
+              "moveEndSeconds": 35.986025,
+              "moveMinMax": [
+                [
+                  111,
+                  158
+                ],
+                [
+                  0,
+                  184
+                ]
+              ],
+              "endpointVotes": {
+                "left": 0,
+                "right": 0,
+                "up": 180,
+                "down": 0
+              },
+              "returnWindowSeconds": [
+                36.486025,
+                37.486025
+              ],
+              "returnReports": 222,
+              "returnMedian": [
+                127.0,
+                125.0
+              ],
+              "returnMinMax": [
+                [
+                  127,
+                  127
+                ],
+                [
+                  125,
+                  125
+                ]
+              ]
+            },
+            {
+              "bout": 2,
+              "direction": "right",
+              "moveStartSeconds": 38.177001,
+              "moveEndSeconds": 39.577026,
+              "moveMinMax": [
+                [
+                  49,
+                  255
+                ],
+                [
+                  101,
+                  152
+                ]
+              ],
+              "endpointVotes": {
+                "left": 0,
+                "right": 279,
+                "up": 0,
+                "down": 0
+              },
+              "returnWindowSeconds": [
+                40.077026,
+                41.077026
+              ],
+              "returnReports": 222,
+              "returnMedian": [
+                126.0,
+                125.0
+              ],
+              "returnMinMax": [
+                [
+                  126,
+                  126
+                ],
+                [
+                  125,
+                  125
+                ]
+              ]
+            },
+            {
+              "bout": 3,
+              "direction": "down",
+              "moveStartSeconds": 41.606032,
+              "moveEndSeconds": 43.006015,
+              "moveMinMax": [
+                [
+                  97,
+                  126
+                ],
+                [
+                  180,
+                  255
+                ]
+              ],
+              "endpointVotes": {
+                "left": 0,
+                "right": 0,
+                "up": 0,
+                "down": 294
+              },
+              "returnWindowSeconds": [
+                43.506015,
+                44.421006
+              ],
+              "returnReports": 203,
+              "returnMedian": [
+                126,
+                125
+              ],
+              "returnMinMax": [
+                [
+                  126,
+                  126
+                ],
+                [
+                  125,
+                  125
+                ]
+              ]
+            },
+            {
+              "bout": 4,
+              "direction": "left",
+              "moveStartSeconds": 44.671006,
+              "moveEndSeconds": 45.74703,
+              "moveMinMax": [
+                [
+                  0,
+                  75
+                ],
+                [
+                  124,
+                  141
+                ]
+              ],
+              "endpointVotes": {
+                "left": 222,
+                "right": 0,
+                "up": 0,
+                "down": 0
+              },
+              "returnWindowSeconds": [
+                46.24703,
+                47.24703
+              ],
+              "returnReports": 222,
+              "returnMedian": [
+                127.0,
+                125.0
+              ],
+              "returnMinMax": [
+                [
+                  127,
+                  127
+                ],
+                [
+                  125,
+                  125
+                ]
+              ]
+            }
+          ],
+          "right": [
+            {
+              "bout": 0,
+              "direction": "right",
+              "moveStartSeconds": 54.350998,
+              "moveEndSeconds": 54.846019999999996,
+              "moveMinMax": [
+                [
+                  46,
+                  255
+                ],
+                [
+                  98,
+                  159
+                ]
+              ],
+              "endpointVotes": {
+                "left": 0,
+                "right": 96,
+                "up": 0,
+                "down": 0
+              },
+              "returnWindowSeconds": [
+                55.346019999999996,
+                56.346019999999996
+              ],
+              "returnReports": 222,
+              "returnMedian": [
+                107.0,
+                134.0
+              ],
+              "returnMinMax": [
+                [
+                  107,
+                  107
+                ],
+                [
+                  134,
+                  134
+                ]
+              ]
+            },
+            {
+              "bout": 1,
+              "direction": "up",
+              "moveStartSeconds": 59.467989,
+              "moveEndSeconds": 59.976034,
+              "moveMinMax": [
+                [
+                  76,
+                  109
+                ],
+                [
+                  0,
+                  219
+                ]
+              ],
+              "endpointVotes": {
+                "left": 0,
+                "right": 0,
+                "up": 105,
+                "down": 0
+              },
+              "returnWindowSeconds": [
+                60.476034,
+                61.476034
+              ],
+              "returnReports": 223,
+              "returnMedian": [
+                105,
+                148
+              ],
+              "returnMinMax": [
+                [
+                  105,
+                  105
+                ],
+                [
+                  148,
+                  148
+                ]
+              ]
+            },
+            {
+              "bout": 2,
+              "direction": "down",
+              "moveStartSeconds": 61.748996,
+              "moveEndSeconds": 62.081979,
+              "moveMinMax": [
+                [
+                  90,
+                  103
+                ],
+                [
+                  186,
+                  255
+                ]
+              ],
+              "endpointVotes": {
+                "left": 0,
+                "right": 0,
+                "up": 0,
+                "down": 66
+              },
+              "returnWindowSeconds": [
+                62.581979,
+                63.241023999999996
+              ],
+              "returnReports": 147,
+              "returnMedian": [
+                105,
+                121
+              ],
+              "returnMinMax": [
+                [
+                  105,
+                  105
+                ],
+                [
+                  121,
+                  121
+                ]
+              ]
+            },
+            {
+              "bout": 3,
+              "direction": "left",
+              "moveStartSeconds": 63.491023999999996,
+              "moveEndSeconds": 63.904998,
+              "moveMinMax": [
+                [
+                  0,
+                  77
+                ],
+                [
+                  108,
+                  123
+                ]
+              ],
+              "endpointVotes": {
+                "left": 81,
+                "right": 0,
+                "up": 0,
+                "down": 0
+              },
+              "returnWindowSeconds": [
+                64.404998,
+                65.404998
+              ],
+              "returnReports": 223,
+              "returnMedian": [
+                132,
+                121
+              ],
+              "returnMinMax": [
+                [
+                  132,
+                  132
+                ],
+                [
+                  121,
+                  121
+                ]
+              ]
+            },
+            {
+              "bout": 4,
+              "direction": "up",
+              "moveStartSeconds": 71.617989,
+              "moveEndSeconds": 72.032016,
+              "moveMinMax": [
+                [
+                  115,
+                  129
+                ],
+                [
+                  0,
+                  80
+                ]
+              ],
+              "endpointVotes": {
+                "left": 0,
+                "right": 0,
+                "up": 81,
+                "down": 0
+              },
+              "returnWindowSeconds": [
+                72.532016,
+                73.532016
+              ],
+              "returnReports": 223,
+              "returnMedian": [
+                133,
+                122
+              ],
+              "returnMinMax": [
+                [
+                  133,
+                  133
+                ],
+                [
+                  122,
+                  122
+                ]
+              ]
+            },
+            {
+              "bout": 5,
+              "direction": "right",
+              "moveStartSeconds": 76.707992,
+              "moveEndSeconds": 77.027987,
+              "moveMinMax": [
+                [
+                  174,
+                  255
+                ],
+                [
+                  105,
+                  126
+                ]
+              ],
+              "endpointVotes": {
+                "left": 0,
+                "right": 57,
+                "up": 0,
+                "down": 0
+              },
+              "returnWindowSeconds": [
+                77.527987,
+                78.527987
+              ],
+              "returnReports": 222,
+              "returnMedian": [
+                133.0,
+                122.0
+              ],
+              "returnMinMax": [
+                [
+                  133,
+                  133
+                ],
+                [
+                  122,
+                  122
+                ]
+              ]
+            },
+            {
+              "bout": 6,
+              "direction": "down",
+              "moveStartSeconds": 80.676986,
+              "moveEndSeconds": 81.131991,
+              "moveMinMax": [
+                [
+                  103,
+                  133
+                ],
+                [
+                  178,
+                  255
+                ]
+              ],
+              "endpointVotes": {
+                "left": 0,
+                "right": 0,
+                "up": 0,
+                "down": 90
+              },
+              "returnWindowSeconds": [
+                81.631991,
+                82.631991
+              ],
+              "returnReports": 222,
+              "returnMedian": [
+                131.0,
+                122.0
+              ],
+              "returnMinMax": [
+                [
+                  131,
+                  131
+                ],
+                [
+                  122,
+                  122
+                ]
+              ]
+            },
+            {
+              "bout": 7,
+              "direction": "left",
+              "moveStartSeconds": 85.389023,
+              "moveEndSeconds": 86.36998299999999,
+              "moveMinMax": [
+                [
+                  0,
+                  187
+                ],
+                [
+                  106,
+                  124
+                ]
+              ],
+              "endpointVotes": {
+                "left": 204,
+                "right": 0,
+                "up": 0,
+                "down": 0
+              },
+              "returnWindowSeconds": [
+                86.86998299999999,
+                87.86998299999999
+              ],
+              "returnReports": 223,
+              "returnMedian": [
+                133,
+                122
+              ],
+              "returnMinMax": [
+                [
+                  133,
+                  133
+                ],
+                [
+                  122,
+                  122
+                ]
+              ]
+            }
+          ]
+        },
+        "limits": [
+          "Physical release is inferred from movement followed by stable coordinates, with operator-confirmed completion, not an independent mechanical witness.",
+          "One circle is operator reported. Native trajectory spans both axes from 0 to 255; signed arc estimate is sensitive to release path and not an independent physical turn count.",
+          "First right-direction sequence was right/up/down/left; second up/right/down/left. Compare matching directions, preserving sequence history.",
+          "First recorded report sequence 81; startup polls before enumeration are not captured.",
+          "Returned coordinates are protocol outputs, not unprocessed ADC voltages."
+        ],
+        "rightMatchedDirectionComparison": [
+          {
+            "direction": "up",
+            "firstSeries": [
+              105,
+              148
+            ],
+            "secondSeries": [
+              133,
+              122
+            ]
+          },
+          {
+            "direction": "right",
+            "firstSeries": [
+              107.0,
+              134.0
+            ],
+            "secondSeries": [
+              133.0,
+              122.0
+            ]
+          },
+          {
+            "direction": "down",
+            "firstSeries": [
+              105,
+              121
+            ],
+            "secondSeries": [
+              131.0,
+              122.0
+            ]
+          },
+          {
+            "direction": "left",
+            "firstSeries": [
+              132,
+              121
+            ],
+            "secondSeries": [
+              133,
+              122
+            ]
+          }
+        ],
+        "rightBetweenReturnCoordinateSpan": {
+          "first": [
+            27,
+            27
+          ],
+          "second": [
+            2.0,
+            0
+          ]
+        },
+        "leftAfterCircleDirectionReturnCoordinateSpan": [
+          1.0,
+          0.0
+        ],
+        "rightMaximumSingleAxisDistanceFrom128": {
+          "first": 23,
+          "second": 6
+        },
+        "interpretation": "Right first-series direction-dependent return spread shrinks substantially in its second series. Left returns after the reported circle remain tightly grouped in its first cardinal series. This supports movement-history-dependent adaptation and is the appropriate per-return comparison; terminal centers alone obscure it. Exact internal calibration formula and whether the circle itself caused the left stability are not directly resolved."
+      }
+    },
+    {
+      "source": "lab/qa/center-mechanism-2026-10-10/W02-PS2-micro-movement-20261011T004432Z-analysis.json",
+      "sourceSha256": "036a3085a958126f2a63f4962c48b6f1510e1620baa220f49b48fe3b163a8717",
+      "sourceBytes": 6377,
+      "data": {
+        "specimen": "W02-PS2-NEW-MODULES",
+        "rawFile": "lab\\qa\\center-mechanism-2026-10-10\\W02-PS2-micro-movement-20261011T004432Z-01.jsonl",
+        "sha256": "1679e5e5cd606e05e3f492e2762d1290eb38d3c0cbe5ab2a55d2256833313ce9",
+        "axisOrder": [
+          "RX",
+          "RY",
+          "LX",
+          "LY"
+        ],
+        "reports": 14489,
+        "gaps": 0,
+        "nonzeroErrors": 0,
+        "invalidCapsOrDisconnected": 0,
+        "nativeFrameAxesEqual": true,
+        "observedAxisMinMax": [
+          [
+            99,
+            153
+          ],
+          [
+            89,
+            143
+          ],
+          [
+            107,
+            160
+          ],
+          [
+            101,
+            141
+          ]
+        ],
+        "endpoint0or255Observed": false,
+        "stablePlateaus": {
+          "left": [
+            {
+              "startSeconds": 0.002284,
+              "endSeconds": 5.900582999999999,
+              "durationSeconds": 5.898298999999999,
+              "XY": [
+                122,
+                125
+              ],
+              "reports": 1312
+            },
+            {
+              "startSeconds": 6.620531,
+              "endSeconds": 6.994582,
+              "durationSeconds": 0.3740510000000006,
+              "XY": [
+                121,
+                125
+              ],
+              "reports": 84
+            },
+            {
+              "startSeconds": 7.525528,
+              "endSeconds": 8.047594,
+              "durationSeconds": 0.5220659999999997,
+              "XY": [
+                121,
+                125
+              ],
+              "reports": 117
+            },
+            {
+              "startSeconds": 10.0496,
+              "endSeconds": 10.382596,
+              "durationSeconds": 0.3329959999999996,
+              "XY": [
+                136,
+                126
+              ],
+              "reports": 75
+            },
+            {
+              "startSeconds": 11.305549000000001,
+              "endSeconds": 11.62459,
+              "durationSeconds": 0.3190409999999986,
+              "XY": [
+                121,
+                124
+              ],
+              "reports": 72
+            },
+            {
+              "startSeconds": 12.722532,
+              "endSeconds": 13.231524,
+              "durationSeconds": 0.508992000000001,
+              "XY": [
+                137,
+                126
+              ],
+              "reports": 114
+            },
+            {
+              "startSeconds": 14.51853,
+              "endSeconds": 14.90554,
+              "durationSeconds": 0.3870100000000001,
+              "XY": [
+                129,
+                123
+              ],
+              "reports": 87
+            },
+            {
+              "startSeconds": 16.138535,
+              "endSeconds": 16.741511,
+              "durationSeconds": 0.6029759999999982,
+              "XY": [
+                131,
+                126
+              ],
+              "reports": 135
+            },
+            {
+              "startSeconds": 18.325547,
+              "endSeconds": 65.20056100000001,
+              "durationSeconds": 46.87501400000001,
+              "XY": [
+                131,
+                126
+              ],
+              "reports": 10417
+            }
+          ],
+          "right": [
+            {
+              "startSeconds": 0.002284,
+              "endSeconds": 19.293563,
+              "durationSeconds": 19.291279,
+              "XY": [
+                130,
+                122
+              ],
+              "reports": 4288
+            },
+            {
+              "startSeconds": 21.012527,
+              "endSeconds": 21.358535,
+              "durationSeconds": 0.3460080000000012,
+              "XY": [
+                127,
+                121
+              ],
+              "reports": 78
+            },
+            {
+              "startSeconds": 22.497529,
+              "endSeconds": 23.059542,
+              "durationSeconds": 0.5620130000000003,
+              "XY": [
+                137,
+                123
+              ],
+              "reports": 126
+            },
+            {
+              "startSeconds": 24.711551,
+              "endSeconds": 25.125507000000002,
+              "durationSeconds": 0.41395600000000243,
+              "XY": [
+                131,
+                121
+              ],
+              "reports": 93
+            },
+            {
+              "startSeconds": 26.250571,
+              "endSeconds": 27.245522,
+              "durationSeconds": 0.9949510000000004,
+              "XY": [
+                130,
+                122
+              ],
+              "reports": 222
+            },
+            {
+              "startSeconds": 28.167588,
+              "endSeconds": 28.554534,
+              "durationSeconds": 0.3869460000000018,
+              "XY": [
+                130,
+                121
+              ],
+              "reports": 87
+            },
+            {
+              "startSeconds": 31.664564,
+              "endSeconds": 32.17254,
+              "durationSeconds": 0.5079759999999993,
+              "XY": [
+                127,
+                122
+              ],
+              "reports": 114
+            },
+            {
+              "startSeconds": 32.825536,
+              "endSeconds": 33.361523,
+              "durationSeconds": 0.5359869999999987,
+              "XY": [
+                137,
+                122
+              ],
+              "reports": 120
+            },
+            {
+              "startSeconds": 33.986554,
+              "endSeconds": 34.522534,
+              "durationSeconds": 0.5359800000000021,
+              "XY": [
+                129,
+                121
+              ],
+              "reports": 120
+            },
+            {
+              "startSeconds": 35.768602,
+              "endSeconds": 36.250515,
+              "durationSeconds": 0.4819129999999987,
+              "XY": [
+                133,
+                122
+              ],
+              "reports": 108
+            },
+            {
+              "startSeconds": 36.902663999999994,
+              "endSeconds": 65.20056100000001,
+              "durationSeconds": 28.297897000000013,
+              "XY": [
+                133,
+                121
+              ],
+              "reports": 6289
+            }
+          ]
+        },
+        "finalAllAxesUnchangedSeconds": 28.297897000000013,
+        "initialFirstThreeSeconds": [
+          130,
+          122,
+          122,
+          125
+        ],
+        "finalRXRYLXLY": [
+          133,
+          121,
+          131,
+          126
+        ],
+        "findings": [
+          "Left movements precede right movements. Protocol values do not reach 0 or 255 on any axis.",
+          "Stable pauses between movements have different coordinates; final coordinates also differ from initial recorded values.",
+          "All four axes remain exactly unchanged for the final 28.3 seconds. No continuing convergence toward 128/128 is observed during this final stationary interval."
+        ],
+        "limits": [
+          "Stable protocol plateaus may be released positions or held small deflections. Individual releases were not separately marked or mechanically witnessed.",
+          "Micro is an operator description; movement amplitude here is measured only in protocol units, not physical angle.",
+          "Prior capture ended at sequence 26410, current capture starts at 67855. Movement during this recording gap is not known; do not assign gap changes to this trial.",
+          "Center variation following micro movements alone does not distinguish mechanical return hysteresis from internal correction."
+        ]
+      }
+    }
+  ]
+}

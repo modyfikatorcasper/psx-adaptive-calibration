@@ -1,0 +1,11 @@
+{
+  "evidence": "user-reported; no new physical tests by the agent",
+  "earlierModels": ["SCPH-10010 PS2", "SCPH-110 PS One", "SCPH-1200 PS1 Korean specimen"],
+  "earlierObservations": "Different center after power cycle; small moves insufficient; large circles improved center. Assignment to a particular earlier model is unknown.",
+  "specimens": [
+    {"id":"U-CLONE-PS2-01","model":"unknown PS2 clone","observations":"Approximately127/120, perceived delay and apparent auto-centering; app calls it PS1","status":"algorithm unknown"},
+    {"id":"U-PS1-NEWSTICKS-01","model":"PS1, exact SCPH unknown","modification":"user replacement sticks","observations":"Return126–133, sometimes135; transient140 during small motion; square boundary; app zero deviation","status":"zero deviation definition must be checked; not ideal RAW proof"},
+    {"id":"U-HALL-PCB-01","model":"probably PS2 PCB, not confirmed","modification":"Hall sticks reported","observations":"Unknown PSX","status":"short suspected, not confirmed; not demonstrated Hall incompatibility"},
+    {"id":"U-PS2-OFFSET-01","model":"other PS2, exact SCPH unknown","observations":"Returns near center; offsets up to about20","status":"replacement proposed, not yet tested"}
+  ]
+}

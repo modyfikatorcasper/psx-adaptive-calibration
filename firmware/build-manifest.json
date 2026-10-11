@@ -1,0 +1,15 @@
+{
+  "board": "waveshare_rp2040_zero",
+  "flash_bytes": 2097152,
+  "usb_vid": "0x1209",
+  "usb_pid": "0x1",
+  "joypad_os_commit": "bf507bf87aee18e24ea82f84647cd592a7a2ddaf",
+  "pico_sdk": "2.2.0",
+  "tinyusb_commit": "86ad6e56c1700e85f1c5678607a762cfe3aa2f47",
+  "tools": {
+    "arm": "arm-none-eabi-gcc.exe (xPack GNU Arm Embedded GCC x86_64) 15.2.1 20251203",
+    "cmake": "cmake version 3.31.6",
+    "ninja": "1.12.1"
+  },
+  "uf2_sha256": "d0a419b2ad917f17dd1e3e9c806cd8015a59d85b67c401259e50d841186f3884"
+}
