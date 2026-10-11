@@ -1,7 +1,198 @@
-<!doctype html><html lang="pl"><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Instrukcja · Modi PSX RAW Tester</title><style>:root{color-scheme:dark;--bg:#2e3440;--panel:#3b4252;--border:#4c566a;--text:#d8dee9;--muted:#aeb6c4;--accent:#88c0d0;--accent-2:#81a1c1;--accent-3:#5e81ac;--good:#a3be8c;--bad:#bf616a;--warn:#ebcb8b;--purple:#b48ead;--radius:12px}
+<!doctype html><html lang="pl"><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Instrukcja · Modi PSX RAW Tester</title><style>
+:root{color-scheme:dark;--bg:#2e3440;--panel:#3b4252;--border:#4c566a;--text:#d8dee9;--muted:#aeb6c4;--accent:#88c0d0;--accent-2:#81a1c1;--accent-3:#5e81ac;--good:#a3be8c;--bad:#bf616a;--warn:#ebcb8b;--purple:#b48ead;--radius:12px}
 *{box-sizing:border-box}body{margin:0;font:14px/1.5 "Segoe UI",system-ui,sans-serif;background:var(--bg);color:var(--text)}button,input,a,summary{ -webkit-tap-highlight-color:transparent}button,input{font:inherit}button{border:1px solid var(--border);border-radius:8px;background:var(--bg);color:var(--text);padding:9px 14px;font-weight:600;cursor:pointer;white-space:nowrap;transition:background .15s,border-color .15s}button:hover:enabled{background:#434c5e;border-color:var(--accent-2)}button:disabled{opacity:.4;cursor:not-allowed}button.primary{background:var(--accent);border-color:var(--accent);color:#242c38}button.primary:hover:enabled{background:#9ed1df}button:focus-visible,a:focus-visible,summary:focus-visible,input:focus-visible{outline:2px solid var(--accent);outline-offset:4px}a{color:var(--accent);text-decoration:none}h1,h2,h3,p{margin:0}h1{font-size:32px;letter-spacing:-1px;line-height:1.2;font-weight:650}h2{font-size:18px;font-weight:600}h3{font-size:15px;font-weight:600}p{color:var(--muted)}small,.label{color:var(--muted)}.topbar{height:70px;border-bottom:1px solid var(--border);background:linear-gradient(180deg,#363d4a,var(--bg));display:flex;align-items:center;justify-content:space-between;padding:0 max(24px,calc((100vw - 1360px)/2));gap:20px}.brand{display:flex;align-items:center;gap:10px;color:var(--text);font-size:18px;letter-spacing:-.4px}.brand b{font-size:12px;color:var(--accent);border-left:1px solid var(--border);padding-left:12px;margin-left:10px;font-weight:600;letter-spacing:.5px}.brand svg{width:34px;height:34px;stroke:var(--accent);fill:none;stroke-width:1.8}.brand .dot{fill:var(--good);stroke:var(--bg)}.top-meta{display:flex;gap:16px;align-items:center;font-size:12px;color:var(--muted)}.pill,.mode-tag,.badge{border:1px solid var(--border);border-radius:6px;padding:4px 9px;font-size:10px;letter-spacing:.6px;color:var(--muted);font-weight:650}.mode-tag{font-size:11px;align-self:center}.mode-tag.demo{color:var(--warn);border-color:#82714b;background:#ebcb8b0a}.mode-tag.live{color:var(--good);border-color:#677958}.badge{padding:3px 7px;font-size:10px}.eyebrow{color:var(--accent);font-size:10px;font-weight:650;letter-spacing:1.8px;margin-bottom:8px}main{max-width:1408px;margin:auto;padding:28px 24px 0}.heading{display:flex;justify-content:space-between;gap:20px;margin-bottom:22px}.heading p{margin-top:10px;font-size:13px}.connection{display:flex;justify-content:space-between;align-items:center;gap:20px;padding:18px 20px;background:var(--panel);border:1px solid var(--border);border-radius:var(--radius)}.connection-copy{display:flex;gap:12px;align-items:center}.connection-copy strong{font-size:14px}.connection-copy p{font-size:12px;margin-top:3px}.status-dot{flex-shrink:0;width:8px;height:8px;border-radius:50%;background:var(--muted);box-shadow:0 0 0 5px #aeb6c40d}.status-dot.live{background:var(--good);box-shadow:0 0 0 5px #a3be8c12}.status-dot.demo,.status-dot.warning{background:var(--warn);box-shadow:0 0 0 5px #ebcb8b12}.actions{display:flex;gap:8px;flex-wrap:wrap;align-items:center}.notice{border:1px solid var(--warn);padding:12px;margin-top:14px;border-radius:8px;color:var(--warn)}.metrics{display:grid;grid-template-columns:1.5fr .8fr .8fr 1fr;gap:0;margin:18px 0 22px;background:var(--panel);border:1px solid var(--border);border-radius:var(--radius);overflow:hidden}.metric{padding:15px 20px;display:flex;flex-direction:column;border-right:1px solid var(--border);font-variant-numeric:tabular-nums}.metric:last-child{border:0}.metric>span{font-size:11px;color:var(--muted);margin-bottom:6px}.metric strong{font-size:23px;letter-spacing:-.6px;font-weight:600}.metric small{font-size:10px;margin-top:3px}.metric em{color:var(--muted);font-size:17px;font-style:normal}.workspace-title{display:flex;justify-content:space-between;align-items:center;margin-bottom:14px;gap:12px}.subtle{font-weight:400;color:var(--muted);font-size:12px;margin-left:5px}.workspace-title button{padding:7px 11px;font-size:11px}.toggle{display:flex;gap:6px;align-items:center;font-size:11px;color:var(--muted);margin-left:7px;cursor:pointer}.toggle input{accent-color:var(--accent);width:14px;height:14px}.stick-grid,.detail-grid{display:grid;grid-template-columns:1fr 1fr;gap:16px}.panel{background:var(--panel);border:1px solid var(--border);border-radius:var(--radius);box-shadow:0 6px 16px -12px #0006;padding:18px}.panel-heading{display:flex;align-items:center;justify-content:space-between;gap:10px;margin-bottom:16px}.panel-heading h3{display:flex;align-items:center;gap:9px}.stick-label{display:inline-grid;place-items:center;width:25px;height:25px;background:#88c0d01a;border-radius:6px;color:var(--accent);font-size:11px}.stick-label.right{color:var(--purple);background:#b48ead1a}.axis-code{font:11px Consolas,monospace;color:var(--muted)}.stick-content{display:grid;grid-template-columns:minmax(180px,1.15fr) minmax(145px,.85fr);gap:20px;align-items:center}canvas{width:100%;height:auto;display:block;background:var(--bg);border:1px solid var(--border);border-radius:8px;aspect-ratio:1}.label{font-size:9px;letter-spacing:1px}.raw-pair{font:600 clamp(20px,2vw,29px)/1.6 Consolas,monospace;color:var(--accent);margin:2px 0 15px}.raw-pair em{color:var(--border);font-style:normal;font-weight:400}.right .raw-pair{color:var(--purple)}.stick-stat{display:flex;justify-content:space-between;gap:10px;font-size:11px;margin:10px 0}.stick-stat>span{color:var(--muted)}.stick-stat b{font-weight:500;font-variant-numeric:tabular-nums}.hint{font-size:11px;line-height:1.7;color:var(--muted)}.stick-info .hint{margin-top:15px;font-size:10px}progress{display:block;height:5px;width:100%;border:0;border-radius:5px;overflow:hidden;background:var(--bg);accent-color:var(--accent)}progress::-webkit-progress-bar{background:var(--bg)}progress::-webkit-progress-value{background:var(--accent)}progress::-moz-progress-bar{background:var(--accent)}#rightProgress::-webkit-progress-value{background:var(--purple)}.table-panel{margin:16px 0}.table-scroll{overflow-x:auto}table{width:100%;border-collapse:collapse;font-size:12px;font-variant-numeric:tabular-nums;white-space:nowrap}th,td{text-align:right;padding:10px 13px;border-bottom:1px solid var(--border)}th{color:var(--muted);font-weight:400;font-size:10px;padding-top:0}th:first-child,td:first-child{text-align:left;padding-left:0}td:first-child{color:var(--accent);font-weight:600}td.raw{font:600 19px Consolas,monospace;color:var(--accent)}tbody tr:last-child td{border:0}.table-note{margin-top:12px;font-size:10px}.buttons{display:grid;grid-template-columns:repeat(4,1fr);gap:8px}.key{padding:9px 5px;border-radius:7px;background:var(--bg);border:1px solid var(--border);color:var(--muted);text-align:center;font-size:11px}.key.on{color:#273038;background:var(--accent);border-color:var(--accent)}.key[data-bit="12"].on{background:var(--good)}.key[data-bit="13"].on{background:var(--bad)}.key[data-bit="14"].on{background:var(--accent-2)}.key[data-bit="15"].on{background:var(--purple)}.detail-grid .hint{margin-top:16px;font-size:10px}.pressures{display:grid;grid-template-columns:repeat(4,1fr);gap:17px 14px}.pressure-label{display:flex;justify-content:space-between;font-size:10px;margin-bottom:7px}.pressure-label b{font:12px Consolas,monospace;color:var(--warn)}.pressures progress::-webkit-progress-value{background:var(--warn)}.session-panel{margin:16px 0;display:grid;grid-template-columns:1fr 1fr;align-items:center;gap:30px}.session-panel .eyebrow{margin-bottom:4px}.session-panel h3{font-size:17px}.session-panel .hint{margin-top:6px}.session-name{display:flex;align-items:center;gap:10px;font-size:11px;color:var(--muted);margin-top:14px}.session-name input{width:100%;max-width:330px;background:var(--bg);border:1px solid var(--border);border-radius:6px;padding:8px 10px;color:var(--text);font-size:11px}.record-meta{display:flex;justify-content:space-between;align-items:baseline;color:var(--muted);font-size:11px;margin-bottom:16px}.record-meta strong{font-size:23px;color:var(--text);font-weight:500;font-variant-numeric:tabular-nums}.record-meta small{font-size:10px}.session-controls .actions{justify-content:flex-end}.session-controls button{font-size:11px}.recording{color:var(--bad)!important;border-color:var(--bad)}details summary{cursor:pointer;display:flex;justify-content:space-between;gap:10px;font-size:12px}summary::before{content:'+';color:var(--accent);margin-right:7px}details[open] summary::before{content:'−'}summary span{margin-left:auto;font-size:10px;color:var(--muted)}pre{font:12px/1.8 Consolas,monospace;white-space:pre-wrap;overflow-wrap:anywhere;color:var(--accent);padding:12px;background:var(--bg);border-radius:6px}.steps{display:grid;grid-template-columns:repeat(3,1fr);gap:35px;padding:26px 4px}.steps>div{position:relative;padding-left:31px}.steps span{position:absolute;left:0;top:0;color:var(--accent-2);font:11px Consolas,monospace}.steps h3{font-size:12px;margin-bottom:5px}.steps p{font-size:11px}footer{border-top:1px solid var(--border);display:flex;justify-content:space-between;gap:20px;padding:17px 0;font-size:10px;color:var(--muted)}[hidden]{display:none!important}
 @media(min-width:1600px){main{padding-top:36px}.stick-content{grid-template-columns:280px 1fr}}
 @media(max-width:1050px){.stick-content{grid-template-columns:1fr;gap:14px}.stick-panel canvas{max-width:310px;margin:auto}.stick-info{display:grid;grid-template-columns:1fr 1fr;gap:0 16px}.stick-info .label,.raw-pair,.stick-info .hint,.stick-info progress{grid-column:1/-1}.raw-pair{margin-bottom:0}.stick-info .hint{margin-top:10px}.session-panel{gap:15px}.privacy{display:none}}
 @media(max-width:760px){main{padding:20px 16px 0}.topbar{padding:0 16px;height:60px}.brand{font-size:16px}.brand b{font-size:10px;padding-left:8px;margin-left:6px}h1{font-size:27px}.heading{align-items:start}.mode-tag{font-size:9px}.connection{flex-direction:column;align-items:stretch;padding:16px}.connection .actions{margin-left:20px}.metrics{grid-template-columns:1fr 1fr}.metric{padding:13px 16px}.metric:nth-child(2){border-right:0}.metric:nth-child(-n+2){border-bottom:1px solid var(--border)}.metric strong{font-size:21px}.workspace-title{flex-direction:column;align-items:flex-start}.stick-grid,.detail-grid,.session-panel{grid-template-columns:1fr}.stick-content{grid-template-columns:1fr 1fr}.stick-info{display:block}.raw-pair{font-size:23px;margin-bottom:12px}.session-controls .actions{justify-content:flex-start}.steps{gap:16px;grid-template-columns:1fr}footer{flex-wrap:wrap}.table-panel{padding:16px}.top-meta .pill{font-size:8px}.session-name input{max-width:none}.panel{padding:16px}.pressures{gap:15px 12px}}
 @media(max-width:420px){.stick-content{grid-template-columns:1fr}.stick-panel canvas{max-width:260px}.stick-info{display:grid}.raw-pair{margin-bottom:0}.mode-tag{max-width:100px;text-align:center}.heading p{font-size:12px}.brand b{display:none}.connection .actions{margin-left:0}button{font-size:12px;padding:9px 10px}.metrics{margin-bottom:18px}.metric strong{font-size:19px}.session-controls button{padding:8px}}
-</style><main style="max-width:900px;margin:auto;padding:32px"><a href="index.html">← Tester RAW</a><h1>Modi PSX RAW Tester</h1><p>Podłącz pad PS1 / PS2 do Modi PSX Adapter z firmware 2.1, a adapter do komputera. W Chrome lub Edge wybierz „Połącz adapter” i wskaż urządzenie.</p><h2>Co widzisz</h2><p>Oryginalne osie 0–255, przyciski, 12 kanałów nacisku w trybie pressure 0x79 i natywną ramkę PSX. Tryb cyfrowy nie zawiera osi. ID określa format protokołu, nie autentyczność pada. USB VID/PID identyfikuje adapter.</p><p>„Zapisz środek” zbiera medianę z 1 sekundy i ustawia wyłącznie punkt odniesienia na wykresie. Nie zmienia RAW i nie kalibruje kontrolera. „Reset pomiarów” czyści lokalne statystyki, nie resetuje pada.</p><h2>Zapis danych</h2><p>Uruchom zapis, wykonaj ruchy, zatrzymaj zapis i pobierz CSV albo JSON. Limit wynosi 120 000 raportów. Odświeżenie strony usuwa niezapisane odczyty. Dane pomiarowe nie są wysyłane na serwer; hosting otrzymuje standardowe żądania pobrania strony.</p><h2>Ograniczenia</h2><p>Tester wysyła zero komend HID. Nie ma symulacji, terminala, automatów badawczych, zapisu konfiguracji ani sterowania wibracjami. Firmware adaptera standardowo odpytuje i inicjalizuje pad. RAW oznacza bajty protokołu, nie napięcia potencjometrów ani surowy ADC.</p><p>W obecnym schemacie zasilanie silników jest niepodłączone; wibracji nie zweryfikowano.</p><p><a href="https://github.com/modyfikatorcasper/psx-adaptive-calibration">Raport, firmware i instrukcja wykonania adaptera</a></p><footer>Kacper Lewandowski, znany też jako modyfikator Modi / modyfikator 89</footer></main></html>
+
+/* Accessible PL / EN switch; switching preserves the current HID session. */
+.language-switch{display:inline-flex;align-items:center;gap:8px;position:relative;cursor:pointer;font-size:12px;font-weight:700;color:#aeb6c4;white-space:nowrap}
+.language-switch .selected{color:#eceff4}
+.language-switch input{position:absolute;width:42px;height:24px;margin:0;left:24px;opacity:0;cursor:pointer;z-index:1}
+.language-track{width:42px;height:24px;border-radius:20px;background:#434c5e;box-shadow:inset 0 0 0 1px #5a657a;transition:background .2s}
+.language-track:before{content:"";display:block;width:18px;height:18px;margin:3px;border-radius:50%;background:#eceff4;transition:transform .2s}
+.language-switch input:checked+.language-track{background:#5e81ac}
+.language-switch input:checked+.language-track:before{transform:translateX(18px)}
+.language-switch input:focus-visible+.language-track{outline:2px solid #88c0d0;outline-offset:3px}
+.help-language{display:flex;justify-content:flex-end;margin-bottom:16px}
+@media(max-width:600px){.top-meta{flex-wrap:wrap;justify-content:flex-end;gap:10px}.topbar{gap:12px}}
+
+</style><main style="max-width:900px;margin:auto;padding:32px"><div class="help-language"><label class="language-switch"><span id="languagePL">PL</span><input id="languageToggle" type="checkbox" role="switch" aria-label="Język angielski"><span class="language-track" aria-hidden="true"></span><span id="languageEN">EN</span></label></div><a href="index.html">← Tester RAW</a><h1>Modi PSX RAW Tester</h1><p>Podłącz pad PS1 / PS2 do Modi PSX Adapter z firmware 2.1, a adapter do komputera. W Chrome lub Edge wybierz „Połącz adapter” i wskaż urządzenie.</p><h2>Co widzisz</h2><p>Oryginalne osie 0–255, przyciski, 12 kanałów nacisku w trybie pressure 0x79 i natywną ramkę PSX. Tryb cyfrowy nie zawiera osi. ID określa format protokołu, nie autentyczność pada. USB VID/PID identyfikuje adapter.</p><p>„Zapisz środek” zbiera medianę z 1 sekundy i ustawia wyłącznie punkt odniesienia na wykresie. Nie zmienia RAW i nie kalibruje kontrolera. „Reset pomiarów” czyści lokalne statystyki, nie resetuje pada.</p><h2>Zapis danych</h2><p>Uruchom zapis, wykonaj ruchy, zatrzymaj zapis i pobierz CSV albo JSON. Limit wynosi 120 000 raportów. Odświeżenie strony usuwa niezapisane odczyty. Dane pomiarowe nie są wysyłane na serwer; hosting otrzymuje standardowe żądania pobrania strony.</p><h2>Ograniczenia</h2><p>Tester wysyła zero komend HID. Nie ma symulacji, terminala, automatów badawczych, zapisu konfiguracji ani sterowania wibracjami. Firmware adaptera standardowo odpytuje i inicjalizuje pad. RAW oznacza bajty protokołu, nie napięcia potencjometrów ani surowy ADC.</p><p>W obecnym schemacie zasilanie silników jest niepodłączone; wibracji nie zweryfikowano.</p><p><a href="https://github.com/modyfikatorcasper/psx-adaptive-calibration">Raport, firmware i instrukcja wykonania adaptera</a></p><footer>Kacper Lewandowski, znany też jako modyfikator Modi / modyfikator 89</footer></main><script>
+'use strict';
+// UI translations only. Hardware data and exported reports remain unchanged.
+const PSXLanguage = (() => {
+  const english = {
+  "Modi PSX RAW Tester — początek": "Modi PSX RAW Tester — home",
+  "Odczyt RAW kontrolerów PS1 i PS2 przez Modi PSX Adapter.": "Read PS1 and PS2 controller RAW data through Modi PSX Adapter.",
+  "Odczyty pozostają w przeglądarce": "Readings stay in your browser",
+  "PS1 + PS2 / ODCZYT RAW": "PS1 + PS2 / RAW READINGS",
+  "Zobacz, co raportuje pad.": "See what your controller reports.",
+  "Diagnostyka oryginalnych wartości RAW przez Modi PSX Adapter.": "Inspect original RAW values through Modi PSX Adapter.",
+  "BRAK ŹRÓDŁA": "NO SOURCE",
+  "Połączenie": "Connection",
+  "Gotowy do testu": "Ready to test",
+  "Podłącz adapter i wybierz go przyciskiem „Połącz adapter”.": "Plug in the adapter and select it using “Connect adapter”.",
+  "Połącz adapter": "Connect adapter",
+  "Rozłącz": "Disconnect",
+  "Stan adaptera": "Adapter status",
+  "Kontroler / protokół": "Controller / protocol",
+  "Oczekiwanie na dane": "Waiting for data",
+  "Brak połączenia": "Disconnected",
+  "Raporty USB / s": "USB reports / s",
+  "Ostatnia sekunda": "Last second",
+  "Błędy PSX / luki sekwencji": "PSX errors / sequence gaps",
+  "Liczniki transportu": "Transport counters",
+  "Analogi": "Sticks",
+  "Zapisz środek · 1 s": "Save center · 1 s",
+  "Reset pomiarów": "Reset measurements",
+  "Ślad ruchu": "Movement trail",
+  "Lewy analog": "Left stick",
+  "Prawy analog": "Right stick",
+  "POZYCJA RAW": "RAW POSITION",
+  "Od środka": "From center",
+  "Pokrycie okręgu": "Circle coverage",
+  "Promień min / max": "Min / max radius",
+  "Wykres XY lewego analoga, wartości RAW 0 do 255": "Left stick XY plot, RAW values 0 to 255",
+  "Wykres XY prawego analoga, wartości RAW 0 do 255": "Right stick XY plot, RAW values 0 to 255",
+  "Pokrycie lewego analoga": "Left stick coverage",
+  "Pokrycie prawego analoga": "Right stick coverage",
+  "Wykonaj powoli pełne okręgi przy krawędzi zakresu.": "Slowly make full circles along the edge of the range.",
+  "Krzyżyk oznacza zmierzony środek. Punkt to bieżąca próbka.": "The cross marks the measured center. The dot is the current sample.",
+  "Pomiar osi": "Axis measurements",
+  "Środek: brak pomiaru": "Center: not measured",
+  "Oś": "Axis",
+  "Środek*": "Center*",
+  "Zakres": "Range",
+  "Δ środka*": "Δ center*",
+  "Δ od 128": "Δ from 128",
+  "* Mediana z 1 s spoczynku, zapisana w aplikacji. † Jitter i σ z ostatniej 1 s; trzymaj gałkę nieruchomo. Pokrycie: 36 sektorów, promień ≥64 RAW. Okrąg tła: środek 127,5, promień 127,5.": "* Median of 1 s at rest, stored in the app. † Jitter and σ over the last 1 s; keep the stick still. Coverage: 36 sectors, radius ≥64 RAW. Background circle: center 127.5, radius 127.5.",
+  "Przyciski": "Buttons",
+  "16 bitów PSX": "16 PSX bits",
+  "Podświetlenie oznacza wciśnięty przycisk w poprawnej ramce.": "A highlight indicates a pressed button in a valid frame.",
+  "Nacisk przycisków": "Button pressure",
+  "Dostępny w trybie pressure 0x79.": "Available in pressure mode 0x79.",
+  "REJESTRATOR": "RECORDER",
+  "Zapisz sesję testową": "Record a test session",
+  "CSV do analizy lub JSON z metadanymi i oryginalnymi ramkami. Limit: 120 000 raportów.": "CSV for analysis or JSON with metadata and original frames. Limit: 120,000 reports.",
+  "Nazwa sesji": "Session name",
+  "np. DS2 · spoczynek po podłączeniu": "e.g. DS2 · at rest after connection",
+  "Gotowy do zapisu": "Ready to record",
+  "raportów": "reports",
+  "● Rozpocznij zapis": "● Start recording",
+  "Eksport CSV": "Export CSV",
+  "Eksport JSON": "Export JSON",
+  "Ramka źródłowa i diagnostyka transportu": "Source frame and transport diagnostics",
+  "Brak ramki": "No frame",
+  "Spoczynek": "At rest",
+  "Zostaw gałki nieruchomo i użyj „Zapisz środek”, żeby powtórzyć pomiar.": "Keep the sticks still and use “Save center” to repeat the measurement.",
+  "Zakres i nacisk": "Range and pressure",
+  "Obróć obie gałki do oporu. Sprawdź przyciski i wartości nacisku DS2, naciskając je stopniowo.": "Move both sticks around their full range. Check the buttons and DS2 pressure values by pressing them gradually.",
+  "Porównanie": "Comparison",
+  "Zapisz sesje przed i po ponownym podłączeniu pada. Porównaj środek, zakres i jitter.": "Record sessions before and after reconnecting the controller. Compare center, range and jitter.",
+  "Modi PSX RAW Tester · tester Modi PSX Adapter": "Modi PSX RAW Tester · for Modi PSX Adapter",
+  "Bez deadzone, skalowania i wygładzania. Pomiar środka nie kalibruje pada.": "No deadzone, scaling or smoothing. Measuring the center does not calibrate the controller.",
+  "Instrukcja": "Instructions",
+  "Badania i adapter DIY": "Research and DIY adapter",
+  "Nieznany PSX": "Unknown PSX",
+  "Tryb cyfrowy": "Digital mode",
+  "Tryb analogowy": "Analog mode",
+  "Tryb pressure": "Pressure mode",
+  "Konfiguracja": "Configuration",
+  "Tryb niedostępny": "Mode unavailable",
+  "Nieznany tryb": "Unknown mode",
+  "Otwórz tester w Chrome lub Edge przez HTTPS albo localhost. WebHID jest niedostępny w tej przeglądarce.": "Open the tester in Chrome or Edge over HTTPS or localhost. WebHID is unavailable in this browser.",
+  "Nie wybrano adaptera. Podłącz Modi PSX Adapter i spróbuj ponownie.": "No adapter selected. Plug in Modi PSX Adapter and try again.",
+  "Nie udzielono dostępu do adaptera. Spróbuj ponownie.": "Adapter access was not granted. Try again.",
+  "Zamknięto widok urządzenia; USB: ": "Device view closed; USB: ",
+  "Rozłączono.": "Disconnected.",
+  "Adapter USB został odłączony.": "The USB adapter was unplugged.",
+  "Pomiary zresetowane. Pozostaw gałki w spoczynku przez 1 s.": "Measurements reset. Leave the sticks at rest for 1 s.",
+  "Pomiar środka: nie poruszaj gałkami przez 1 s.": "Measuring center: keep the sticks still for 1 s.",
+  "Odczyt sprzętowy wymaga przeglądarki z WebHID, np. Chrome lub Edge na komputerze, oraz HTTPS albo localhost.": "Hardware readings require a WebHID browser, such as desktop Chrome or Edge, over HTTPS or localhost.",
+  "Informacja": "Information",
+  "Oczekiwanie na raporty": "Waiting for reports",
+  "Brak świeżych danych od ponad 1 s. Sprawdź USB i zgodność firmware MPSX v1.": "No fresh data for over 1 s. Check USB and MPSX v1 firmware compatibility.",
+  "Adapter otwarty. Oczekiwanie na raport MPSX…": "Adapter opened. Waiting for an MPSX report…",
+  "Kontroler odłączony": "Controller disconnected",
+  "Adapter działa. Brak poprawnej ramki pada przez co najmniej 30 ms.": "The adapter is working. No valid controller frame for at least 30 ms.",
+  "Błąd odczytu PSX": "PSX read error",
+  "Ostatnia ramka pozostaje w diagnostyce. Nie dodajemy jej ponownie do pomiarów.": "The last frame remains in diagnostics. It is not added to measurements again.",
+  "Konfiguracja kontrolera": "Controller configuration",
+  "Ramka 0xF3 nie zawiera danych użytkownika. Poczekaj na zakończenie konfiguracji.": "A 0xF3 frame contains no user input. Wait for configuration to finish.",
+  "Tryb cyfrowy — kontroler aktywny": "Digital mode — controller active",
+  "D-pad i przyciski pozostają dostępne. Gałki nie są raportowane w trybie cyfrowym.": "The D-pad and buttons remain available. Sticks are not reported in digital mode.",
+  "Odczyt RAW aktywny": "RAW readings active",
+  "Użyj „Zapisz środek” do lokalnego porównania.": "Use “Save center” for a local comparison.",
+  "Oryginalne dane kontrolera. Pomiar środka jest tylko punktem odniesienia.": "Original controller data. The measured center is only a reference.",
+  "Brak świeżych danych": "No fresh data",
+  "Kontroler podłączony": "Controller connected",
+  "Środek: zapisany lokalnie": "Center: saved locally",
+  "Środek: pomiar 1 s…": "Center: measuring for 1 s…",
+  "Oryginalne wartości nacisku 0–255.": "Original pressure values 0–255.",
+  "Bieżący tryb nie udostępnia świeżych danych pressure.": "The current mode provides no fresh pressure data.",
+  "Brak ramki natywnej": "No native frame",
+  "błędy dekodera": "decoder errors",
+  "■ Zatrzymaj zapis": "■ Stop recording",
+  "Nagrywanie · ": "Recording · ",
+  "Zapis zakończony · ": "Recording finished · ",
+  " · limit raportów": " · report limit",
+  "Nieprawidłowa długość raportu": "Invalid report length",
+  "To nie jest protokół Modi PSX": "This is not the Modi PSX protocol",
+  "Nieobsługiwana wersja protokołu": "Unsupported protocol version",
+  "Nieprawidłowa długość ramki PSX": "Invalid PSX frame length",
+  "Instrukcja · Modi PSX RAW Tester": "Instructions · Modi PSX RAW Tester",
+  "← Tester RAW": "← RAW tester",
+  "Podłącz pad PS1 / PS2 do Modi PSX Adapter z firmware 2.1, a adapter do komputera. W Chrome lub Edge wybierz „Połącz adapter” i wskaż urządzenie.": "Connect a PS1 / PS2 controller to Modi PSX Adapter with firmware 2.1, then connect the adapter to your computer. In Chrome or Edge, choose “Connect adapter” and select the device.",
+  "Co widzisz": "What you see",
+  "Oryginalne osie 0–255, przyciski, 12 kanałów nacisku w trybie pressure 0x79 i natywną ramkę PSX. Tryb cyfrowy nie zawiera osi. ID określa format protokołu, nie autentyczność pada. USB VID/PID identyfikuje adapter.": "Original axes 0–255, buttons, 12 pressure channels in pressure mode 0x79, and the native PSX frame. Digital mode has no axes. The ID identifies the protocol format, not controller authenticity. USB VID/PID identifies the adapter.",
+  "„Zapisz środek” zbiera medianę z 1 sekundy i ustawia wyłącznie punkt odniesienia na wykresie. Nie zmienia RAW i nie kalibruje kontrolera. „Reset pomiarów” czyści lokalne statystyki, nie resetuje pada.": "“Save center” takes the median over 1 second and sets a reference point on the plot only. It does not change RAW or calibrate the controller. “Reset measurements” clears local statistics; it does not reset the controller.",
+  "Zapis danych": "Recording data",
+  "Uruchom zapis, wykonaj ruchy, zatrzymaj zapis i pobierz CSV albo JSON. Limit wynosi 120 000 raportów. Odświeżenie strony usuwa niezapisane odczyty. Dane pomiarowe nie są wysyłane na serwer; hosting otrzymuje standardowe żądania pobrania strony.": "Start recording, move the sticks, stop recording, and download CSV or JSON. The limit is 120,000 reports. Refreshing the page removes unsaved readings. Measurements are not sent to a server; the hosting service receives standard page requests.",
+  "Ograniczenia": "Limitations",
+  "Tester wysyła zero komend HID. Nie ma symulacji, terminala, automatów badawczych, zapisu konfiguracji ani sterowania wibracjami. Firmware adaptera standardowo odpytuje i inicjalizuje pad. RAW oznacza bajty protokołu, nie napięcia potencjometrów ani surowy ADC.": "The tester sends no HID commands. It has no simulation, terminal, automated research tests, configuration writes or vibration controls. The adapter firmware polls and initializes the controller normally. RAW means protocol bytes, not potentiometer voltages or raw ADC values.",
+  "W obecnym schemacie zasilanie silników jest niepodłączone; wibracji nie zweryfikowano.": "Motor power is not connected in the current wiring diagram; vibration has not been verified.",
+  "Raport, firmware i instrukcja wykonania adaptera": "Report, firmware and DIY adapter instructions (Polish)",
+  "Kacper Lewandowski, znany też jako modyfikator Modi / modyfikator 89": "Kacper Lewandowski, also known as modyfikator Modi / modyfikator 89"
+};
+  const key = 'modi-lab-lang';
+  let language = 'pl';
+  try { if (localStorage.getItem(key) === 'en') language = 'en'; } catch (_) {}
+  const translate = value => language === 'en' ? (english[value] ?? value) : value;
+  const dynamicIds = new Set(['sourceTag','statusTitle','status','compatibility','family','mode','connectionState','centerState','pressureNote','native','transport','record','recordState','recordCount','axes','buttons','pressures']);
+  const nodes = [], attributes = [];
+  const walker = document.createTreeWalker(document.body, NodeFilter.SHOW_TEXT);
+  while (walker.nextNode()) {
+    const node = walker.currentNode, parent = node.parentElement;
+    if (!parent || parent.closest('script,style,.language-switch') || dynamicIds.has(parent.id)) continue;
+    const trimmed = node.nodeValue.trim();
+    if (Object.hasOwn(english, trimmed)) nodes.push([node, node.nodeValue, trimmed]);
+  }
+  document.querySelectorAll('[aria-label],[placeholder],meta[name="description"]').forEach(element => {
+    for (const name of ['aria-label','placeholder','content']) {
+      const original = element.getAttribute(name);
+      if (original && Object.hasOwn(english, original)) attributes.push([element, name, original]);
+    }
+  });
+  const originalTitle = document.title;
+  function apply(next = language) {
+    language = next === 'en' ? 'en' : 'pl';
+    document.documentElement.lang = language;
+    nodes.forEach(([node, original, trimmed]) => { node.nodeValue = original.replace(trimmed, translate(trimmed)); });
+    attributes.forEach(([element, name, original]) => element.setAttribute(name, translate(original)));
+    document.title = translate(originalTitle);
+    const toggle = document.getElementById('languageToggle');
+    toggle.checked = language === 'en';
+    toggle.setAttribute('aria-label', language === 'en' ? 'English language' : 'Język angielski');
+    document.getElementById('languagePL').classList.toggle('selected', language === 'pl');
+    document.getElementById('languageEN').classList.toggle('selected', language === 'en');
+    try { localStorage.setItem(key, language); } catch (_) {}
+    document.querySelectorAll('#pressures progress').forEach((bar,i) => bar.setAttribute('aria-label', (language === 'en' ? 'Pressure ' : 'Nacisk ') + PRESSURE[i]));
+    window.dispatchEvent(new Event('psxlanguagechange'));
+  }
+  document.getElementById('languageToggle').addEventListener('change', event => apply(event.target.checked ? 'en' : 'pl'));
+  apply();
+  return { t: translate, apply, get language() { return language; } };
+})();
+
+</script></html>
