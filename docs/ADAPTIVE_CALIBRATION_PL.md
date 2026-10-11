@@ -24,11 +24,13 @@ Drugim celem było sprawdzenie, czy na wynik można wpłynąć sprzętowo, wymie
 
 W tych doświadczeniach nie programowaliśmy wewnętrznej kalibracji Sony ani nie stosowaliśmy korekcji wartości RAW po stronie adaptera. Nie wykazaliśmy tym samym, że każda ingerencja programowa jest niemożliwa; wykazaliśmy wpływ historii ruchów i wymiany sprzętu na raportowane wartości.
 
-## Źródło Sony
+## Źródło Sony — DualShock do PS1, 1998
 
 Sony Computer Entertainment, *Technical Requirements Checklist for PlayStation Software*, wersja 1.3, czerwiec 1998, §11.10.1, strona 14 (19. strona PDF). [Źródło](https://psx.arthus.net/sdk/Psy-Q/DOCS/TECHNOTE/mtrc13.pdf#page=19).
 
 > built-in auto-calibration function for center position calibration and maximum travel value detection
+
+Cytat dotyczy kontrolera Analog Controller (DUAL SHOCK) do **PS1**. Dokument pochodzi z **1998 roku** i nie opisuje algorytmu DualShocka 2. Lepsza powtarzalność centrowania PS2 w tym raporcie wynika z naszych pomiarów badanych egzemplarzy, nie z powyższego cytatu.
 
 ## Co zbudowaliśmy i co mierzyliśmy
 
